@@ -1,8 +1,7 @@
-#Trekma Html Template
-> Copyright: Waituk  
-> Author: Waituk  
+> Copyright: Sanjeev  
+> Author: sanjeevpraja@gmail.com  
 > Vesrion: 1.0  
-> Date: 20th April 2015  
+
 
 
 
@@ -331,57 +330,7 @@ Or app/font/wkfont/style.css is included on all pages so icon can be simply used
 
 	<span class="wk-icon wk-icon_sign"></span>
 
-**Available icons**
-
-	icon_bungee
-	icon_cycle
-	icon_hunt
-	icon_mount2
-	icon_scooba
-	icon_surf
-	icon_trek2
-	icon_dropdown
-	icon_compare
-	icon_heart
-	icon_eye
-	icon_faq
-	icon_note
-	icon_setting
-	icon_fax
-	icon_mail
-	icon_skype
-	icon_add
-	icon_delete
-	icon_minus
-	icon_plus
-	icon_climb
-	icon_downhill
-	icon_parasuit
-	icon_raft2
-	icon_swissknife
-	icon_tent
-	icon_all
-	icon_arrleft
-	icon_arrright
-	icon_bino
-	icon_boot
-	icon_facebook
-	icon_google
-	icon_grid
-	icon_list
-	icon_mark
-	icon_mount
-	icon_phone
-	icon_raft
-	icon_rss
-	icon_search
-	icon_sign
-	icon_star
-	icon_trek
-	icon_twitter
-
 -------------------------------  
-
 
 ##Use of .kit extention for html generation.
 
