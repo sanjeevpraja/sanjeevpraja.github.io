@@ -1,7 +1,6 @@
 $(function(){
 	var stellarActivated = false;
 	homeparallax();
-	homesearch();
 	waypoint();
 	sectionTitle();
 	wkTab();
@@ -60,18 +59,6 @@ $(function(){
 });
 
 
-
-
-
-
-
-
-function homesearch(){
-	$('.dropdown-menu li').click(function(){
-		var text = $(this).html();
-		$(this).parents('.dropdown').find('.text').html(text);
-	});
-}
 
 function waypoint(){
 	/*waypoint animation for feature icons*/

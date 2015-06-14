@@ -1,4 +1,5 @@
 header.wk-nav{
+	@nav-color: @brand-color;
 	width: 100%;
 	border-bottom: 1px solid @brand-color;
 	z-index: 99;
@@ -22,7 +23,6 @@ header.wk-nav{
 	.nav{
 		@nav-radius: 0px;
 		@width: 200px;
-		@anchor-color: fade(@font-color, 90%);
 		float: right;
 		margin-right:20px;
 		font-family: @body-font;
@@ -57,6 +57,7 @@ header.wk-nav{
 			}
 			&.wk-submenu, &.wk-megamenu, &.wk-halfmenu{
 				text-transform: uppercase;
+				@dropmenu-color: contrast(@brand-color);
 				& > a{
 					height: @nav-height - 20px;
 					margin-bottom:  0px;
@@ -66,13 +67,13 @@ header.wk-nav{
 					border: none;
 					padding: 15px 0px;
 					background: fade(@base-color, 90%);
-					color: @brand-color;
 					letter-spacing: .06em;
 					font-size: .8em;
+					color: @dropmenu-color;
 					a{	
-						color: fade(@brand-color, 70%);
+						color: @dropmenu-color;
 						&:hover{
-							color: @brand-color;
+							color: @dropmenu-color;
 						}
 					}
 					h5{	
@@ -159,7 +160,7 @@ header.wk-nav{
 		.navbar-brand{
 			height: @nav-height - 1px;
 			line-height: @nav-height - 1px;
-			color: @brand-color;
+			color: @nav-color;
 			font-size: 2.25em;
 			.transition(all .2s linear);
 		}
@@ -167,7 +168,7 @@ header.wk-nav{
 			margin: 30px 0;
 			height: @nav-height - 60px;
 			line-height: @nav-height - 60px;
-			color: @base-contrast;
+			color: @nav-color;
 			font-size: 1em;
 			.transition(all .2s linear);
 			&:focus{
@@ -181,7 +182,7 @@ header.wk-nav{
 		}
 	}
 	&.fixed{
-		background: @brand-color;
+		background: @nav-color;
 		@shrink-height: 50px;
 		height: @shrink-height;
 		width: 100%;
@@ -194,7 +195,7 @@ header.wk-nav{
 			height: @shrink-height;
 			line-height: @shrink-height;
 			border-right: none;
-			color: @base-color;
+			color: contrast(@nav-color);
 			font-size: 1.4em;
 			.transition(all .2s linear);
 		}
@@ -202,16 +203,16 @@ header.wk-nav{
 			margin: 0px;
 			height: @shrink-height;
 			line-height: @shrink-height;
-			color: @base-color;
+			color: contrast(@nav-color);
 			font-size: .8em;
 			.transition(all .2s linear);
 			&:focus{
 				background: transparent;
-				color: darken(@base-color, 50%);
+				color: lighten(contrast(@nav-color), 50%);
 			}
 			&:hover{
 				background: transparent; /*to overrite bootstrap*/
-				color: darken(@base-color, 50%);
+				color: lighten(contrast(@nav-color), 50%);
 			}
 		}
 	}

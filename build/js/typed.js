@@ -1,6 +1,6 @@
 $(function(){
 	$(".element").typed({
-		strings: ["Expedition", "Adventure", "Hiking"],
+		strings: ["Design", "Develop", "Deploy"],
 		startDelay:1500,
 		typeSpeed:50,
 		backDelay:1e3,
