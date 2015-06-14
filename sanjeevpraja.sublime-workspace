@@ -72,14 +72,11 @@
 	"buffers":
 	[
 		{
-			"contents": "{\n	\"folders\":\n	[\n		{\n			\"path\": \".\"\n		}\n	]\n}\n",
-			"file": "untitled.sublime-project",
-			"file_size": 45,
-			"file_write_time": 130787188730000000,
+			"file": "build/kit/partial/_feature-pro.kit",
 			"settings":
 			{
-				"buffer_size": 45,
-				"line_ending": "Unix"
+				"buffer_size": 8433,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -136,7 +133,9 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/sanjeev/Sites/sanjeevpraja.github.io"
+		"/Users/sanjeev/Sites/sanjeevpraja/build",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/kit",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/kit/partial"
 	],
 	"file_history":
 	[
@@ -341,27 +340,28 @@
 			[
 				{
 					"buffer": 0,
-					"file": "untitled.sublime-project",
-					"semi_transient": true,
+					"file": "build/kit/partial/_feature-pro.kit",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 45,
+						"buffer_size": 8433,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								768,
+								768
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"syntax": "Packages/CodeKit/CodeKit.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3352.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
