@@ -1,0 +1,93 @@
+<h1 id="html-template">Html Template</h1>
+<blockquote>
+<p>Copyright: Waituk<br>Author: Waituk<br>Vesrion: 1.0<br>Date: 24th March 2015  </p>
+</blockquote>
+<h2 id="dependency-">Dependency:</h2>
+<ul>
+<li>Twitter Bootstrap: 3.3.4</li>
+<li>jquery:  1.9</li>
+<li>lesshat:  3.0.2 - collection of less mixins</li>
+</ul>
+<hr>
+<h2 id="theme-setup-process-">Theme-setup process:</h2>
+<ol>
+<li>Git pull</li>
+<li>Install prepros <a href="https://prepros.io/">https://prepros.io/</a></li>
+<li>Open file prepros.cfg change &quot;name&quot;: &quot;TO_PROKJECTNAME&quot;</li>
+<li>Add project to prepose rename project if needed</li>
+<li>Finish</li>
+</ol>
+<hr>
+<h2 id="theme-folder-stucture-">Theme Folder stucture:</h2>
+<pre><code>Themefolder{  
+    /app  
+        -/css  (All Complied css from build/less)  
+            bootstrao.css
+            theme.css
+        -/font (font that is doenloaded from https://icomoon.io)  
+        -/img (only optimized image assets)  
+        -/js (js minified from /build/js)  
+    /build  
+        -/font (contain icon.ai that generates custom icon-font refer &quot;Use of font-icon&quot;)  
+        -/js  
+        -/less  
+            -/base  
+                _header.less  
+                _footer.less  
+            -/globals    
+            -/layouts  
+                -dark.less  
+                -light.less  
+                -boxed.less  
+            -/modules  
+            -/partials 
+                _typo.less  
+                _button.less  
+                _form.less   
+            -/skins  
+                _default.less 
+            -/states  
+                _responsive-lg.less  
+            -/vendors  
+                -/_variables.less (overrides default variables.less from /vendor/variables)  
+            -/bootstrap.less (imports everthing fom /vendor/bootstrap except above _variable.less)  
+            -/theme.less (it imports less an compiles them to single css /app/css/theme.css)  
+    /kit  
+        -/partial (contains partial kit files that are to be imported to index.kit)  
+            -/_header.kit  
+            -/_footer.kit  
+        -/index.kit (or other files that will be finally complided to index.html on root folder)
+        -/about-us.kit  
+    /vendor  
+        -/boostrap  
+        -/jquery  
+        -/lesshat  
+    /.bowerrc  
+    /.bower.json  
+    /.prepros.cfg  
+    /Readme.md  
+    /index.html  
+}  
+</code></pre><hr>
+<h2 id="use-of-font-icon-">Use of font-icon:</h2>
+<ol>
+<li>Find the icon.ai on folder /build/font, open the file in illustrator</li>
+<li>You will find 64X64 px artboard that are arranged to 6 artboard per row   <ul>
+<li>From main menu of illustrator click view/show grid or use shortcut ctrl+&#39;</li>
+<li>Make sure your rule is on and the grid is on every 8 pixel and there is 2 cell gap ie (16 pixel) between any two artboard</li>
+</ul>
+</li>
+<li>Add any icon custom designed or download(only vector icon single color-black) at the end.</li>
+<li>Export it to individual svg by &quot;save as&quot; menu from illustrator and see use artboard option.</li>
+<li>On <a href="https://icomoon.io">https://icomoon.io</a> create new project or open existing one.</li>
+<li>Import entire set or selected svg icons from the illustrator on iconmoon project.</li>
+<li>Download the fonticon<ul>
+<li>Remember to check the preferences before doenloading for proper name of font and class that will be used</li>
+</ul>
+</li>
+<li>Extact downloaded font icon and save it to /app/font/ folder <ul>
+<li>Include the style.css from the fonticon on html before you use it. </li>
+</ul>
+</li>
+</ol>
+<hr>

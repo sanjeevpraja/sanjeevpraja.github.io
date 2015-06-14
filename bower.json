@@ -1,0 +1,19 @@
+{
+  "name": "trekmahtml",
+  "version": "0.0.0",
+  "authors": [
+    "waituk <info@waituk.com>"
+  ],
+  "description": "Html/css template for trekma",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

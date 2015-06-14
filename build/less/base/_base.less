@@ -1,0 +1,101 @@
+/*****************Base********************/
+@width-sm: @grid-float-breakpoint; //768px
+@width-md: @screen-md; //992px;
+
+@section-pd: 100px; // padding for section mainly used in homepage
+@nav-height: 100px;
+@info-height: 25px; //before navbar info
+
+/*icon font wkfonts*/
+@font-face {
+  font-family: 'wkfont';
+  src:url('../font/wkfont/fonts/wkfont.eot?-3unpd4');
+  src:url('../font/wkfont/fonts/wkfont.eot?#iefix-3unpd4') format('embedded-opentype'),
+  url('../font/wkfont/fonts/wkfont.woff?-3unpd4') format('woff'),
+  url('../font/wkfont/fonts/wkfont.ttf?-3unpd4') format('truetype'),
+  url('../font/wkfont/fonts/wkfont.svg?-3unpd4#wkfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+&{
+  background: @body-bg;
+  color: @font-color;
+}
+
+a{
+  color: @base-color;
+  cursor: pointer;
+  outline: none;
+}
+a:hover, 
+a:focus{
+  text-decoration: none;
+  outline: none;
+}
+
+
+hr.dark{
+  border-top: 1px solid rgba(0,0,0,0.2);
+}
+.wk-center, .pull-center{
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tooltip-inner{
+  .border-radius(2px);
+}
+
+.wk-icon{
+	font-size: 25px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.wk-load{
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 99999;
+}
+
+/*rate stars*/
+.wk-rate{
+  .wk-icon{
+    font-size: 14px;
+    color: @brand-color;
+    &.on{
+      color: #e8b800;
+    }
+  }
+}
+
+/*extra caret defined*/
+.caret-up {
+	width: 0; 
+	height: 0; 
+	border-left: 4px solid rgba(0, 0, 0, 0);
+	border-right: 4px solid rgba(0, 0, 0, 0);
+	border-bottom: 4px solid;
+
+	display: inline-block;
+	margin-left: 2px;
+	vertical-align: middle;
+}
+.caret-right {
+	width: 0; 
+	height: 0; 
+	border-top: 4px solid rgba(0, 0, 0, 0);
+	border-bottom: 4px solid rgba(0, 0, 0, 0);
+	border-left: 4px solid;
+	vertical-align: middle;
+	position: absolute;
+	right: 10px;
+	top: 12px;
+}
+/*extra caret defined ends*/

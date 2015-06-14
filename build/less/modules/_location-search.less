@@ -1,0 +1,98 @@
+/*wk-news*/
+.wk-lc-search{
+	min-height: 800px;
+	padding: 0; /*if stellar js parallax background is use padding and margin must be 0*/
+	@color: #f8f8f8;
+	background-image: url('../img/location_bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: @color;
+	overflow: hidden;
+	position: relative;
+	a{
+		color: @color;
+	}
+	.container{
+		position: relative;
+		top: 100px;
+		.transition(all 0.2s ease);
+	}
+	.wk-title{
+		border-bottom: 1px solid @color;
+		margin-bottom: 80px;
+		ul{
+			float: none;
+			font-size: 1.125em;
+			text-transform: uppercase;
+			font-weight: bold;
+			height: 40px;
+			li{
+				padding: 0 15px 0 0;
+			}
+		}
+		hr {
+			border-top: 6px solid @color;
+			border-right: 1px solid @color;
+		}
+	}
+	.wk-top{
+		margin-bottom: 100px;
+	}
+	.wk-bordered{
+		width: 100%;
+		margin: 1px 0;
+		font-family: @head-font;
+		font-weight: bold;
+		font-size: 0.8em;
+		td{
+			@height: 30px;
+			height: @height;
+			border: 1px solid @color;
+			text-align: center;
+			padding: 0 10px;
+			margin-bottom: 3px;
+		}
+	}
+	.wk-compass{
+		@height: 70px;
+		height: 70px;
+		width: 70px;
+		position: relative; 
+		float: right;
+		background: url('../img/compass.png') no-repeat center center;
+		.transition(all 2s ease-in-out);
+	}
+	.btn-brand{
+		text-transform: uppercase;
+		font-size: 1.5em;
+		padding: 0 50px;
+		height: 60px;
+		line-height: 60px;
+	}
+	.wk-txt-box{
+		border: 1px solid @color;
+		padding: 20px 15px;
+		line-height: 1.6em;
+		h4{
+			line-height: 1.4em;
+			margin: 0px;
+		}
+		p{
+			font-size: .8em;
+			margin: 30px 0;
+		}
+		a{
+			font-weight: bold;
+			font-size: 1.125em;
+			text-transform: uppercase;
+		}
+	}
+
+	/*tab*/
+	.wk-tab-pane{
+		display: none;
+		&.active{
+			display: block;
+		}
+	}
+}

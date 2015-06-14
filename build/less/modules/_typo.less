@@ -1,0 +1,74 @@
+/*****************Typography********************/
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,600,700,900,800,300,200,500);
+
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700);
+
+
+@head-font: 'Montserrat', sans-serif;
+@body-font: 'Raleway', sans-serif;	
+//@style-font: 'Pacifico', cursive;
+
+@home-font: 'Playfair Display', serif;
+
+@nav-font: @head-font;	
+
+@font-size-base: 16px;
+
+/*
+@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+*/
+
+@font-size-h1:            2.6em; // ~36px
+@font-size-h2:            2.15em; // ~30px
+@font-size-h3:            1.7em; // ~24px
+@font-size-h4:            1.125em; // ~18px
+@font-size-h5:            1em;
+@font-size-h6:            0.85em; // ~12px
+
+body{
+	font-family: @body-font;
+	font-size: @font-size-base;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand, .nav-bar, .nav-bar a{
+	font-family: @head-font;
+}
+
+.navbar-brand{
+	font-weight: bold;
+}
+
+
+/*****************Font sizes overrides for bootstrap********************/
+h1{
+	font-size: @font-size-h1;
+} 
+h2{
+	font-size: @font-size-h2;
+} 
+h3{
+	font-size: @font-size-h3;
+} 
+h4{
+	font-size: @font-size-h4;
+} 
+h5{
+	font-size: @font-size-h5;
+} 
+h6{
+	font-size: @font-size-h6;
+}
+
+p{
+	line-height: 1.6em;
+}
+
+h2.product-title{
+	font-size: 3em;
+}
