@@ -19,9 +19,7 @@ changes mad
 line number 110: @icon-font-path:          "../../vendor/bootstrap/fonts/";
 ----------------------------------*/
 /*****************Typography********************/
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,600,700,900,800,300,200,500);
-@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700);
 /*
 @font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
 @font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
@@ -43,7 +41,7 @@ h6,
 .navbar-brand,
 .nav-bar,
 .nav-bar a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 .navbar-brand {
   font-weight: bold;
@@ -195,7 +193,7 @@ generates
 .wk-light header.wk-nav .navbar-brand {
   padding: 0 35px;
   border-right: 1px solid #333333;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   vertical-align: middle;
 }
@@ -223,7 +221,7 @@ generates
 .wk-light header.wk-nav .nav > li > a {
   padding: 0 10px;
   border-radius: 0px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -530,7 +528,7 @@ generates
 .wk-light .btn {
   font-size: 1.2em;
   font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 0.05em;
   padding: 5px 15px;
@@ -789,11 +787,11 @@ generates
 }
 .wk-light .wk-image-txt em {
   font-size: 2em;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
 }
 .wk-light .wk-image-txt h1 {
   font-size: 5em;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
   margin: 0px 0px 30px;
 }
@@ -1017,7 +1015,7 @@ generates
 .wk-light .wk-news .wk-news-list .author {
   font-size: .8em;
   font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 .wk-light .wk-news .wk-news-list .date .wk-icon,
 .wk-light .wk-news .wk-news-list .author .wk-icon {
@@ -1079,7 +1077,7 @@ generates
 .wk-light .wk-lc-search .wk-bordered {
   width: 100%;
   margin: 1px 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 0.8em;
 }

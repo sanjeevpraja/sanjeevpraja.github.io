@@ -7,7 +7,7 @@
 <body class="wk-light">
 	<div class="wk-load"></div>
 	<main>
-	<!-- ########## Main Img Section ##########  -->
+		<!-- ########## Main Img Section ##########  -->
 	<!-- <section class="wk-main-parallax wk-height-ad" data-stellar-background-ratio="0.6">
 		<div class="container wk-home-component" data-stellar-ratio="1.2">
 			<div class="wk-image-txt">
@@ -19,13 +19,53 @@
 	</section> -->
 	<!-- ########## Main Img Section Ends ##########  -->
 
-	<!-- @import "partial/_feature-pro.kit" -->
+
+	<!-- ########## Feature Product Section ########## -->
+	<section class="wk-clear-btm" ng-app="portfolio">
+		<div ng-controller="PortfolioController">
+			<div class="container">
+				<div class="wk-title wk-iso">
+					<h3 class="wk-h3">SOME WORKS</h3>
+					<ul>
+						<li ng-click="filterthis('website')"><span class="wk-text">Website</span></li>
+						<li ng-click="filterthis('logo')"><span class="wk-text">Logo</span></li>
+						<li ng-click="filterthis('ui')"><span class="wk-text">User Interface</span></li>
+						<li ng-click="filterthis('art')"><span class="wk-text">Artwork</span></li>
+						<li ng-click="filterthis()"><span class="wk-text">All</span></li>
+					</ul>
+					<input type="hidden" ng-model="datafilter" value="">
+					<hr>
+				</div>
+			</div>
+
+			<div class="container wk-feature-pro">
+				<div id="iso-container" class="row js-isotope">
+
+					<div class="col-md-3 {{myproject.project.tag}}" ng-repeat="myproject in posts | filter: { project: { tag: datafilter } }">
+						<a href="assets/img/portfolio/{{myproject.project.img}}" data-lightbox="image-1">
+							<div bg-img="assets/img/portfolio/{{myproject.project.img}}">
+
+								<div class="wk-pro-desc">
+									<div class="wk-pro-title">{{myproject.project.title}}</div>
+									<div class="wk-job">{{myproject.project.job}}</div>
+									<p class="hidden-md">{{myproject.project.desc}}</p>
+								</div>
+
+							</div>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ########## Feature Product Section Ends ########## -->
+
 
 	<!-- @import "partial/_footer.kit" -->
 
 	<!-- Current Page js -->
-	<!-- isotope -->
-	<script type="text/javascript" src="vendor/isotope/isotope.pkgd.min.js"></script>
+
 	<!-- stellar - parallax -->
 	<script type="text/javascript" src="vendor/stellar/jquery.stellar.min.js"></script>
 	<!-- waypoint -->
@@ -43,6 +83,37 @@
 
 	<!-- lightbox -->
 	<script src="vendor/lightbox/js/lightbox.min.js"></script>
+	<script src="vendor/angularjs/angular.min.js"></script>
+
+
+	<script type="text/javascript">
+		var app = angular.module('portfolio', []);
+
+		app.controller('PortfolioController', function($scope, $http){
+
+			$http.get('data.json').
+			success(function(data, status, headers, config) {
+				$scope.posts = data;
+			}).
+			error(function(data, status, headers, config) {
+      // log error
+  });
+
+			$scope.filterthis = function(filter){
+				this.datafilter = filter;
+			}
+
+		});
+
+		app.directive('bgImg', function(){
+			return function(scope, element, attrs){
+				var url = attrs.bgImg;
+				element.css({
+					'background-image': 'url(' + url +')',
+				});
+			};
+		});
+	</script>
 
 </body>
 </html>

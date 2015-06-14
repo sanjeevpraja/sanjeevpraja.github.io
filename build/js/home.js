@@ -5,7 +5,6 @@ $(function(){
 	sectionTitle();
 	wkTab();
 
-	productisotope();
 
 	compassRotate('.wk-compass');
 
@@ -13,7 +12,6 @@ $(function(){
 		location.reload();
 		homeparallax();
 		eachHr();
-		productisotopeDefault();
 		//$.stellar('refresh');
 	});
 
@@ -108,29 +106,6 @@ function eachHr(){
 			$(this).css('left', hrleft+'px');
 		}
 	});	
-}
-
-/*isotope*/
-function productisotopeDefault(){
-	/*use this function on window resize only*/
-	$('#iso-container').isotope({
-		itemSelector: '.col-md-3'
-	});
-}
-function productisotope(){
-	/*use this function on document ready resize only*/
-	//**do not use wk-title class
-	$('.wk-iso ul li').click(function(){
-		$('.wk-iso ul li').removeClass('active');
-		$('.wk-iso ul li').removeClass('active');
-		$(this).addClass('active');
-		var filterValue = $(this).attr('data-filter');
-		$('#iso-container').isotope({
-			filter: '.'+filterValue,
-			resizesContainer: true,
-			resizable: true
-		});
-	});
 }
 
 

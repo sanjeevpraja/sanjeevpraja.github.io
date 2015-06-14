@@ -1,10 +1,10 @@
 {
-  "name": "trekmahtml",
+  "name": "SanjeevHtml",
   "version": "0.0.0",
   "authors": [
-    "waituk <info@waituk.com>"
+    "sanjeev <sanjeevpraja@gmail.com>"
   ],
-  "description": "Html/css template for trekma",
+  "description": "Html template by sanjeev",
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -14,6 +14,5 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-  }
+  "homepage": "https://github.com/sanjeevpraja/sanjeevpraja.github.io"
 }
