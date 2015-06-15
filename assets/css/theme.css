@@ -74,8 +74,10 @@ h2.product-title {
 .wk-light {
   /*****************Base********************/
   /*icon font wkfonts*/
+  /*this is .wk-light for body*/
   background: #ffffff;
   color: #7d7d7d;
+  overflow-y: scroll;
   /*rate stars*/
   /*extra caret defined*/
   /*extra caret defined ends*/

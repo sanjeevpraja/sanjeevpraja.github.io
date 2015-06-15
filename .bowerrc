@@ -1,0 +1,11 @@
+{
+  "directory": "vendor",
+  "analytics": false,
+  "timeout": 120000,
+  "registry": {
+    "search": [
+      "http://localhost/sanjeevpraja/vendor",
+      "https://bower.herokuapp.com"
+    ]
+  }
+}
