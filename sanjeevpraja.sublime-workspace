@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"bac",
+				"background"
+			],
+			[
+				"over",
+				"overflow-y"
+			],
+			[
+				"Webs",
+				"website"
+			],
+			[
 				"mar",
 				"margin-bottom"
 			],
@@ -30,10 +42,6 @@
 			[
 				"min",
 				"min-height"
-			],
-			[
-				"bac",
-				"background-size"
 			],
 			[
 				"text",
@@ -71,14 +79,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "build/kit/partial/_feature-pro.kit",
-			"settings":
-			{
-				"buffer_size": 8433,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -134,11 +134,45 @@
 	"expanded_folders":
 	[
 		"/Users/sanjeev/Sites/sanjeevpraja/build",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/js",
 		"/Users/sanjeev/Sites/sanjeevpraja/build/kit",
-		"/Users/sanjeev/Sites/sanjeevpraja/build/kit/partial"
+		"/Users/sanjeev/Sites/sanjeevpraja/build/kit/partial",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/less",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/less/base",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/less/globals",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/less/layouts",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/less/modules",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/less/partials",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/less/vendors"
 	],
 	"file_history":
 	[
+		"/Users/sanjeev/Sites/sanjeevpraja/build/kit/partial/_feature-pro.kit",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/less/theme.less",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/less/base/_base.less",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/kit/index.kit",
+		"/Users/sanjeev/Sites/sanjeevpraja/data.json",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/less/modules/_typo.less",
+		"/Users/sanjeev/Sites/iconFont/index.html",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/js/home.js",
+		"/Users/sanjeev/Sites/sanjeevpraja/index.html",
+		"/Users/sanjeev/Sites/angularjs/helloworld.html",
+		"/Users/sanjeev/Sites/sanjeevpraja/bower.json",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/less/modules/_feature-pro.less",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/kit/partial/_blog.kit",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/less/modules/_team.less",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/kit/partial/_team.kit",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/less/base/_header.less",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/less/layouts/_light.less",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/less/base/_footer.less",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/kit/index_backup.kit",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/kit/partial/_testimonial.kit",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/js/typed.js",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/less/partials/_home.less",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/less/skins/_default.less",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/kit/partial/_nav-transparent.kit",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/less/modules/_trek-guides.less",
+		"/Users/sanjeev/Sites/sanjeevpraja/build/kit/partial/_navmenu.kit",
 		"/Users/sanjeev/Sites/cod-contract/i.Coupon Edge 1 with Timer/Black/Free Gift/Preview Cart Closer Offer.html",
 		"/Users/sanjeev/Sites/cod-contract/i.Coupon Edge 1 with Timer/Black/Free Gift/css/responsive.css",
 		"/Users/sanjeev/Sites/cod-contract/i.Coupon Edge 1 with Timer/Black/Free Shipping/css/responsive.css",
@@ -240,43 +274,18 @@
 		"/Users/sanjeev/Sites/cod-contract/Small Tag with Timer_responsive/Green/Discount/Preview Cart Closer Offer.html",
 		"/Users/sanjeev/Sites/cod-contract/Small Tag with Timer_responsive/Orange-Blue/Discount/Preview Cart Closer Offer.html",
 		"/Users/sanjeev/Sites/cod-contract/Small Tag with Timer_responsive/Green/Free Gift/Preview Cart Closer Offer.html",
-		"/Users/sanjeev/Sites/cod-contract/Small Tag with Timer_responsive/Green/Free Shipping/Preview Cart Closer Offer.html",
-		"/Users/sanjeev/Sites/cod-contract/Small Tag with Timer_responsive/Orange-Blue/Free Gift/Preview Cart Closer Offer.html",
-		"/Users/sanjeev/Sites/cod-contract/Small Tag with Timer_responsive/Orange-Blue/Free Shipping/Preview Cart Closer Offer.html",
-		"/Users/sanjeev/Sites/cod-contract/Small Tag with Timer_responsive/Blue/Free Shipping/Preview Cart Closer Offer.html",
-		"/Users/sanjeev/Sites/cod-contract/Small Tag with Timer_responsive/Blue/Free Gift/Preview Cart Closer Offer.html",
-		"/Users/sanjeev/Sites/cod-contract/Tag with Timer_responsive/Green-Yellow/Free Shipping/Preview Cart Closer Offer.html",
-		"/Users/sanjeev/Sites/cod-contract/Tag with Timer_responsive/Green-Yellow/Free Gift/Preview Cart Closer Offer.html",
-		"/Users/sanjeev/Sites/cod-contract/Tag with Timer_responsive/Green-Yellow/Discount/Preview Cart Closer Offer.html",
-		"/Users/sanjeev/Sites/cod-contract/Tag with Timer_responsive/Red-Blue/Free Gift/Preview Cart Closer Offer.html",
-		"/Users/sanjeev/Sites/cod-contract/Tag with Timer_responsive/Dark Blue-Light Blue/Free Shipping/Preview Cart Closer Offer.html",
-		"/Users/sanjeev/Sites/cod-contract/Tag with Timer_responsive/Red-Blue/Discount/Preview Cart Closer Offer.html",
-		"/Users/sanjeev/Sites/cod-contract/Tag with Timer_responsive/Blue/Discount/css/responsive.css",
-		"/Users/sanjeev/Sites/cod-contract/Tag with Timer_responsive/Dark Blue-Light Blue/Free Gift/Preview Cart Closer Offer.html",
-		"/Users/sanjeev/Sites/cod-contract/Tag with Timer_responsive/Dark Blue-Light Blue/Discount/Preview Cart Closer Offer.html",
-		"/Users/sanjeev/Sites/cod-contract/Tag with Timer_responsive/Blue/Free Shipping/css/responsive.css",
-		"/Users/sanjeev/Sites/cod-contract/Tag with Timer_responsive/Blue/Free Gift/css/responsive.css",
-		"/Users/sanjeev/Sites/cod-contract/Tag with Timer/Blue/Discount/css/responsive.css",
-		"/Users/sanjeev/Sites/cod-contract/Tag with Timer/Blue/Free Gift/css/responsive.css",
-		"/Users/sanjeev/Sites/cod-contract/Tag with Timer/Blue/Discount/Preview Cart Closer Offer.html",
-		"/Users/sanjeev/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/Users/sanjeev/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/sanjeev/Downloads/Blue 2/Discount/css/responsive.css",
-		"/Users/sanjeev/Downloads/Blue 2/Discount/Preview Cart Closer Offer.html",
-		"/Users/sanjeev/Downloads/light-box/css/responsive.css",
-		"/Users/sanjeev/Downloads/light-box/index.html",
-		"/Users/sanjeev/Desktop/cod-contract/Tag with Timer/Blue/Discount/Preview Cart Closer Offer.html",
-		"/Users/sanjeev/Desktop/tutorial/Lynda - Up and Running with AngularJS/Exercise/Ex_Files_UaR_AngularJS/Exercise Files/chap_03/04/final/public/js/app.js"
+		"/Users/sanjeev/Sites/cod-contract/Small Tag with Timer_responsive/Green/Free Shipping/Preview Cart Closer Offer.html"
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
 		"height": 263.0,
 		"where_history":
 		[
+			"/Users/sanjeev/Sites/sanjeevpraja/build/less",
 			"/Users/sanjeev/Sites/cod-contract/Small Tag with Timer_responsive/Orange-Blue",
 			"/Users/sanjeev/Sites/cod-contract/Small Tag with Timer_responsive/Green",
 			"/Users/sanjeev/Sites/cod-contract/Small Tag with Timer_responsive/Orange-Blue",
@@ -296,6 +305,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"body",
+			"brand-color",
+			"anc",
+			"an",
+			"anchor",
 			"#",
 			"#F8F3E6",
 			"cod_appl",
@@ -335,38 +349,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "build/kit/partial/_feature-pro.kit",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8433,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								768,
-								768
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CodeKit/CodeKit.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3352.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -447,7 +431,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 240.0,
+	"side_bar_width": 269.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
