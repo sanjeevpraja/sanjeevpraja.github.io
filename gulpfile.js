@@ -39,7 +39,7 @@ gulp.task('kit', function(){
   .pipe(kit({
     paths: [ path.join(__dirname, 'build/kit', 'import') ]
   }))
-  .pipe(gulp.dest('app/'))
+  .pipe(gulp.dest('/'))
 });
 
 gulp.task('less', function () {
@@ -48,13 +48,13 @@ gulp.task('less', function () {
     errorHandler: onError
   }))
   .pipe(sourcemaps.init())
-  .pipe(changed('app/assets/css'))
+  .pipe(changed('assets/css'))
   .pipe(less({
     paths: [ path.join(__dirname, 'build/less', 'includes') ]
   }))
   //.pipe(concat('all.css'))
   .pipe(sourcemaps.write())
-  .pipe(gulp.dest('app/assets/css'))
+  .pipe(gulp.dest('assets/css'))
   .pipe(browserSync.stream());
 });
 
@@ -76,18 +76,18 @@ gulp.task('scripts', function() {
           suffix: "-min",
           extname: ".js"
         }))
-        .pipe(gulp.dest('app/assets/js'));
+        .pipe(gulp.dest('assets/js'));
       });
 
 //Image Optimize
 gulp.task('images', function() {
-  return gulp.src('build/img/**/*')
+  return gulp.src('assets/img/**/*')
   .pipe(imagemin({
     progressive: true,
     interlaced: true,
     svgoPlugins: [{removeUnknownsAndDefaults: false}, {cleanupIDs: false}]
   }))
-  .pipe(gulp.dest('app/assets/img'));
+  .pipe(gulp.dest('assets/img'));
 });
 
 
@@ -100,20 +100,20 @@ gulp.watch('build/kit/**/*', ['kit']);
 gulp.watch('build/img/**/*', ['images']);
 gulp.watch('build/js/*.js', ['lint', 'scripts']);
 gulp.watch('build/less/**/*.less', ['less']);
-gulp.watch("app/*.html").on('change', browserSync.reload);
+gulp.watch("*.html").on('change', browserSync.reload);
 });
 
 // Default Task
 gulp.task('default', ['kit', 'less', 'images', 'scripts'], function() {
   browserSync.init({
-    server: "./app/"
+    server: "./"
   });
 });
 
 gulp.task('image', ['images']);
 
 //copy custom font into asset
-gulp.task('copyfont', function() {
-  return gulp.src(['build/font/fontcustom/**/*']).
-  pipe(gulp.dest('app/assets/font/fontcustom/'));
-});
+// gulp.task('copyfont', function() {
+//   return gulp.src(['build/font/fontcustom/**/*']).
+//   pipe(gulp.dest('app/assets/font/fontcustom/'));
+// });
