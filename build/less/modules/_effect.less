@@ -1,0 +1,318 @@
+@color-list: btn-base @base-color, btn-light @base-light, btn-dark @base-dark, btn-grey @font-color, btn-white #ffffff;
+
+.generate-effect(@iterator:1) when(@iterator <= length(@color-list)) {
+  @name: extract(extract(@color-list, @iterator),1);
+
+
+  /*fade*/
+  .@{name}{
+    
+    /* Underline From Left */
+    &.gt-underline-from-left {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      overflow: hidden;
+    }
+    &.gt-underline-from-left:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 100%;
+      bottom: 0;
+      background: extract(extract(@color-list, @iterator),2);
+      height: 4px;
+      -webkit-transition-property: right;
+      transition-property: right;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+    &.gt-underline-from-left:hover:before, &.gt-underline-from-left:focus:before, &.gt-underline-from-left:active:before {
+      right: 0;
+    }
+
+    /* Underline From Center */
+    &.gt-underline-from-center {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      overflow: hidden;
+    }
+    &.gt-underline-from-center:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      right: 50%;
+      bottom: 0;
+      background: extract(extract(@color-list, @iterator),2);
+      height: 4px;
+      -webkit-transition-property: left, right;
+      transition-property: left, right;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+    &.gt-underline-from-center:hover:before, &.gt-underline-from-center:focus:before, &.gt-underline-from-center:active:before {
+      left: 0;
+      right: 0;
+    }
+
+    /* Underline From Right */
+    &.gt-underline-from-right {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      overflow: hidden;
+    }
+    &.gt-underline-from-right:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 100%;
+      right: 0;
+      bottom: 0;
+      background: extract(extract(@color-list, @iterator),2);
+      height: 4px;
+      -webkit-transition-property: left;
+      transition-property: left;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+    &.gt-underline-from-right:hover:before, &.gt-underline-from-right:focus:before, &.gt-underline-from-right:active:before {
+      left: 0;
+    }
+
+
+
+    &.gt-fade {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      overflow: hidden;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: color, background-color;
+      transition-property: color, background-color;
+    }
+    &.gt-fade:hover, &.gt-fade:focus, &.gt-fade:active {
+      background-color: extract(extract(@color-list, @iterator),2);
+      color: white;
+    }
+
+
+    /* Sweep To Right */
+    &.gt-sweep-to-right {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+    }
+    &.gt-sweep-to-right:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: extract(extract(@color-list, @iterator),2);
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+    &.gt-sweep-to-right:hover, &.gt-sweep-to-right:focus, &.gt-sweep-to-right:active {
+      color: white;
+    }
+    &.gt-sweep-to-right:hover:before, &.gt-sweep-to-right:focus:before, &.gt-sweep-to-right:active:before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+
+    /* Sweep To Left */
+    &.gt-sweep-to-left {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+    }
+    &.gt-sweep-to-left:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: extract(extract(@color-list, @iterator),2);
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transform-origin: 100% 50%;
+      transform-origin: 100% 50%;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+    &.gt-sweep-to-left:hover, &.gt-sweep-to-left:focus, &.gt-sweep-to-left:active {
+      color: white;
+    }
+    &.gt-sweep-to-left:hover:before, &.gt-sweep-to-left:focus:before, &.gt-sweep-to-left:active:before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+
+    /* Sweep To Bottom */
+    &.gt-sweep-to-bottom {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+    }
+    &.gt-sweep-to-bottom:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: extract(extract(@color-list, @iterator),2);
+      -webkit-transform: scaleY(0);
+      transform: scaleY(0);
+      -webkit-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+    &.gt-sweep-to-bottom:hover, &.gt-sweep-to-bottom:focus, &.gt-sweep-to-bottom:active {
+      color: white;
+    }
+    &.gt-sweep-to-bottom:hover:before, &.gt-sweep-to-bottom:focus:before, &.gt-sweep-to-bottom:active:before {
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1);
+    }
+
+    /* Sweep To Top */
+    &.gt-sweep-to-top {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+    }
+    &.gt-sweep-to-top:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: extract(extract(@color-list, @iterator),2);
+      -webkit-transform: scaleY(0);
+      transform: scaleY(0);
+      -webkit-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+    &.gt-sweep-to-top:hover, &.gt-sweep-to-top:focus, &.gt-sweep-to-top:active {
+      color: white;
+    }
+    &.gt-sweep-to-top:hover:before, &.gt-sweep-to-top:focus:before, &.gt-sweep-to-top:active:before {
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1);
+    }
+
+
+    
+  }
+
+  .generate-effect((@iterator + 1));
+}
+.generate-effect();
+
+
+

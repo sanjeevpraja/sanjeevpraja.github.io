@@ -1,0 +1,30 @@
+.helpcursor{
+  position: relative;
+  .gt-help{
+    position: absolute;
+    top: 5px;
+    @width: 120px;
+    width: @width;
+    font-size: 14px;
+    line-height: 1.2em;
+    height: auto;
+    color: @base-contrast;
+    span{
+      font-size: 30px;
+      position: absolute;
+      top: 0px;
+    }
+    &.left{
+      left: -(@width+40px);
+      span{
+        right:-30px;
+      }
+    }
+    &.right{
+      right: -(@width+40px);
+      span{
+        left:-30px;
+      }
+    }
+  }
+}

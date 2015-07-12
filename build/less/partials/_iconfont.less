@@ -1,0 +1,92 @@
+.gt-iconfont{
+	.glyph {
+		border-bottom: 1px dotted #ccc;
+		padding: 10px 0 20px;
+		margin-bottom: 20px;
+		float: left;
+		width: 100px;
+		text-align: center;
+	}
+	.preview-glyphs { vertical-align: bottom; }
+
+	.preview-scale {
+		color: #888;
+		font-size: 12px;
+		margin-top: 5px;
+	}
+
+	.step {
+		display: inline-block;
+		line-height: 1;
+		position: relative;
+	}
+
+	.step:hover .letters { opacity: 1; }
+	.step:hover i { 
+		color: @base-dark;
+		cursor: default;
+	}
+
+	.size { 
+		font-size: 30px; 
+		color: @base-color;
+	}
+
+	.characters-off .letters { display: none; }
+	.characters-off .step:hover i { opacity: 1; }
+
+	.usage { margin-top: 10px; }
+	.usage .class { width: 90px; }
+	.usage input {
+		font-family: monospace;
+		margin-right: 3px;
+		padding: 2px 5px;
+		text-align: center;
+		font-size: 10px;
+		width: 100%;
+	}
+
+	.search-div{
+		margin-bottom: 50px;
+		text-align: center;
+	}
+	.wrapper{
+		margin: 0 auto;
+		background: rgba(0,0,0,0.2);
+	}
+
+	input.form-control{
+		border-radius: 0px;
+		text-align: center;
+		height: 60px;
+		line-height: 60px;
+		font-size: 14px;
+	}
+	input.form-control:focus{
+		border-color: @base-dark;
+		box-shadow: none;
+	}
+	.how-to-use{
+		margin-top: 10px;
+		color: #888;
+		font-size: 12px;
+		cursor: pointer;
+	}
+}
+
+#iconhelp{
+	.modal-body{
+		min-height: 160px;
+	}
+	.glyph{
+		text-align: center;
+		float: left;
+		margin-right: 15px;
+	}
+	.preview-glyphs{
+		.size.icon-addon
+		{
+			font-size: 60px;
+		}
+	}
+}

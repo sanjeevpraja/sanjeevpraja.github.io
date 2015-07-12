@@ -1,0 +1,82 @@
+<!-- @import "partial/_header.kit" -->
+<!-- Additional page CSS -->
+
+<!-- @import "partial/_nav.kit" -->
+<!-- @import "partial/_main-img.kit" -->
+
+<section class="gt-steps">
+	<div class="container">
+		<div class="gt-title">
+			<h3>Using Steps</h3>
+			<p>Mold Theme is Html Template, build for personal use and base theme structure to start with.</p>
+		</div>
+
+		<div class="col-md-3 gt-step-module first wp-1 delay-0">
+			<div class="gt-index">1</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+		<div class="col-md-3 gt-step-module wp-1 delay-1">
+			<div class="gt-index">2</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+		<div class="col-md-3 gt-step-module wp-1 delay-2">
+			<div class="gt-index">3</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+		<div class="col-md-3 gt-step-module last wp-1 delay-3">
+			<div class="gt-index">4</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+	</div>
+</section>
+
+<section class="gt-timeline">
+	<div class="container">
+		<div class="gt-title">
+			<h3>Using Timeline</h3>
+			<p>Mold Theme is Html Template, build for personal use and base theme structure to start with.</p>
+		</div>
+		<div class="gt-time-module wp-2 delay-0">
+			<div class="gt-index"><span class="icon-map"></span>
+				<div class="gt-time-pop left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, a officiis! Incidunt.</div>
+			</div>
+		</div>
+		<div class="gt-time-module wp-2 delay-1">
+			<div class="gt-index"><span class="icon-road-sign"></span>
+				<div class="gt-time-pop right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae iste, unde expedita</div>
+			</div>
+		</div>
+		<div class="gt-time-module wp-2 delay-2">
+			<div class="gt-index"><span class="icon-travel-cycle"></span>
+				<div class="gt-time-pop left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt eaque, voluptatum ullam.</div>
+			</div>
+		</div>
+		<div class="gt-time-module last wp-2 delay-3">
+			<div class="gt-index"><span class="icon-flag"></span>
+				<div class="gt-time-pop right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus mollitia quisquam beatae.</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- @import "partial/_controlpanel.kit" -->
+<!-- @import "partial/_footer.kit" -->
+
+
+<script type="text/javascript" src="assets/js/home-min.js"></script>
+<script>
+	$('.wp-1').waypoint(function() {
+		$('.wp-1').addClass('animated flipInX');
+	}, {
+		offset: '75%'
+	});
+
+	$('.wp-2').waypoint(function() {
+		$('.wp-2').addClass('animated flipInX');
+	}, {
+		offset: '75%'
+	});
+</script>
+</body>
+</html>

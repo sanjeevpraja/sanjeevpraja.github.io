@@ -1,0 +1,230 @@
+@nav-height: 80px;
+&{
+	padding-top: @nav-height;
+}
+
+.gt-nav{
+	width: 100%;
+	@nav-height: 80px;
+	height: @nav-height;
+	color: @base-contrast;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	.transition(all .2s linear);
+	&.gt-shrink{
+		position: absolute;
+		border-bottom: 1px solid fade(@base-color, 10%);
+	}
+	&.transparent{
+		border-bottom: 1px solid fade(@base-contrast,20%);
+		a{
+			color: @base-contrast;
+		}
+	}
+	.navbar{
+		border: none;
+	}
+	.navbar-logo{
+		height: @nav-height - 1px;
+		line-height: @nav-height - 1px;
+		padding: 0 35px;
+		margin-top: 20px;
+		font-size: 1.6em;
+		font-family: @head-font;
+		font-weight: 600;
+		vertical-align: middle;
+		.transition(all .2s linear);
+		&:hover{
+			color: @base-color;
+		}
+		img{
+			height: 28px;
+			margin:36px 0;
+		}
+	}
+	.nav{
+		@nav-radius: 0px;
+		@width: 200px;
+		float: none;
+		display: table;
+		margin:0 auto;
+		font-family: @body-font;
+		ul{
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+			line-height: 24px;
+		}
+		& > li{
+			& > a{
+				height: @nav-height - 1;
+				line-height: @nav-height - 1;
+				padding:0 10px;
+				border-radius: @nav-radius;
+				font-family: @head-font;
+				font-weight: normal;
+				text-transform: uppercase;
+				letter-spacing: 0.06em;
+				font-size: 1.2em;
+				.transition(all .2s linear);
+				&:focus{
+					color: @base-dark;
+					background: transparent;
+				}
+				&:hover{
+					color: @base-light;/*to overrite bootstrap*/
+					background: transparent;
+				}
+			}
+			&.open{ /*li.open*/
+				a.dropdown-toggle, a:focus, a:hover{
+					background: transparent; /*for wk-megamenu, wksubmenu*/
+				}
+				a.btn-base{
+					line-height: 40px;
+					height: 40px;
+					padding: 0 15px;
+					&:hover{
+						background: darken(@base-color, 10%);
+					}
+				}
+			}
+			&.gt-submenu, &.gt-megamenu{
+				text-transform: uppercase;
+				& > a{
+					margin-bottom:  0px;
+					text-transform: uppercase;
+				}
+				.dropdown-menu{
+					@bg-drop: @base-dark;
+					@color-drop: @base-light;
+					border: none;
+					background: fade(@bg-drop, 90%);
+					color: @color-drop;
+					letter-spacing: .06em;
+					font-size: .8em;
+					a{	
+						color: desaturate(lighten(@color-drop, 40%), 30%);
+						text-transform: none;
+						&:hover{
+							color: desaturate(lighten(@color-drop, 20%), 40%);
+						}
+					}
+					h5{	
+						border-bottom: 1px solid fade(@bg-drop, 10%);
+						margin-top: 0px;
+						padding-bottom: 0px
+					}
+					img{
+						width: 100%;
+						margin-bottom: 15px;
+					}
+					ul{
+						margin-bottom: 15px;
+					}
+				}
+			}
+			&.gt-megamenu{
+				position: static;
+				.dropdown-menu{
+					padding: 15px 20px;
+					right: 0;
+					left: 0;
+					border: none;
+					border-radius: @nav-radius;
+				}
+			}
+			&.gt-submenu{ /*infinity sub-nav*/
+				.dropdown-menu{
+					padding: 10px 0;
+					border: none;
+					box-shadow: none;
+					.border-radius(0px);
+					width: @width;
+					position: absolute;
+					top: 100%;
+					ul{	
+						background: fade(@base-dark, 90%);
+						border-left: 1px solid @base-dark;
+						display: none;
+						width: @width + 30px;
+						margin: 0px;
+						padding: 0px;
+						list-style: none;
+						position: absolute;
+						top: 0px;
+						left: @width;
+					}
+					li{
+						position: relative;
+						&:hover{
+							& > ul{
+								display: block;
+							}
+						}
+						&.open{
+							& > a, & > a:hover, & > a:focus{
+								background: none;
+							}
+						}
+					}
+					a{
+						position: relative;
+						display: block;
+						height: 30px;
+						line-height: 30px;
+						padding: 0 15px;
+					}
+				}
+			}
+		}
+	}
+	&.fixed{
+		background: @base-contrast;
+		@shrink-height: 50px;
+		height: @shrink-height;
+		width: 100%;
+		position: fixed;
+		top: 0px;
+		z-index: 999;
+		.transition(all .2s linear);
+		.box-shadow(0 0 3px fade(@base-color, 30%));
+		.navbar-logo{
+			height: @shrink-height;
+			line-height: @shrink-height;
+			border-right: none;
+			color: @base-color;
+			font-size: 1em;
+			.transition(all .2s linear);
+		}
+		.navbar{
+			border-bottom: none;
+		}
+		.nav > li {
+			& > a{
+				margin: 0px;
+				height: @shrink-height;
+				line-height: @shrink-height;
+				color: @base-color;
+				font-size: .7em;
+				.transition(all .2s linear);
+				&:focus{
+					background: transparent;
+					color: darken(@base-color, 50%);
+				}
+				&:hover{
+					background: transparent; /*to overrite bootstrap*/
+					color: darken(@base-color, 50%);
+				}
+			}
+			&.open{ /*li.open*/
+				a.dropdown-toggle{
+					background: transparent; /*for wk-megamenu, wksubmenu*/
+					color: @base-dark;
+				}
+			}
+		}
+	}
+	}/*header ends*/

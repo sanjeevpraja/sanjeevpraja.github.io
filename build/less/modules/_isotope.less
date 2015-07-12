@@ -1,0 +1,72 @@
+
+/*wk-feature-pro*/
+.gt-isotope{
+	overflow: hidden;
+	padding-bottom: 50px;
+	background: @body-bg;
+	ul.gt-isotope-menu{
+		display: table;
+		list-style: none;
+		margin: -15px auto 20px;
+		padding: 0px;
+		font-size: 1.2em;
+		color: @base-color;
+		li{
+			display: inline-block;
+			padding: 0 30px 10px 0;
+			cursor: pointer;
+			&:last-child{
+				padding-right: 0px;
+			}
+		}
+	}
+	.col-md-3{
+		.gt-isotope-item{
+			height: 200px;
+			width: 100%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			position: relative;
+			overflow: hidden;
+			margin-bottom: 30px;
+			.gt-isotope-desc{
+				visibility: hidden;
+				width: 100%;
+				height: 100%;
+				padding: 15px;
+				font-size: .8em;
+				color: @base-contrast;
+				background: fade(@base-color, 80%);
+				position: absolute;
+				top: 100%;
+				left: 0px;
+				cursor: pointer;
+				.transition(all .4s linear);
+				.gt-iso-title{
+					margin-top: 20px;
+					text-align: center;
+					font-weight: bold;
+				}
+				.gt-subtitle{
+					text-align: center;
+					margin-bottom: 10px;
+					span{
+						font-size: 30px;
+					}
+				}
+				p{
+					text-align: center;
+				}
+			}
+
+			&:hover{
+				.gt-isotope-desc{
+					visibility: visible;
+					top: 0;
+					.transition(all .4s linear);
+				}
+			}
+		}
+	}
+}

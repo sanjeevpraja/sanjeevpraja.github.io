@@ -1,0 +1,75 @@
+ /*****************Homepage********************/
+ /*for parrallax*/
+ .gt-slider{
+ 	margin: -@nav-height 0 0px;
+ 	padding: 0px;
+ 	position: relative;
+ 	overflow: hidden;
+ 	&:after{
+ 		@seperate: 4px;
+ 		@seperateplus: @seperate + 1;
+ 		@overlay: desaturate(@base-color, 50%);
+ 		content: '';
+ 		height: 100%;
+ 		width: 100%;
+ 		position: absolute;
+ 		top: 0px;
+ 		left: 0px;
+ 		background: @base-color;
+ 		opacity: 0.4;
+ 		z-index: 9;
+ 	}
+ 	.gt-image-txt{
+ 		width: 100%;
+ 		@height: 300px;
+ 		height: @height;
+ 		position: absolute;
+ 		top: 50%;
+ 		margin-top: -@height/2 + 50;
+ 		z-index: 10;
+ 	}
+ 	.rslides{
+ 		width: 100%;
+ 		li{
+ 			width: 100%;
+ 			& >  div{
+ 				width:100%;
+ 				background-repeat: no-repeat;
+ 				background-size: cover;
+ 				background-position: center;
+ 			}
+ 		}
+ 	}
+ 	.rslides_tabs{
+ 		width: 100%;
+ 		padding: 0;
+ 		margin: 0;
+ 		text-align: center;
+ 		list-style: none;
+ 		position: absolute;
+ 		bottom: 50px;
+ 		z-index: 99;
+ 		li{	
+ 			display: inline-block;
+ 			a{	
+ 				display: inline-block;
+ 				margin: 0 5px;
+ 				@height: 12px;
+ 				height: @height;
+ 				width: @height;
+ 				background: @base-color;
+ 				color: transparent;
+ 				.border-radius(@height);
+ 			}
+ 			&.rslides_here{
+ 				a{
+ 					background: @base-contrast;
+ 				}
+ 			}
+ 		}
+ 	}
+ }
+
+
+
+

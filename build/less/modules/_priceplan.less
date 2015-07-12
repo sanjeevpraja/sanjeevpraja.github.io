@@ -1,0 +1,83 @@
+.features-table
+{
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid fade(@base-color, 20%);
+  td
+  {
+    @height: 60px;
+    height:  @height;
+    line-height:  @height;
+    padding: 0 20px;
+    border-bottom: 1px solid fade(@body-grey, 10%);
+    border-right: 1px solid fade(@body-grey, 10%);
+    white-space: nowrap;
+    text-align: center;
+    &:nth-child(2), &:nth-child(3)
+    {
+      background: fade(@body-grey, 3%);
+    }
+
+    &:nth-child(4)
+    {
+      background: fade(@base-color, 10%);
+    }
+    &:last-child{
+      border-right: none;
+    }
+    *[class^='icon-']{
+      font-size: 30px;
+    }
+    .icon-tick{
+      color: @success-color;
+    }
+    .icon-cross{
+      color: @fail-color;
+    }
+  }
+  
+  tbody td
+  {
+    text-align: center;
+    min-width: 150px;
+    &:first-child
+    {
+      width: auto;
+      text-align: left;
+    }
+  }
+
+  /*Header*/
+  thead td
+  { 
+    @height: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-top: 1px solid #eaeaea;
+    &:first-child
+    {
+      border-top: none;
+    }
+  }
+
+  /*Footer*/
+  tfoot td
+  { 
+    @height: 100px;
+    height: @height;
+    line-height: @height;
+    font-size: 2em;
+    font-weight: bold;
+    color: @base-color;
+    .btn{
+      font-size: 16px;
+    }
+  }
+}
+
+
+
+
+

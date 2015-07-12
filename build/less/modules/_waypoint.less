@@ -1,0 +1,31 @@
+/*****************All waypoint********************/
+.generate-wp(3);
+.generate-delay(8);
+/*How  .wp1, .wp2 .. gebnerated generate is only mixin nothing to do with waypoint library
+generates
+.wp1{
+    visibility: hidden;
+}
+.wp2{
+    visibility: hidden;
+}...
+*/
+
+.generate-wp(@n, @i: 1) when (@i =< @n) {
+  .wp-@{i} {
+   visibility: hidden;
+ }
+ .generate-wp(@n, (@i + 1));
+}
+
+.generate-delay(@n, @i: 1) when (@i =< @n) {
+  .delay-@{i} {
+   animation-delay: (.4s* @i);
+ }
+ .generate-delay(@n, (@i + 1));
+}
+
+.pulse, .flipInX, .fadeIn, .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUp .fadeInLeft, .fadeInRight, .bounceInDown {
+  visibility: visible;
+}
+

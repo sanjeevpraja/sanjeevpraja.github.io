@@ -1,0 +1,31 @@
+<section class="gt-banner gt-base"> 
+  <div class="container gt-counter-div">
+    <div class="row">
+     <div class="col-md-4">
+       <span class="gt-icon-font icon-clock"></span>
+       <span class="counter">4,82</span>
+       <p>Hours Worked</p>
+     </div>
+     <div class="col-md-4">
+       <span class="gt-icon-font icon-load-down"></span>
+       <span class="counter">12</span>
+       <p>Downloads Made</p>
+     </div>
+     <div class="col-md-4">
+      <span class="gt-icon-font icon-cook-coffee"></span>
+      <span class="counter">45</span>
+      <p>Coffee Consumed</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<script type="text/javascript" src="assets/js/countnumbers-min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.counter').countUp({
+      delay: 10,
+      time: 1000
+    });
+  });
+</script>

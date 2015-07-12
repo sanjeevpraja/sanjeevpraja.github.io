@@ -1,0 +1,26 @@
+.gt-feature{
+  @height: 100px;
+  .col-md-4{
+    margin-bottom: 20px;
+  }
+  .gt-icon{
+    float: left;
+    width: @height;
+    height: @height;
+    line-height: @height;
+     text-align: center;
+    color: @base-color;
+    font-size: 60px;
+    &.circle{
+     display: inline-block;
+     background: @base-color;
+     color: @base-contrast;
+     .border-radius(@height);
+   }
+ }
+ .gt-desc{
+  margin-left: @height;
+  font-size: .9em;
+  min-height: @height;
+}
+}

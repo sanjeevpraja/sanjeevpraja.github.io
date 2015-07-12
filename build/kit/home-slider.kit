@@ -1,0 +1,37 @@
+<!-- @import "partial/_header.kit" -->
+<!-- Additional page CSS -->
+
+<link rel="stylesheet" href="vendor/responsiveslides/responsiveslides.css">
+<script src="vendor/responsiveslides/responsiveslides.min.js"></script>
+
+
+<!-- @import "partial/_nav-transparent.kit" -->
+
+<section class="gt-slider gt-height-ad">
+	<ul class="rslides gt-height-ad" id="slider1">
+		<li><div class="gt-height-ad" style="background-image: url('assets/img/parallax.jpg');"></div></li>
+		<li><div class="gt-height-ad" style="background-image: url('assets/img/parallax2.jpg');"></div></li>
+		<li><div class="gt-height-ad" style="background-image: url('assets/img/parallax3.jpg');"></div></li>
+	</ul>
+	<div class="gt-image-txt">
+		<div class="gt-logo"></div>
+		<h1 class="gt-main">Mold MultiPurpose Theme</h1>	
+		<a href="" class="btn btn-white gt-underline-from-left">Download</a>
+	</div>
+
+</section>
+<!-- @import "partial/_about.kit" -->
+
+<!-- @import "partial/_controlpanel.kit" -->
+<!-- @import "partial/_footer.kit" -->
+
+<script type="text/javascript" src="assets/js/home-min.js"></script>
+<script>
+	$(function(){
+		$("#slider1").responsiveSlides({
+			pager: true
+		});
+	})
+</script>
+</body>
+</html>

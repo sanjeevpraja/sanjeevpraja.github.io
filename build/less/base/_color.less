@@ -1,0 +1,135 @@
+/*color Scheme*/
+@base-color: hsl(210, 60%, 30%);
+//@base-color: #c7c5a7;
+@base-hover: darken(saturate(@base-color, 50%), 10%);
+@base-light: lighten(@base-color, 20%);
+@base-dark: darken(@base-color, 20%);
+@base-contrast: contrast(@base-color);
+
+//@body-bg: contrast(@base-color);
+@body-bg: #ffffff;
+@body-contrast: contrast(@body-bg);
+@body-grey: fade(contrast(@body-bg), 5%);
+
+//@font-color: fade(desaturate(@base-color, 100%), 80%);
+@font-color: #333333;
+
+@success-color: #8EAB49;
+@fail-color: #D84A38;
+
+
+
+.gt-color{
+	.gt-color-div{
+		clear: both;
+		display: table;
+		margin: 0 auto 20px;
+		& > div{
+			height: 50px;
+			width: 50px;
+			border: 5px solid rgba(0,0,0,0.2);
+			position: relative;
+			.after{
+				width: 100px;
+				position: absolute;
+				top: 10px;
+				right: -120px;
+			}
+			.before{
+				width: 100px;
+				text-align: right;
+				position: absolute;
+				top: 10px;
+				left: -130px;
+			}
+			&.gt-base-color{
+				background: @base-color;
+				&:before{
+					content: 'base-color';
+					.before;
+				}
+				&:after{
+					content: '@{base-color}';
+					.after;
+				}
+			}
+			&.gt-base-hover{
+				background: @base-hover;
+				&:before{
+					content: 'base-hover';
+					.before;
+				}
+				&:after{
+					content: '@{base-hover}';
+					.after;
+				}
+			}
+			&.gt-base-light{
+				background: @base-light;
+				&:before{
+					content: 'base-light';
+					.before;
+				}
+				&:after{
+					content: '@{base-light}';
+					.after;
+				}
+			}
+			&.gt-base-dark{
+				background: @base-dark;
+				&:before{
+					content: 'base-dark';
+					.before;
+				}
+				&:after{
+					content: '@{base-dark}';
+					.after;
+				}
+			}
+			&.gt-base-contrast{
+				background: @base-contrast;
+				&:before{
+					content: 'base-contrast';
+					.before;
+				}
+				&:after{
+					content: '@{base-contrast}';
+					.after;
+				}
+			}
+			&.gt-body-bg{
+				background: @body-bg;
+				&:before{
+					content: 'body-bg';
+					.before;
+				}
+				&:after{
+					content: '@{body-bg}';
+					.after;
+				}
+			}
+			&.gt-body-contrast{
+				background: @body-contrast;
+				&:before{
+					content: 'body-contrast';
+					.before;
+				}
+				&:after{
+					content: '@{body-contrast}';
+					.after;
+				}
+			}
+			&.gt-font-color{
+				background: @font-color;
+				&:before{
+					content: 'font-color';
+					.before;
+				}
+				&:after{
+					content: '@{font-color}';
+					.after;
+				}
+			}
+		}
+	}
+}

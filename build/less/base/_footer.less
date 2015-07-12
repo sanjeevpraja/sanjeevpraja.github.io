@@ -1,0 +1,80 @@
+/*****************Footer********************/
+footer{
+	@height: 270px;
+	@bg-footer: darken(@base-color, 10%);
+	@footer-color: @base-contrast;
+	background: @bg-footer;
+	color: @footer-color;
+	line-height: 1.6em;
+	font-size: .9em;
+	position: relative;
+	z-index: 9;
+	.row{
+		& > div{
+			padding-top: 40px;
+			padding-bottom: 50px;
+		}
+	}
+	p{
+		font-size: .8em;
+	}
+	a{
+		color: @footer-color;
+		&:hover{
+			color: @base-contrast;
+		}
+	}
+
+	.gt-foot-txt{
+		margin-bottom: 15px;
+		line-height: 1.6em;
+	}
+
+	ul{
+		margin: 15px 0px 0px;
+		padding: 0px;
+		list-style: none;
+		li{	
+			margin-bottom: 10px;
+			&.gt-big-txt{
+				font-size: 1.2em;
+			}
+			.gt-icon{
+				font-size: 20px;
+				margin-right: 10px;
+				color: @footer-color;
+			}
+		}
+	}
+	.gt-social{
+		.gt-icon{
+			display: inline-block;
+			@height: 40px;
+			height: @height;
+			width: @height;
+			line-height: @height;
+			margin-bottom: 15px;
+			margin-right: 10px;
+			font-size: 24px;
+			color: @footer-color;
+			border-color: @footer-color;
+			&.gt-icon_rss{
+				margin-right: 0px;
+			}
+		}
+	}
+
+
+	.gt-copy{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background: darken(@bg-footer, 2%);
+		font-size: .8em;
+		text-align: center;
+		span{
+			font-size: 1.6em;
+			position: relative;
+			top: 2px;
+		}
+	}
+}

@@ -1,0 +1,168 @@
+.gt-steps, .gt-timeline{
+  .gt-index{
+      *[class^="icon-"]{
+        font-size: 60px;
+      }
+  }
+}
+.gt-steps{
+  text-align: center;
+  .gt-step-module{
+    position: relative;
+    @height: 120px;
+    .gt-index{
+     height: @height;
+     width: @height;
+     line-height: @height;
+     text-align: center;
+     margin: 0px auto 30px;
+     font-size: 40px;
+     color: @base-contrast;
+     background: @base-color;
+     .border-radius(@height);
+   }
+   &:before{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 50%;
+    border-bottom:5px dotted fade(@base-color, 10%);
+    position: absolute;
+    top: @height/2;
+    left: 0px;
+    z-index: -1;
+  }
+  &:after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 50%;
+    border-bottom:5px dotted fade(@base-color, 10%);
+    position: absolute;
+    top: @height/2;
+    right: 0px;
+    z-index: -1;
+  }
+  &.first{
+    &:before{
+      display: none;
+    }
+  }
+  &.last{
+    &:after{
+      display: none;
+    }
+  }
+}
+}
+
+@media screen and (max-width: @width-sm){
+  .gt-steps{
+    .gt-step-module{
+      overflow: hidden;
+      padding-bottom: 30px;
+      p{
+        background: @body-bg; 
+        padding: 10px 0;}
+      &:before{
+        display: none;
+      }
+      &:after{
+        height: 300px;
+        width: 1px;
+        border-left:5px dotted fade(@base-color, 10%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+      &.last{
+        &:after{
+          display: none;
+        }
+      }
+    }
+  }
+
+}
+
+
+/*timeline*/
+.gt-timeline{
+  text-align: center;
+  .gt-time-module{
+    position: relative;
+    padding-bottom: 60px;
+    @height: 120px;
+    .gt-index{
+     height: @height;
+     width: @height;
+     line-height: @height;
+     text-align: center;
+     margin: 0px auto;
+     font-size: 40px;
+     color: @base-contrast;
+     background: @base-color;
+     .border-radius(@height);
+     position: relative;
+     .gt-time-pop{
+      @width: 200px;
+      width: @width;
+      height: auto;
+      padding: 20px;
+      @pop-color: fade(@base-color, 10%);
+      background: @pop-color;
+      font-size: 16px;
+      line-height: 1.4em;
+      color: @font-color;
+      position: absolute;
+      top: 0px;
+      .border-radius(5px);
+      &.left{
+        left: -(@width+30px);
+        &:after{
+          content: '';
+          height: 0px;
+          width: 0px;
+          border-top: 20px solid transparent;
+          border-bottom: 20px solid transparent;
+          border-left: 20px solid @pop-color;
+          position: absolute;
+          top: 38px;
+          right: -20px;
+        }
+      }
+      &.right{
+        right: -(@width+30px);
+        &:after{
+          content: '';
+          height: 0px;
+          width: 0px;
+          border-top: 20px solid transparent;
+          border-bottom: 20px solid transparent;
+          border-right: 20px solid @pop-color;
+          position: absolute;
+          top: 38px;
+          left: -20px;
+        }
+     }
+   }
+ }
+ &:after{
+  content: '';
+  display: block;
+  height: 50%;
+  width: 1px;
+  border-left:5px dotted fade(@base-color, 10%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+&.last{
+  &:after{
+    display: none;
+  }
+}
+}
+}
+

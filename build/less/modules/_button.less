@@ -1,0 +1,60 @@
+/*****************All Buttons********************/
+.btn{
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: @head-font;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 5px 15px;
+  .border-radius(0px);
+  color: @base-contrast;
+  background: @base-color;
+  border: none;
+  &:hover{
+    background: @base-hover;
+  }
+  .gt-icon{
+    font-size: 12px;
+  }
+  &.btn-base{
+    background: transparent;
+    color: @base-color;
+    border: 2px solid @base-color;
+  }
+   &.btn-light{
+    background: transparent;
+    color: @base-light;
+    border: 2px solid @base-light;
+  }
+   &.btn-dark{
+    background: transparent;
+    color: @base-dark;
+    border: 2px solid @base-dark;
+  }
+   &.btn-grey{
+    background: transparent;
+    color: @font-color;
+    border: 2px solid @font-color;
+  }
+   &.btn-white{
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+}
+
+/*only presentational*/
+.gt-button-list{
+  text-align: center;
+  display: table;
+  margin: 0 auto;
+  & > div{
+  display: inline-block;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  span{
+    display: block;
+  }
+}
+}
