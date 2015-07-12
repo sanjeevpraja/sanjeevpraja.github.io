@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sanjeev Prajapati</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="vendor/animate-css/animate.css" rel="stylesheet" media="all">
+
+    <link href="assets/css/theme.css" rel="stylesheet">
+    <link href="assets/font/iconfont/iconstyle.css" rel="stylesheet">
+
+    <script type="text/javascript" src="assets/font/js/angular.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src=" vendor/jquery-cookie/jquery.cookie.js"></script>
+    <!-- waypoint -->
+    <script type="text/javascript" src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+
+    <link rel="stylesheet/less" type="text/css" href="../build/less/themecompile.less" />
+    <script>
+      var less = {
+        env: 'development',
+        //env: 'production',
+        useFileCache: false,
+        errorReporting: console
+    };
+    localStorage.clear(); 
+</script>
+
+<script type="text/javascript" src="vendor/less/dist/less.min.js"></script>
+
+
+
+<!-- Additional page CSS -->
+
+</head>
+
+<body class="gt-body">
+<div class="gt-load">
+    <div class="gt-load-text"><div class="loader"></div></div>
+</div>
+<main>
+
+    <!-- ########## Header ########## -->
+    <header class="gt-nav gt-shrink">
+
+    <nav class="navbar normal">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-list"></span>
+            </button>
+            <a class="navbar-logo" href="index.html">Mold</a>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-collapse-1">
+             <!--codekit kit variable $iscontainer used to conditionally add container class on _navmenu.kit-->
+             <!-- navigation list -->
+ <ul class="nav navbar-nav">
+    <li><a href="#about">About</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+     <li><a href="#workflow">Workflow</a></li>
+    <li><a href="#icons">Icons</a></li>
+    <li><a href="mailto:sanjeevpraja@gmail.com">Contact</a></li>
+</ul>
+                <!-- navigation list ends --> 
+        </div>
+    </nav>
+
+    </header>
+    <!-- ########## Header Ends  ##########-->
+    
+
+<!-- Icon Font -->
+<section ng-app="icon" class="gt-iconfont">
+ <div class="gt-title">
+   <h3>Custom Icon Font</h3>
+   <p>263 Customised Icon Fonts, designed for personal use and if you want to use it please <a href="mailto:sanjeevpraja@gmail.com">send me mail</a>, I can forward you this icon set.</p>
+ </div>
+
+ <div class="container">
+  <div ng-controller="IconController">
+
+    <div class="row search-div">
+      <div class="col-md-4 col-md-offset-4">
+        <input ng-model="sort" class="form-control" placeholder="Search Available Icon"/>
+        <div class="how-to-use">
+          <span data-toggle="modal" data-target="#iconhelp">How to use?</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div ng-repeat="post in posts | filter : sort | orderBy : 'name'">
+        <div class="glyph">
+          <div class="preview-glyphs">
+            <span class="step size"><i class="size {{post.name}}"></i></span>
+          </div>
+          <div class="usage">
+            <input class="class" type="text" readonly="readonly" onClick="this.select();" value="{{post.name}}" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<div class="modal fade" id="iconhelp" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">How To Use?</h4>
+      </div>
+      <div class="modal-body">
+        <div class="glyph">
+          <div class="preview-glyphs">
+          <span class="step size"><i class="size icon-addon"></i></span>
+          </div>
+          <div class="usage">
+            <input type="text" value="icon-addon" onclick="this.select();" readonly="readonly" class="class">
+          </div>
+        </div>
+        <br>
+        Just Copy the class eg. icon-addon and add to element that you like to use as icon.
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Icon Font Ends -->
+
+<script>
+  var app = angular.module('icon', []);
+
+  app.controller('IconController', function($scope, $http){
+
+    $http.get('assets/font/iconfont/data.json').
+    success(function(data, status, headers, config) {
+      $scope.posts = data;
+    }).
+    error(function(data, status, headers, config) {
+      // log error
+    });
+
+  });
+</script>
+
+ <link href="vendor/colpick-jQuery-Color-Picker-master/css/colpick.css" rel="stylesheet" media="all">
+ 
+ <div class="gt-control-panel">
+ 	<div class="gt-panel-opener"><span class="icon-setting"></span></div>
+ 	<div class="clearfix">
+ 		<input id="hexvalue" class="form-control" value="1F4C7A"></input>
+ 		<button id="hexchange" class="btn btn-grey gt-sweep-to-right" data-toggle="tooltip" data-placement="bottom" title="Apply"><span class="icon-arrow-right"></span></button>
+ 		<button id="hexrefresh" class="btn btn-grey gt-sweep-to-right" data-toggle="tooltip" data-placement="bottom" title="Reset"><span class="icon-sync"></span></button>
+ 	</div>
+
+ 	<div class="download-text">
+ 		Download Mold or get support at support@mold.com
+ 		or request full version with source <strong>kit/less/js</strong> files 
+ 		for just $45
+ 	</div>
+
+ 	<button class="btn download-mold">Free Download</button>
+
+ </div>
+ <script type="text/javascript" src="vendor/colpick-jQuery-Color-Picker-master/js/colpick.js"></script>
+ <script type="text/javascript" src="assets/js/helpcursor-min.js"></script>
+
+
+ <script>
+  function controlpanel(){
+    $('.gt-panel-opener').click(function(){
+      $('.gt-control-panel').toggleClass('show');
+    });
+    if($(window).width() > 768){
+      $('.gt-panel-opener').helpcursor({
+        position: 'left',
+        color: '#cccccc',
+        msg: 'You can change color from here.'
+      });
+
+      /*hide on scroll down*/
+      $('.gt-panel-opener').waypoint(function(direction) {
+        if (direction === 'down') {
+          $('.gt-help').hide();
+        }
+      },{
+        offset: '-60%'
+      });
+      $('.gt-panel-opener').waypoint(function(direction) {
+        if (direction === 'up') {
+          $('.gt-help').show();
+        }
+      }, {
+        offset: '-60%'
+      });
+    }
+  };
+  /********************/
+  $(document).ready(function(){
+    controlpanel();
+
+    $('#hexvalue').colpick({
+      layout:'hex',
+      submit:0,
+      colorScheme:'light',
+      onChange:function(hsb,hex,rgb,el,bySetColor) {
+        $(el).css('border-color','#'+hex);
+        $(el).val(hex);
+      }
+    }).keyup(function(){
+      $(this).colpickSetColor(this.value);
+    });
+    if($.cookie('hexvalue') != null){
+      var hex = '#'+$.cookie('hexvalue');
+      less.modifyVars({
+        '@base-color': hex
+      });
+      less.refreshStyles();
+    }
+  });
+
+  $('#hexchange').click(function(){
+    showloading();
+    var hex = '#'+$('#hexvalue').val();
+    $.cookie('hexvalue', $('#hexvalue').val(), { expires: 7 });
+    less.modifyVars({
+      '@base-color': hex
+    });
+    less.refreshStyles();
+    hideloading();
+  });
+  $('#hexrefresh').click(function(){
+    showloading();
+    $.removeCookie('hexvalue');
+    less.modifyVars({
+      '@base-color': '#1F4C7A'
+    });
+    less.refreshStyles();
+    hideloading();
+  });
+ </script>
+	<!-- ########## Footer Section ########## -->
+	<footer>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<h4>Have idea/project</h4>
+					<div>
+					<p>If have idea or project and need fronend help, please do contact.</p>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-md-offset-1">
+						<h4>Social Media</h4>
+						<div class="gt-social">
+						<a href="https://np.linkedin.com/pub/sanjeev-praja/24/295/7a2" class="gt-icon icon-social-linkedin"></a>
+						<a href="https://twitter.com/sanjeevpraja" class="gt-icon icon-social-twitter"></a>
+						<a href="http://github.com/sanjeevpraja" class="gt-icon icon-social-github"></a>
+						</div>
+				</div>
+
+				<div class="col-md-3">
+					<h4>Contact</h4>
+					<div>
+					<ul>
+						<li><span class="gt-icon icon-telephone"></span>+977 9841-763-856</li>
+						<li><span class="gt-icon icon-address"></span>sanjeevpraja@gmail.com</li>
+					</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid gt-copy"><span>&copy;</span> Copyright &copy;, 2015</div>
+
+	</footer>
+	<!-- ########## Footer Section Ends ########## -->
+</main>
+
+<!-- theme js-->
+<script type="text/javascript" src="assets/js/theme-min.js"></script>
+
+
+
+<script type="text/javascript" src="assets/js/home-min.js"></script>
+</body>
+</html>

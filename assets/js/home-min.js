@@ -1,0 +1,1 @@
+function gtTab(){$(".gt-tab li").click(function(){$(".gt-title ul li").removeClass("active"),$(".gt-tab li").removeClass("active"),$(this).addClass("active");var t=$(this).attr("data-tab");$(".gt-tab-pane").removeClass("active"),$("#"+t).addClass("active")})}$(function(){gtTab()});
