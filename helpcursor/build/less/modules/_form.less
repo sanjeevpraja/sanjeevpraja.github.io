@@ -1,0 +1,35 @@
+/**********form**********/
+@height: 30px;
+.form-control{
+	border-width: 2px;
+	.border-radius(0px);
+	&:focus {
+		border-width: 2px;
+		border-color: fade(@base-color, 50%);
+		box-shadow: none;
+		outline: 0 none;
+	}
+}
+
+.form-mid{
+	width: 100%;
+	height: @height;
+	line-height: @height;
+	padding: 0 15px;
+	display: block;
+	background: transparent;
+	border-color: @font-color;
+	.box-shadow(none);
+	.border-radius(0px);
+	&:focus {
+		border-color: @font-color;
+		box-shadow: none;
+		outline: 0 none;
+	}
+}
+
+.input-group-addon{
+	font-size: 20px;
+	border-radius: 0px;
+	color: @base-color;
+}

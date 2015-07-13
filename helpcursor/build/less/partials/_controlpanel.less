@@ -1,0 +1,78 @@
+.gt-control-panel{
+	display: none;
+	@height: 230px;
+	@width: 260px;
+	@bg-color: #fafafa;
+	height: @height;
+	width: @width;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background: @bg-color;
+	padding: 25px 20px;
+	position: fixed;
+	top: 100px;
+	right: -@width;
+	z-index: 999999;
+	transition: all 0.3s linear; 
+	&.show{
+		right: -1px;
+		.gt-help{
+			display: none !important;
+		}
+	}
+	.gt-panel-opener{
+		@height: 40px;
+		height: @height;
+		width: @height;
+		background: @bg-color;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		border-right: none;
+		position: absolute;
+		top: 20px;
+		left: -@height;
+		font-size: 26px;
+		line-height: @height;
+		text-align: center;
+		cursor: pointer;
+	}
+}
+
+.colpick.colpick_hex{
+	position: fixed !important;
+	z-index: 1000000 !important;
+	top: 165px !important;
+	border-radius: 0px;
+	background: #fafafa;
+	border:1px solid #dddddd;
+}
+
+#hexvalue{
+	padding: 10px;
+	border-right-width: 34px;
+	border-style: solid;
+	width: 135px;
+	float: left;
+}
+#hexchange,#hexrefresh{
+	float: right;
+    height: 34px;
+    line-height: 32px;
+    padding: 0 5px;
+    margin-left: 5px;
+}
+
+.download-mold{
+	font-family: @body-font;
+	font-weight: normal;
+	width: 100%;
+	margin-top: 20px;
+	padding: 10px 0;
+	font-size: 1em;
+}
+
+.download-text{
+	font-size: .8em;
+	color: #666;
+	margin: 15px 0 0;
+	text-align: center;
+	clear: both;
+}

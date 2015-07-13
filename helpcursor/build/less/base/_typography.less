@@ -1,0 +1,194 @@
+/*****************Typography********************/
+@import url(http://fonts.googleapis.com/css?family=Homemade+Apple);
+//@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+// @import url(http://fonts.googleapis.com/css?family=Raleway:400,600,700,900,800,300,200,500);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+
+
+
+//@head-font: "Montserrat", sans-serif;
+@head-font: "Open Sans", cursive;
+//@body-font: Raleway, sans-serif;	
+@body-font: "Open Sans", sans-serif;  
+@cursive-font: "Homemade Apple", cursive;
+
+
+@nav-font: @head-font;	
+
+@font-size-base: 16px;
+
+@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+
+
+
+body{
+	font-family: @body-font;
+	font-size: @font-size-base;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand, .nav-bar, .nav-bar a{
+	font-family: @head-font;
+}
+
+.navbar-brand{
+	font-weight: bold;
+}
+
+
+/*****************Font sizes overrides for bootstrap********************/
+h1{
+	font-size: @font-size-h1;
+} 
+h2{
+	font-size: @font-size-h2;
+} 
+h3{
+	font-size: @font-size-h3;
+} 
+h4{
+	font-size: @font-size-h4;
+} 
+h5{
+	font-size: @font-size-h5;
+} 
+h6{
+	font-size: @font-size-h6;
+}
+
+p{
+	line-height: 1.6em;
+}
+
+h2.product-title{
+	font-size: 3em;
+}
+
+
+
+
+.gt-article{
+  margin-bottom: 50px;
+  font-size: @font-size-base;
+  .after{
+    font-size: 14px;
+    color: #ccc;
+    width: 60px;
+    text-align: right;
+    position: absolute;
+    top: 5px;
+    left: -80px;
+    display: none;
+  }
+  .before{
+    font-size: 10px;
+    color: #ccc;
+    text-align: right;
+    width: 120px;
+    position: absolute;
+    top: 25px;
+    left: -140px;
+    display: none;
+  }
+  .gt-headline, .gt-subheadline{
+    position: relative;
+    line-height: 1.4em;
+  }
+
+  .gt-headline{
+    @font-size: 2.5;
+    @font-per: round(@font-size * 100);
+    font-size: unit(@font-size, em);
+    font-family: @head-font;
+    margin-bottom: 10px;
+    &:before{
+      content: '@{head-font}';
+      .before;
+    }
+    &:after{
+      content: '@{font-per}% --';
+      .after;
+    }
+  }
+  .gt-subheadline{
+    margin-bottom: 30px;
+    @font-size: 1.5;
+    @font-per: round(@font-size * 100);
+    font-size: unit(@font-size, em);
+    font-family: @head-font;
+    &:before{
+      content: '@{head-font}';
+      .before;
+    }
+    &:after{
+     content: '@{font-per}% --';
+     .after;
+   }
+ }
+ ul.gt-navigation{
+  @font-size: 1.5;
+  @font-per: round(@font-size * 100);
+  font-size: unit(@font-size, em);
+  font-weight: bold;
+  list-style: none;
+  display: table;
+  margin: 0;
+  padding: 0px;
+  font-family: @body-font;
+  position: relative;
+  &:before{
+    content: '@{body-font}';
+    .before;
+  }
+  &:after{
+   content: '@{font-per}% --';
+   .after;
+ }
+ li{
+  display: inline-block;
+  margin: 0 15px 20px 0;
+}
+}
+p{
+  @font-size: 1;
+  @font-per: round(@font-size * 100);
+  font-size: unit(@font-size, em);
+  position: relative;
+  font-family: @body-font;
+  &:before{
+    content: '@{body-font}';
+    .before;
+  }
+  &:after{
+   content: '@{font-per}% --';
+   .after;
+ }
+}
+.gt-byline{
+  @font-size: .75;
+  @font-per: round(@font-size * 100);
+  font-size: unit(@font-size, em);
+  color: lighten(@font-color, 30%);
+  font-weight:bold;
+  position: relative;
+  font-family: @body-font;
+  &:before{
+    content: '@{body-font}';
+    .before;
+  }
+  &:after{
+    content: '@{font-per}% --';
+    .after;
+  }
+}
+
+&.gt-showguide{
+  *:after, *:before, ul.gt-navigation:before, ul.gt-navigation:after{
+    display: block;
+  }
+}
+}

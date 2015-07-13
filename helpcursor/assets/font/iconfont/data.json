@@ -1,0 +1,1062 @@
+
+[
+{
+	"name" : "icon-addon",
+	"category" : ["base"]
+},
+{
+	"name" : "icon-address",
+	"category" : ["rate"]
+},
+{
+	"name" : "icon-alarm",
+	"category" : ["time"]
+},
+{
+	"name" : "icon-alert",
+	"category" : ["message"]
+},
+{
+	"name" : "icon-anchor",
+	"category" : ["hook"]
+},
+{
+	"name" : "icon-anounce",
+	"category" : ["loud"]
+},
+{
+	"name" : "icon-arr-down",
+	"category" : ["direction", "below"]
+},
+{
+	"name" : "icon-arr-left",
+	"category" : ["direction", "left"]
+},
+{
+	"name" : "icon-arr-right",
+	"category" : ["direction", "right"]
+},
+{
+	"name" : "icon-arr-up",
+	"category" : ["direction", "above"]
+},
+{
+	"name" : "icon-arrow-down",
+	"category" : ["direction", "below"]
+},
+{
+	"name" : "icon-arrow-left",
+	"category" : ["direction", "base"]
+},
+{
+	"name" : "icon-arrow-right",
+	"category" : ["direction", "base"]
+},
+{
+	"name" : "icon-arrow-up",
+	"category" : ["direction", "base"]
+},
+{
+	"name" : "icon-bell",
+	"category" : ["ring"]
+},
+{
+	"name" : "icon-brain",
+	"category" : ["mind"]
+},
+{
+	"name" : "icon-briefcase",
+	"category" : ["money"]
+},
+{
+	"name" : "icon-browser",
+	"category" : ["window"]
+},
+{
+	"name" : "icon-browser-chrome",
+	"category" : ["crossbrowser"]
+},
+{
+	"name" : "icon-browser-firefox",
+	"category" : ["crossbrowser"]
+},
+{
+	"name" : "icon-browser-ie",
+	"category" : ["crossbrowser"]
+},
+{
+	"name" : "icon-browser-opera",
+	"category" : ["crossbrowser"]
+},
+{
+	"name" : "icon-browser-safari",
+	"category" : ["crossbrowser"]
+},
+{
+	"name" : "icon-brush",
+	"category" : ["paint", "coloring"]
+},
+{
+	"name" : "icon-bulb",
+	"category" : ["idea", "light"]
+},
+{
+	"name" : "icon-cake",
+	"category" : ["birthday"]
+},
+{
+	"name" : "icon-calendar",
+	"category" : ["date"]
+},
+{
+	"name" : "icon-chart-bar",
+	"category" : ["stock", "statistics"]
+},
+{
+	"name" : "icon-chart-line",
+	"category" : ["stock", "statistics"]
+},
+{
+	"name" : "icon-chart-pie",
+	"category" : ["stock", "statistics"]
+},
+{
+	"name" : "icon-chart-stock",
+	"category" : ["stock", "statistics"]
+},
+{
+	"name" : "icon-chat",
+	"category" : ["bubble", "message"]
+},
+{
+	"name" : "icon-clock",
+	"category" : ["time"]
+},
+{
+	"name" : "icon-cloud",
+	"category" : ["storage"]
+},
+{
+	"name" : "icon-cloud-add",
+	"category" : ["remote"]
+},
+{
+	"name" : "icon-cloud-down",
+	"category" : ["download"]
+},
+{
+	"name" : "icon-cloud-drop",
+	"category" : ["rain", "wather"]
+},
+{
+	"name" : "icon-cloud-moon",
+	"category" : ["weather", "night"]
+},
+{
+	"name" : "icon-cloud-rain",
+	"category" : ["weather", "heavy rain"]
+},
+{
+	"name" : "icon-cloud-schedule",
+	"category" : ["sync"]
+},
+{
+	"name" : "icon-cloud-sun",
+	"category" : ["day"]
+},
+{
+	"name" : "icon-cloud-thunder",
+	"category" : ["storm"]
+},
+{
+	"name" : "icon-cloud-up",
+	"category" : ["upload"]
+},
+{
+	"name" : "icon-club",
+	"category" : ["gamble"]
+},
+{
+	"name" : "icon-color",
+	"category" : ["pallet"]
+},
+{
+	"name" : "icon-compass",
+	"category" : ["direction"]
+},
+{
+	"name" : "icon-contact",
+	"category" : ["address book"]
+},
+{
+	"name" : "icon-cook-chicken",
+	"category" : ["delicious", "food"]
+},
+{
+	"name" : "icon-cook-chilly",
+	"category" : ["hot", "spicy"]
+},
+{
+	"name" : "icon-cook-coffee",
+	"category" : ["hot", "warm"]
+},
+{
+	"name" : "icon-cook-hat",
+	"category" : ["profession"]
+},
+{
+	"name" : "icon-cook-plate",
+	"category" : ["dine", "eat", "resturant"]
+},
+{
+	"name" : "icon-cook-receipe",
+	"category" : ["food"]
+},
+{
+	"name" : "icon-cook-spice",
+	"category" : ["bowl"]
+},
+{
+	"name" : "icon-cook-teapot",
+	"category" : ["tea"]
+},
+{
+	"name" : "icon-cross",
+	"category" : ["wrong"]
+},
+{
+	"name" : "icon-cursor",
+	"category" : ["pointer"]
+},
+{
+	"name" : "icon-dashboard",
+	"category" : ["dash"]
+},
+{
+	"name" : "icon-data",
+	"category" : ["database", "server"]
+},
+{
+	"name" : "icon-date",
+	"category" : ["calendar"]
+},
+{
+	"name" : "icon-diamond",
+	"category" : ["gamble", "cards"]
+},
+{
+	"name" : "icon-drink-beer",
+	"category" : ["cool"]
+},
+{
+	"name" : "icon-drink-soft",
+	"category" : ["summer"]
+},
+{
+	"name" : "icon-drink-wine",
+	"category" : ["celeberate"]
+},
+{
+	"name" : "icon-earth",
+	"category" : ["environment", "countries", "globe"]
+},
+{
+	"name" : "icon-ec-calculate",
+	"category" : ["account"]
+},
+{
+	"name" : "icon-ec-cart",
+	"category" : ["shopping"]
+},
+{
+	"name" : "icon-ec-creditcard",
+	"category" : ["money", "credit"]
+},
+{
+	"name" : "icon-ec-dollar",
+	"category" : ["money"]
+},
+{
+	"name" : "icon-ec-euro",
+	"category" : ["money"]
+},
+{
+	"name" : "icon-ec-minicart",
+	"category" : ["shopping"]
+},
+{
+	"name" : "icon-ec-money",
+	"category" : ["note"]
+},
+{
+	"name" : "icon-ec-pound",
+	"category" : ["money"]
+},
+{
+	"name" : "icon-ec-shop",
+	"category" : ["shopping", "store"]
+},
+{
+	"name" : "icon-ec-shopbag",
+	"category" : ["shopping", "store"]
+},
+{
+	"name" : "icon-ec-tag",
+	"category" : ["price", "discount"]
+},
+{
+	"name" : "icon-ec-weight",
+	"category" : ["measure"]
+},
+{
+	"name" : "icon-eye",
+	"category" : ["show"]
+},
+{
+	"name" : "icon-filter",
+	"category" : ["funnel"]
+},
+{
+	"name" : "icon-fire",
+	"category" : ["hot"]
+},
+{
+	"name" : "icon-flag",
+	"category" : ["finish"]
+},
+{
+	"name" : "icon-format-bold",
+	"category" : ["layout"]
+},
+{
+	"name" : "icon-format-expand",
+	"category" : ["layout"]
+},
+{
+	"name" : "icon-format-italic",
+	"category" : ["layout"]
+},
+{
+	"name" : "icon-format-quote",
+	"category" : ["layout"]
+},
+{
+	"name" : "icon-format-resize",
+	"category" : ["layout", "edit"]
+},
+{
+	"name" : "icon-format-underline",
+	"category" : ["layout"]
+},
+{
+	"name" : "icon-grid",
+	"category" : ["list"]
+},
+{
+	"name" : "icon-hand-dislike",
+	"category" : ["down"]
+},
+{
+	"name" : "icon-hand-down",
+	"category" : ["below"]
+},
+{
+	"name" : "icon-hand-fist",
+	"category" : ["rock"]
+},
+{
+	"name" : "icon-hand-left",
+	"category" : ["direction"]
+},
+{
+	"name" : "icon-hand-like",
+	"category" : ["up"]
+},
+{
+	"name" : "icon-hand-right",
+	"category" : ["direction"]
+},
+{
+	"name" : "icon-hand-rock",
+	"category" : ["sign"]
+},
+{
+	"name" : "icon-hand-scissor",
+	"category" : ["sign"]
+},
+{
+	"name" : "icon-hand-stop",
+	"category" : ["wait"]
+},
+{
+	"name" : "icon-hand-swipe",
+	"category" : ["gesture", "touch device"]
+},
+{
+	"name" : "icon-hand-up",
+	"category" : ["pinter"]
+},
+{
+	"name" : "icon-handdrawn-arr-left",
+	"category" : ["arrow"]
+},
+{
+	"name" : "icon-handdrawn-arr-right",
+	"category" : ["arrow"]
+},
+{
+	"name" : "icon-happy",
+	"category" : ["face"]
+},
+{
+	"name" : "icon-healthy-band",
+	"category" : ["first aid"]
+},
+{
+	"name" : "icon-healthy-doctor",
+	"category" : ["health"]
+},
+{
+	"name" : "icon-healthy-hearth",
+	"category" : ["heart beat", "life"]
+},
+{
+	"name" : "icon-healthy-inject",
+	"category" : ["vaccine"]
+},
+{
+	"name" : "icon-healthy-tab",
+	"category" : ["medicine"]
+},
+{
+	"name" : "icon-healthy-tab-open",
+	"category" : ["medicine"]
+},
+{
+	"name" : "icon-heart",
+	"category" : ["card","gamble"]
+},
+{
+	"name" : "icon-heathy-micro",
+	"category" : ["science", "experiment"]
+},
+{
+	"name" : "icon-heatlhy-sign",
+	"category" : ["health"]
+},
+{
+	"name" : "icon-help",
+	"category" : ["question"]
+},
+{
+	"name" : "icon-home",
+	"category" : ["house"]
+},
+{
+	"name" : "icon-hw-desktop",
+	"category" : ["computer", "screen"]
+},
+{
+	"name" : "icon-hw-keyboard",
+	"category" : ["input"]
+},
+{
+	"name" : "icon-hw-laptop",
+	"category" : ["pc"]
+},
+{
+	"name" : "icon-hw-mobile",
+	"category" : ["phone", "iphone"]
+},
+{
+	"name" : "icon-hw-mouse",
+	"category" : ["hardware"]
+},
+{
+	"name" : "icon-hw-printer",
+	"category" : ["print"]
+},
+{
+	"name" : "icon-hw-responsive",
+	"category" : ["fit screen"]
+},
+{
+	"name" : "icon-hw-tablet",
+	"category" : ["ipad"]
+},
+{
+	"name" : "icon-hw-tv",
+	"category" : ["show"]
+},
+{
+	"name" : "icon-info",
+	"category" : ["information"]
+},
+{
+	"name" : "icon-key",
+	"category" : ["access"]
+},
+{
+	"name" : "icon-knife",
+	"category" : ["cut", "shard"]
+},
+{
+	"name" : "icon-knife-butcher",
+	"category" : ["meat", "cut"]
+},
+{
+	"name" : "icon-knife-paper",
+	"category" : [""]
+},
+{
+	"name" : "icon-knife-swiss",
+	"category" : ["camping"]
+},
+{
+	"name" : "icon-less",
+	"category" : ["css"]
+},
+{
+	"name" : "icon-link",
+	"category" : ["chain", "url"]
+},
+{
+	"name" : "icon-list",
+	"category" : ["listing"]
+},
+{
+	"name" : "icon-load-down",
+	"category" : ["download"]
+},
+{
+	"name" : "icon-load-up",
+	"category" : ["upload"]
+},
+{
+	"name" : "icon-locate",
+	"category" : ["location"]
+},
+{
+	"name" : "icon-locate-map",
+	"category" : ["address"]
+},
+{
+	"name" : "icon-location",
+	"category" : ["direction"]
+},
+{
+	"name" : "icon-lock",
+	"category" : ["safe", "protected", "password"]
+},
+{
+	"name" : "icon-logout",
+	"category" : ["signout", "power"]
+},
+{
+	"name" : "icon-mail",
+	"category" : ["eamil", "envelop"]
+},
+{
+	"name" : "icon-mail-open",
+	"category" : ["mail", "envelop"]
+},
+{
+	"name" : "icon-map",
+	"category" : ["location"]
+},
+{
+	"name" : "icon-message",
+	"category" : ["chat", "bubble"]
+},
+{
+	"name" : "icon-minus",
+	"category" : ["dash", "subtract"]
+},
+{
+	"name" : "icon-moon",
+	"category" : ["night"]
+},
+{
+	"name" : "icon-mountain",
+	"category" : ["geography", "snow", "high"]
+},
+{
+	"name" : "icon-music-classic",
+	"category" : ["song"]
+},
+{
+	"name" : "icon-music-disc",
+	"category" : ["album", "music"]
+},
+{
+	"name" : "icon-music-earphone",
+	"category" : ["play", "listen", "headphone"]
+},
+{
+	"name" : "icon-music-forward",
+	"category" : ["fast"]
+},
+{
+	"name" : "icon-music-guitar",
+	"category" : ["song"]
+},
+{
+	"name" : "icon-music-mic",
+	"category" : ["record"]
+},
+{
+	"name" : "icon-music-notation",
+	"category" : ["symbol"]
+},
+{
+	"name" : "icon-music-play",
+	"category" : ["triangle"]
+},
+{
+	"name" : "icon-music-record",
+	"category" : ["circle"]
+},
+{
+	"name" : "icon-music-rewind",
+	"category" : ["reverse"]
+},
+{
+	"name" : "icon-music-sign",
+	"category" : ["symbol"]
+},
+{
+	"name" : "icon-music-stop",
+	"category" : ["square"]
+},
+{
+	"name" : "icon-nepal",
+	"category" : ["flag", "country"]
+},
+{
+	"name" : "icon-office-attach",
+	"category" : ["pin"]
+},
+{
+	"name" : "icon-office-copy",
+	"category" : ["carbon copy"]
+},
+{
+	"name" : "icon-office-file",
+	"category" : ["document"]
+},
+{
+	"name" : "icon-office-folder",
+	"category" : ["file"]
+},
+{
+	"name" : "icon-order",
+	"category" : ["law"]
+},
+{
+	"name" : "icon-os-android",
+	"category" : ["kitkat"]
+},
+{
+	"name" : "icon-os-apple",
+	"category" : ["brand"]
+},
+{
+	"name" : "icon-os-mac",
+	"category" : ["machintosh"]
+},
+{
+	"name" : "icon-os-window",
+	"category" : ["operating system"]
+},
+{
+	"name" : "icon-paint",
+	"category" : ["color"]
+},
+{
+	"name" : "icon-paper-plane",
+	"category" : ["send"]
+},
+{
+	"name" : "icon-pencil",
+	"category" : ["write"]
+},
+{
+	"name" : "icon-phone",
+	"category" : ["contact"]
+},
+{
+	"name" : "icon-phone-tilt",
+	"category" : ["contact"]
+},
+{
+	"name" : "icon-pin",
+	"category" : ["attach"]
+},
+{
+	"name" : "icon-plant-flower",
+	"category" : ["decoration"]
+},
+{
+	"name" : "icon-plant-leaf",
+	"category" : ["environment", "green"]
+},
+{
+	"name" : "icon-plant-tree",
+	"category" : ["christmas"]
+},
+{
+	"name" : "icon-plug",
+	"category" : ["electricity"]
+},
+{
+	"name" : "icon-plus",
+	"category" : ["add"]
+},
+{
+	"name" : "icon-razor",
+	"category" : ["shave"]
+},
+{
+	"name" : "icon-recycle",
+	"category" : ["reuse"]
+},
+{
+	"name" : "icon-reply",
+	"category" : ["back"]
+},
+{
+	"name" : "icon-replyall",
+	"category" : []
+},
+{
+	"name" : "icon-road-sign",
+	"category" : ["road post"]
+},
+{
+	"name" : "icon-rocket",
+	"category" : ["fast", "launch"]
+},
+{
+	"name" : "icon-sad",
+	"category" : ["face"]
+},
+{
+	"name" : "icon-sass",
+	"category" : ["css"]
+},
+{
+	"name" : "icon-saturn",
+	"category" : ["planet"]
+},
+{
+	"name" : "icon-schedule",
+	"category" : ["run", "periodic"]
+},
+{
+	"name" : "icon-science-atom",
+	"category" : ["experiment"]
+},
+{
+	"name" : "icon-science-beaker",
+	"category" : ["experiment"]
+},
+{
+	"name" : "icon-science-conical",
+	"category" : ["experiment"]
+},
+{
+	"name" : "icon-science-dna",
+	"category" : ["gene"]
+},
+{
+	"name" : "icon-science-round",
+	"category" : ["experiment", "flask"]
+},
+{
+	"name" : "icon-science-temp",
+	"category" : ["degree"]
+},
+{
+	"name" : "icon-scissor",
+	"category" : ["trim", "cut"]
+},
+{
+	"name" : "icon-search",
+	"category" : ["lense", "look"]
+},
+{
+	"name" : "icon-setting",
+	"category" : ["control"]
+},
+{
+	"name" : "icon-snow",
+	"category" : ["cold"]
+},
+{
+	"name" : "icon-social-dribbble",
+	"category" : ["basketball"]
+},
+{
+	"name" : "icon-social-dropbox",
+	"category" : [""]
+},
+{
+	"name" : "icon-social-facebook",
+	"category" : [""]
+},
+{
+	"name" : "icon-social-github",
+	"category" : ["base"]
+},
+{
+	"name" : "icon-social-google",
+	"category" : [""]
+},
+{
+	"name" : "icon-social-linkedin",
+	"category" : [""]
+},
+{
+	"name" : "icon-social-pinterest",
+	"category" : [""]
+},
+{
+	"name" : "icon-social-play",
+	"category" : [""]
+},
+{
+	"name" : "icon-social-rss",
+	"category" : ["feed"]
+},
+{
+	"name" : "icon-social-share",
+	"category" : [""]
+},
+{
+	"name" : "icon-social-skype",
+	"category" : [""]
+},
+{
+	"name" : "icon-social-twitter",
+	"category" : ["retweet"]
+},
+{
+	"name" : "icon-social-youtube",
+	"category" : [""]
+},
+{
+	"name" : "icon-sound-loud",
+	"category" : ["volumn"]
+},
+{
+	"name" : "icon-sound-low",
+	"category" : ["volumn"]
+},
+{
+	"name" : "icon-sound-mid",
+	"category" : ["volumn"]
+},
+{
+	"name" : "icon-sound-off",
+	"category" : ["volumn", "mute"]
+},
+{
+	"name" : "icon-spade",
+	"category" : ["card", "gamble"]
+},
+{
+	"name" : "icon-star",
+	"category" : ["rate"]
+},
+{
+	"name" : "icon-star-empty",
+	"category" : ["rate"]
+},
+{
+	"name" : "icon-star-half",
+	"category" : ["rate"]
+},
+{
+	"name" : "icon-sun",
+	"category" : ["day","sunny"]
+},
+{
+	"name" : "icon-support",
+	"category" : ["help"]
+},
+{
+	"name" : "icon-sync",
+	"category" : ["refresh"]
+},
+{
+	"name" : "icon-telephone",
+	"category" : ["landline"]
+},
+{
+	"name" : "icon-temple",
+	"category" : ["nepal"]
+},
+{
+	"name" : "icon-tent",
+	"category" : ["camp", "adventure"]
+},
+{
+	"name" : "icon-tick",
+	"category" : ["right", "correct"]
+},
+{
+	"name" : "icon-transfer",
+	"category" : ["transit"]
+},
+{
+	"name" : "icon-transfer2",
+	"category" : ["suffle"]
+},
+{
+	"name" : "icon-trash",
+	"category" : ["bin", "delete"]
+},
+{
+	"name" : "icon-travel-balloon",
+	"category" : ["adventure"]
+},
+{
+	"name" : "icon-travel-bus",
+	"category" : ["transport"]
+},
+{
+	"name" : "icon-travel-car",
+	"category" : ["transport"]
+},
+{
+	"name" : "icon-travel-cycle",
+	"category" : ["adventure"]
+},
+{
+	"name" : "icon-travel-plane",
+	"category" : ["transport"]
+},
+{
+	"name" : "icon-travel-scooter",
+	"category" : ["transport"]
+},
+{
+	"name" : "icon-travel-ship",
+	"category" : ["transport", "shipping"]
+},
+{
+	"name" : "icon-triangle-down",
+	"category" : [""]
+},
+{
+	"name" : "icon-triangle-left",
+	"category" : [""]
+},
+{
+	"name" : "icon-triangle-right",
+	"category" : [""]
+},
+{
+	"name" : "icon-triangle-up",
+	"category" : [""]
+},
+{
+	"name" : "icon-umbrella",
+	"category" : ["rain"]
+},
+{
+	"name" : "icon-use-binocular",
+	"category" : ["scene"]
+},
+{
+	"name" : "icon-use-camera",
+	"category" : ["picture"]
+},
+{
+	"name" : "icon-use-telescope",
+	"category" : ["universe"]
+},
+{
+	"name" : "icon-user",
+	"category" : ["person"]
+},
+{
+	"name" : "icon-win-badge",
+	"category" : ["game"]
+},
+{
+	"name" : "icon-win-cup",
+	"category" : ["game"]
+},
+{
+	"name" : "icon-win-medal",
+	"category" : ["game"]
+},
+{
+	"name" : "icon-wrench",
+	"category" : ["tool"]
+},
+{
+	"name" : "icon-wrench-tilt",
+	"category" : ["tool"]
+},
+{
+	"name" : "icon-zoo-bird",
+	"category" : ["animal", "bird"]
+},
+{
+	"name" : "icon-zoo-cat",
+	"category" : ["animal", "pet"]
+},
+{
+	"name" : "icon-zoo-deer",
+	"category" : ["animal"]
+},
+{
+	"name" : "icon-zoo-dog",
+	"category" : ["animal", "pet"]
+},
+{
+	"name" : "icon-zoo-elephant",
+	"category" : ["animal"]
+},
+{
+	"name" : "icon-zoo-fish",
+	"category" : ["animal", "aquatic", "fish"]
+},
+{
+	"name" : "icon-zoo-horse",
+	"category" : ["animal", "race"]
+},
+{
+	"name" : "icon-zoo-owl",
+	"category" : ["animal", "bird"]
+},
+{
+	"name" : "icon-zoo-snail",
+	"category" : ["animal", "slow"]
+},
+{
+	"name" : "icon-zoo-tortoise",
+	"category" : ["animal", "slow"]
+},
+{
+	"name" : "icon-zoo-whale",
+	"category" : ["animal", "aquatic", "fish"]
+},
+{
+	"name" : "icon-zoomin",
+	"category" : ["lense", "enlarge"]
+},
+{
+	"name" : "icon-zoomout",
+	"category" : ["lense"]
+}
+]
+
+
+
+
+
+
+

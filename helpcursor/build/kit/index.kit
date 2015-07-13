@@ -1,0 +1,113 @@
+<!-- @import "partial/_header.kit" -->
+<!-- Additional page CSS -->
+<link href="assets/css/helpcursor.css" rel="stylesheet">
+<script type="text/javascript" src="assets/js/helpcursor-min.js"></script>
+<style>
+	.header-text{
+		margin: 100px auto 100px;
+		display: table;
+		font-size: 6em;
+	}
+</style>
+<!-- @import "partial/_nav.kit" -->
+
+
+<section>
+	<div class="container">
+		<div class="header-text">
+			<h1>This div has four help cursors.</h1>
+		</div>
+		<div><center>Help Cursur is similar to tooltip, but mean to provide help message with handdrawn arrow.</center></div>
+
+
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<div class="gt-title">
+				<h3>How to use</h3>
+			</div>
+
+			<div>
+				<code>
+					$('.header-text').helpcursor({options});
+				</code>
+
+				<br>
+				<br>
+				eg.
+				<br>
+				<code>
+					$('.header-text').helpcursor({<br>
+					position: 'right',<br>
+					color: '#666666',<br>
+					msg: 'This is right help text, better keep it straight and short'<br>
+				});
+			</code>
+		</div>
+		<br>
+
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Option</th>
+					<th>Possible Value</th>
+					<th>Default</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>position</td>
+					<td>left, right, top, bottom</td>
+					<td>left</td>
+				</tr>
+				<tr>
+					<td>color</td>
+					<td>Hex color</td>
+					<td>#333333</td>
+				</tr>
+				<tr>
+					<td>msg</td>
+					<td>Any string</td>
+					<td>Help Cursor text</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="col-md-2"></div>
+</div>
+</section>
+
+
+<!-- @import "partial/_controlpanel.kit" -->
+<!-- @import "partial/_footer.kit" -->
+
+</body>
+<script>
+	$(document).ready(function(){
+		$('.header-text').helpcursor({
+			position: 'right',
+			color: '#666666',
+			msg: 'This is right help text, better keep it straight and short'
+		});
+
+		$('.header-text').helpcursor({
+			position: 'top',
+			color: '#666666',
+			msg: 'This is top help text, better keep it straight and short'
+		});
+
+		$('.header-text').helpcursor({
+			position: 'bottom',
+			color: '#666666',
+			msg: 'This is top bottom text, better keep it straight and short'
+		});
+		$('.header-text').helpcursor({
+			position: 'left',
+			color: '#666666',
+			msg: 'This is top left text, better keep it straight and short'
+		});
+
+	});
+
+</script>
+</html>
+

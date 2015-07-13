@@ -1,0 +1,132 @@
+/*****************Section Defination********************/
+section{
+	@s-padding: 70px;
+	padding: @s-padding 0;
+	.gt-title{
+		text-align: center;
+		width: 80%;
+		margin: 0 auto 0px;
+		color: @base-color;
+		margin-bottom: 50px;
+		.after(){
+			padding: 0 15px 20px;
+			font-weight: normal;
+			line-height: 1.6em;
+			position: relative;
+			margin-bottom: 15px;
+			&:after{
+				width: 30px;
+				content: "";
+				border-top: 5px solid @base-color;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				margin-left: -15px;
+			}
+		}
+		h3{	
+			font-size: 3em;
+			.after();
+		}
+		h4{	
+			font-size: 2em;
+			//.after();
+		}
+		p{	
+			width: 50%;
+			margin: 0 auto 30px;
+			line-height: 1.6em;
+			a{
+				  text-decoration: underline;
+			}
+		}
+		&.left{
+			text-align: left;
+			margin: 0 0 50px;
+			width: auto;
+			h3{
+				margin: 0;
+				padding: 0 0 5px;
+				&:after{
+					display: none;
+				}
+			}
+		}
+	}
+	.gt-title-hr{
+		@height: 50px;
+		height: @height;
+		margin-bottom: 45px;
+		border-bottom: 1px solid @font-color;
+		position: relative;
+		h3.gt-h3{	
+			display: inline-block;
+			margin: 0px;
+			font-size: 1.25em;
+			height: @height;
+			padding-bottom: 10px;
+		}
+		ul{
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+			float: right;
+			li{
+				display: inline-block;
+				height: @height;
+				padding: 0 30px 10px 0;
+				cursor: pointer;
+				&:last-child{
+					padding-right: 0px;
+				}
+				.gt-icon{
+					display: none;
+				}
+			}
+		}
+		hr{	
+			margin: 0px;
+			border-top: 6px solid @font-color;
+			border-right: 1px solid @font-color;
+			position: absolute;
+			bottom: 0px;
+			pointer-events: none;
+		}
+
+		&.gt-right{
+			h3{
+				float: right;
+			}
+		}
+	}
+	&.gt-base{
+		.gt-title{
+			color: @base-contrast;
+			h3:after{
+				border-top: 5px solid @base-contrast;
+			}
+		}
+	}
+	&.gt-clear-btm{
+		padding-bottom: 0px;
+	}
+
+	&.gt-banner{
+		padding: 60px 0;
+	}
+}
+
+.gt-grey{
+	background: @body-grey;
+	border-top: 1px solid darken(@body-grey, 5%);
+	border-bottom: 1px solid darken(@body-grey, 5%);
+}
+.gt-base{
+	background: @base-color;
+	border-top: 1px solid darken(@base-color, 10%);
+	border-bottom: 1px solid darken(@base-color, 10%);
+	color: @base-contrast;
+}
+
+
+

@@ -1,0 +1,19 @@
+{
+  "name": "Sanjeevpraja",
+  "version": "0.0.0",
+  "authors": [
+    "sanjeev <sanjeevpraja@gmail.com>"
+  ],
+  "description": "Html/css template by sanjeev",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
