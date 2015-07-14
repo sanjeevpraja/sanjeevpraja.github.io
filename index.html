@@ -1,552 +1,607 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
-	<meta name="description" content="">
-	<meta name="author" content="">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<title>Sanjeev Prajapati</title>
-	<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <title>Sanjeev Prajapati</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
 
-	<!-- Bootstrap core CSS -->
-	<link href="assets/css/bootstrap.css" rel="stylesheet">
-	<link href="vendor/animate-css/animate.css" rel="stylesheet" media="all">
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="vendor/animate-css/animate.css" rel="stylesheet" media="all">
 
-	<link href="assets/css/theme.css" rel="stylesheet">
-	<link href="assets/font/iconfont/iconstyle.css" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet">
+    <link href="assets/font/iconfont/iconstyle.css" rel="stylesheet">
 
-	<script type="text/javascript" src="assets/font/js/angular.min.js"></script>
-	<script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src=" vendor/jquery-cookie/jquery.cookie.js"></script>
-	<!-- waypoint -->
-	<script type="text/javascript" src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="assets/font/js/angular.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src=" vendor/jquery-cookie/jquery.cookie.js"></script>
+    <!-- waypoint -->
+    <script type="text/javascript" src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+
+    <link rel="stylesheet/less" type="text/css" href="../build/less/themecompile.less" />
+    <script>
+      var less = {
+        env: 'development',
+        //env: 'production',
+        useFileCache: false,
+        errorReporting: console
+    };
+    localStorage.clear(); 
+</script>
+
+<script type="text/javascript" src="vendor/less/dist/less.min.js"></script>
 
 
 
+<!-- Additional page CSS -->
 
-	<!-- Additional page CSS -->
-
-	<link href="vendor/lightbox/css/lightbox.css" rel="stylesheet" />
-	<script src="vendor/lightbox/js/lightbox.min.js"></script>
+<link href="vendor/lightbox/css/lightbox.css" rel="stylesheet" />
+<script src="vendor/lightbox/js/lightbox.min.js"></script>
 
 </head>
 
 <body class="gt-body">
-	<div class="gt-load">
-		<div class="gt-load-text"><div class="loader"></div></div>
-	</div>
-	<main>
+<div class="gt-load">
+    <div class="gt-load-text"><div class="loader"></div></div>
+</div>
+<main>
 
-		<!-- ########## Header ########## -->
-		<header class="gt-nav gt-shrink transparent">
+    <!-- ########## Header ########## -->
+    <header class="gt-nav gt-shrink transparent">
 
-			<nav class="navbar normal">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-list"></span>
-					</button>
-				</div>
+    <nav class="navbar normal">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-list"></span>
+            </button>
+        </div>
 
-				<div class="navbar-collapse collapse" id="navbar-collapse-1">
-					<!--codekit kit variable $iscontainer used to conditionally add container class on _navmenu.kit-->
-					<!-- navigation list -->
-					<ul class="nav navbar-nav">
-						<li><a href="#about">About</a></li>
-						<li><a href="#portfolio">Portfolio</a></li>
-						<li><a href="#workflow">Workflow</a></li>
-						<li><a href="#icons">Icons</a></li>
-						<li><a href="mailto:sanjeevpraja@gmail.com">Contact</a></li>
-					</ul>
-					<!-- navigation list ends --> 
-				</div>
-			</nav>
+        <div class="navbar-collapse collapse" id="navbar-collapse-1">
+             <!--codekit kit variable $iscontainer used to conditionally add container class on _navmenu.kit-->
+             <!-- navigation list -->
+ <ul class="nav navbar-nav">
+    <li><a href="#about">About</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+     <li><a href="#workflow">Workflow</a></li>
+    <li><a href="#icons">Icons</a></li>
+    <li><a href="mailto:sanjeevpraja@gmail.com">Contact</a></li>
+</ul>
+                <!-- navigation list ends --> 
+        </div>
+    </nav>
 
-		</header>
-		<!-- ########## Header Ends  ##########-->
-		
+    </header>
+    <!-- ########## Header Ends  ##########-->
+    
 
-		<div id="about"></div>
-		<!-- ########## Main Img Section ##########  -->
-		<section class="gt-main-img gt-height-ad">
-			<div class="gt-image-txt">
-				<div class="gt-logo"></div>
-				<h1 class="gt-main">Sanjeev Prajapati</h1>	
-				<p>I am Web Designer/Frontend Developer from Kathmandu. I love to experiment on web.</p>
-				<a href="/app/resume.pdf" target="_blank" class="btn btn-white gt-underline-from-left">Download Resume</a>
-			</div>
-		</section>
-		<!-- ########## Main Img Section Ends ##########  -->
+<div id="about"></div>
+<!-- ########## Main Img Section ##########  -->
+<section class="gt-main-img gt-height-ad">
+		<div class="gt-image-txt">
+			<div class="gt-logo"></div>
+			<h1 class="gt-main">Sanjeev Prajapati</h1>	
+			<p>I am Web Designer/Frontend Developer from Kathmandu. I love to experiment on web.</p>
+			<a href="/resume.pdf" target="_blank" class="btn btn-white gt-underline-from-left">Download Resume</a>
+		</div>
+</section>
+<!-- ########## Main Img Section Ends ##########  -->
 
-		<div id="portfolio"></div>
-		<section class="gt-isotope">
-			<div class="container">
-				<div class="gt-title">
-					<h3>Portfolio</h3>
-					<p></p>
-				</div>
-
-				<ul class="gt-isotope-menu">
-					<li data-filter="design"><span class="gt-text">Design</span></li>
-					<li data-filter="character"><span class="gt-text">Character</span></li>
-					<li data-filter="logo"><span class="gt-text">Logo</span></li>
-					<li data-filter="col-md-3"><span class="gt-text">All</span></li>
-				</ul>
-
-				
-				<div class="gt-isotipe">
-
-					<div id="iso-container" class="row js-isotope">
-
-						<div class="col-md-3 design logo">
-							<a href="assets/img/gallery/1.jpg" data-lightbox="gallery">
-								<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/1.jpg');">	
-									<div class="gt-isotope-desc">
-										<div class="gt-iso-title">Logo Design</div>
-										<div class="gt-subtitle">
-											Creating Brand
-											<br>
-											<span class="icon-eye"></span>
-										</div>
-										<p>Logo Design using golden ratio.</p>
-									</div>
-								</div>
-							</a>
-						</div>	
-
-						<div class="col-md-3 design">
-							<a href="assets/img/gallery/2.jpg" data-lightbox="gallery">
-								<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/2.jpg');">
-									<div class="gt-isotope-desc">
-										<div class="gt-iso-title">Experiment</div>
-										<div class="gt-subtitle">
-											Design
-											<br>
-											<span class="icon-eye"></span>
-										</div>
-										<p >Experiment delaunay triangulation</p>
-									</div>
-								</div>
-							</a>
-						</div>		
-
-						<div class="col-md-3 design character">
-							<a href="assets/img/gallery/3.jpg" data-lightbox="gallery">
-								<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/3.jpg');">
-									<div class="gt-isotope-desc">
-										<div class="gt-iso-title">Character Design</div>
-										<div class="gt-subtitle">
-											Illustrator
-											<br>
-											<span class="icon-eye"></span>
-										</div>
-										<p>Character Design using illustrator</p>
-									</div>
-								</div>
-							</a>
-						</div>		
-
-						<div class="col-md-3 design">
-							<a href="assets/img/gallery/4.jpg" data-lightbox="gallery">
-								<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/4.jpg');">
-									<div class="gt-isotope-desc">
-										<div class="gt-iso-title">Pintopdf</div>
-										<div class="gt-subtitle">
-											Interface Design
-											<br>
-											<span class="icon-eye"></span>
-										</div>
-										<p >Interface Design that converts pinterest board to pdf</p>
-									</div>
-								</div>
-							</a>
-						</div>		
-
-						<div class="col-md-3 design logo character">
-							<a href="assets/img/gallery/5.jpg" data-lightbox="gallery">
-								<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/5.jpg');">
-									<div class="gt-isotope-desc">
-										<div class="gt-iso-title">Orangotango</div>
-										<div class="gt-subtitle">
-											Website Design
-											<br>
-											<span class="icon-eye"></span>
-										</div>
-										<p >Logo/website Design </p>
-									</div>
-								</div>
-							</a>
-						</div>		
-
-						<div class="col-md-3 design">
-							<a href="assets/img/gallery/6.jpg" data-lightbox="gallery">
-								<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/6.jpg');">
-									<div class="gt-isotope-desc">
-										<div class="gt-iso-title">Character Design</div>
-										<div class="gt-subtitle">
-											Illustrator
-											<br>
-											<span class="icon-eye"></span>
-										</div>
-										<p>Character Design using illustrator</p>
-									</div>
-								</div>
-							</a>
-						</div>		
-
-						<div class="col-md-3 design">
-							<a href="assets/img/gallery/7.jpg" data-lightbox="gallery">
-								<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/7.jpg');">
-									<div class="gt-isotope-desc">
-										<div class="gt-iso-title">Experiment</div>
-										<div class="gt-subtitle">
-											Design
-											<br>
-											<span class="icon-eye"></span>
-										</div>
-										<p>Experiment delaunay triangulation</p>
-									</div>
-								</div>
-							</a>
-						</div>		
-
-						<div class="col-md-3 design logo">
-							<a href="assets/img/gallery/8.jpg" data-lightbox="gallery">
-								<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/8.jpg');">
-									<div class="gt-isotope-desc">
-										<div class="gt-iso-title">Tshirt Design</div>
-										<div class="gt-subtitle">
-											Design
-											<br>
-											<span class="icon-eye"></span>
-										</div>
-										<p>Tshirt Design</p>
-									</div>
-								</div>
-							</a>
-						</div>		
-
-
-						<div class="col-md-3 design logo">
-							<a href="assets/img/gallery/8.jpg" data-lightbox="gallery">
-								<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/9.jpg');">
-									<div class="gt-isotope-desc">
-										<div class="gt-iso-title">Hami Sakchaun</div>
-										<div class="gt-subtitle">
-											Website Design
-											<br>
-											<span class="icon-eye"></span>
-										</div>
-										<p>Website Design and Developed</p>
-									</div>
-								</div>
-							</a>
-						</div>		
-
-
-						<div class="col-md-3 design logo">
-							<a href="assets/img/gallery/8.jpg" data-lightbox="gallery">
-								<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/10.jpg');">
-									<div class="gt-isotope-desc">
-										<div class="gt-iso-title">Sidhartha Guest House</div>
-										<div class="gt-subtitle">
-											Website Design
-											<br>
-											<span class="icon-eye"></span>
-										</div>
-										<p>Website Design and Developed</p>
-									</div>
-								</div>
-							</a>
-						</div>		
-
-
-						<div class="col-md-3 design logo">
-							<a href="assets/img/gallery/8.jpg" data-lightbox="gallery">
-								<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/11.jpg');">
-									<div class="gt-isotope-desc">
-										<div class="gt-iso-title">Wild Heights</div>
-										<div class="gt-subtitle">
-											Website Design
-											<br>
-											<span class="icon-eye"></span>
-										</div>
-										<p>Website Design and Developed</p>
-									</div>
-								</div>
-							</a>
-						</div>		
-
-
-						<div class="col-md-3 design logo">
-							<a href="assets/img/gallery/8.jpg" data-lightbox="gallery">
-								<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/12.jpg');">
-									<div class="gt-isotope-desc">
-										<div class="gt-iso-title">NYC Apartment Cleaners</div>
-										<div class="gt-subtitle">
-											Website Design
-											<br>
-											<span class="icon-eye"></span>
-										</div>
-										<p>Website Design and Developed</p>
-									</div>
-								</div>
-							</a>
-						</div>		
-
-
-					</div>
-
-
-				</div>
-			</div>
-		</section>
-
-
-		<div id="workflow"></div>
-		<section class="gt-steps gt-grey">
-			<div class="container">
-				<div class="gt-title">
-					<h3>Work Flow</h3>
-					<p>How I ususally do the project</p>
-				</div>
-
-				<div class="col-md-3 gt-step-module first wp-1 delay-0">
-					<div class="gt-index"><span class="icon-pencil"></span></div>
-					<p>Sketch Idea</p>
-				</div>
-				<div class="col-md-3 gt-step-module wp-1 delay-1">
-					<div class="gt-index"><span class="icon-hw-desktop"></span></div>
-					<p>Design it on Photoshop</p>
-				</div>
-				<div class="col-md-3 gt-step-module wp-1 delay-2">
-					<div class="gt-index"><span class="icon-less"></span></div>
-					<p>Code it Html/css/js</p>
-				</div>
-				<div class="col-md-3 gt-step-module last wp-1 delay-3">
-					<div class="gt-index"><span class="icon-support"></span></div>
-					<p>Support</p>
-				</div>
-			</div>
-		</section>
-
-
-		<div id="icons"></div>
-		<!-- Icon Font -->
-		<section ng-app="icon" class="gt-iconfont">
-			<div class="gt-title">
-				<h3>Custom Icon Font</h3>
-				<p>263 Customised Icon Fonts, designed for personal use and if you want to use it please <a href="mailto:sanjeevpraja@gmail.com">send me mail</a>, I can forward you this icon set.</p>
-			</div>
-
-			<div class="container">
-				<div ng-controller="IconController">
-
-					<div class="row search-div">
-						<div class="col-md-4 col-md-offset-4">
-							<input ng-model="sort" class="form-control" placeholder="Search Available Icon"/>
-							<div class="how-to-use">
-								<span data-toggle="modal" data-target="#iconhelp">How to use?</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="wrapper">
-						<div ng-repeat="post in posts | filter : sort | orderBy : 'name'">
-							<div class="glyph">
-								<div class="preview-glyphs">
-									<span class="step size"><i class="size {{post.name}}"></i></span>
-								</div>
-								<div class="usage">
-									<input class="class" type="text" readonly="readonly" onClick="this.select();" value="{{post.name}}" />
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</section>
-
-		<div class="modal fade" id="iconhelp" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="myModalLabel">How To Use?</h4>
-					</div>
-					<div class="modal-body">
-						<div class="glyph">
-							<div class="preview-glyphs">
-								<span class="step size"><i class="size icon-addon"></i></span>
-							</div>
-							<div class="usage">
-								<input type="text" value="icon-addon" onclick="this.select();" readonly="readonly" class="class">
-							</div>
-						</div>
-						<br>
-						Just Copy the class eg. icon-addon and add to element that you like to use as icon.
-						<br>
-						<br>
-					</div>
-				</div>
-			</div>
+<div id="portfolio"></div>
+<section class="gt-isotope">
+	<div class="container">
+		<div class="gt-title">
+			<h3>Portfolio</h3>
+			<p></p>
 		</div>
 
-		<!-- Icon Font Ends -->
+		<ul class="gt-isotope-menu">
+			<li data-filter="design"><span class="gt-text">Design</span></li>
+			<li data-filter="character"><span class="gt-text">Character</span></li>
+			<li data-filter="logo"><span class="gt-text">Logo</span></li>
+			<li data-filter="col-md-3"><span class="gt-text">All</span></li>
+		</ul>
 
-		<script>
-			var app = angular.module('icon', []);
+		
+		<div class="gt-isotipe">
 
-			app.controller('IconController', function($scope, $http){
+			<div id="iso-container" class="row js-isotope">
 
-				$http.get('assets/font/iconfont/data.json').
-				success(function(data, status, headers, config) {
-					$scope.posts = data;
-				}).
-				error(function(data, status, headers, config) {
+				<div class="col-md-3 design logo">
+					<a href="assets/img/gallery/1.jpg" data-lightbox="gallery">
+						<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/1.jpg');">	
+							<div class="gt-isotope-desc">
+								<div class="gt-iso-title">Logo Design</div>
+								<div class="gt-subtitle">
+									Creating Brand
+									<br>
+									<span class="icon-eye"></span>
+								</div>
+								<p>Logo Design using golden ratio.</p>
+							</div>
+						</div>
+					</a>
+				</div>	
+
+				<div class="col-md-3 design">
+					<a href="assets/img/gallery/2.jpg" data-lightbox="gallery">
+						<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/2.jpg');">
+							<div class="gt-isotope-desc">
+								<div class="gt-iso-title">Experiment</div>
+								<div class="gt-subtitle">
+									Design
+									<br>
+									<span class="icon-eye"></span>
+								</div>
+								<p >Experiment delaunay triangulation</p>
+							</div>
+						</div>
+					</a>
+				</div>		
+
+				<div class="col-md-3 design character">
+					<a href="assets/img/gallery/3.jpg" data-lightbox="gallery">
+						<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/3.jpg');">
+							<div class="gt-isotope-desc">
+								<div class="gt-iso-title">Character Design</div>
+								<div class="gt-subtitle">
+									Illustrator
+									<br>
+									<span class="icon-eye"></span>
+								</div>
+								<p>Character Design using illustrator</p>
+							</div>
+						</div>
+					</a>
+				</div>		
+
+				<div class="col-md-3 design">
+					<a href="assets/img/gallery/4.jpg" data-lightbox="gallery">
+						<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/4.jpg');">
+							<div class="gt-isotope-desc">
+								<div class="gt-iso-title">Pintopdf</div>
+								<div class="gt-subtitle">
+									Interface Design
+									<br>
+									<span class="icon-eye"></span>
+								</div>
+								<p >Interface Design that converts pinterest board to pdf</p>
+							</div>
+						</div>
+					</a>
+				</div>		
+
+				<div class="col-md-3 design logo character">
+					<a href="assets/img/gallery/5.jpg" data-lightbox="gallery">
+						<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/5.jpg');">
+							<div class="gt-isotope-desc">
+								<div class="gt-iso-title">Orangotango</div>
+								<div class="gt-subtitle">
+									Website Design
+									<br>
+									<span class="icon-eye"></span>
+								</div>
+								<p >Logo/website Design </p>
+							</div>
+						</div>
+					</a>
+				</div>		
+
+				<div class="col-md-3 design">
+					<a href="assets/img/gallery/6.jpg" data-lightbox="gallery">
+						<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/6.jpg');">
+							<div class="gt-isotope-desc">
+								<div class="gt-iso-title">Character Design</div>
+								<div class="gt-subtitle">
+									Illustrator
+									<br>
+									<span class="icon-eye"></span>
+								</div>
+								<p>Character Design using illustrator</p>
+							</div>
+						</div>
+					</a>
+				</div>		
+
+				<div class="col-md-3 design">
+					<a href="assets/img/gallery/7.jpg" data-lightbox="gallery">
+						<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/7.jpg');">
+							<div class="gt-isotope-desc">
+								<div class="gt-iso-title">Experiment</div>
+								<div class="gt-subtitle">
+									Design
+									<br>
+									<span class="icon-eye"></span>
+								</div>
+								<p>Experiment delaunay triangulation</p>
+							</div>
+						</div>
+					</a>
+				</div>		
+
+				<div class="col-md-3 design logo">
+					<a href="assets/img/gallery/8.jpg" data-lightbox="gallery">
+						<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/8.jpg');">
+							<div class="gt-isotope-desc">
+								<div class="gt-iso-title">Tshirt Design</div>
+								<div class="gt-subtitle">
+									Design
+									<br>
+									<span class="icon-eye"></span>
+								</div>
+								<p>Tshirt Design</p>
+							</div>
+						</div>
+					</a>
+				</div>		
+
+
+				<div class="col-md-3 design logo">
+					<a href="assets/img/gallery/8.jpg" data-lightbox="gallery">
+						<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/9.jpg');">
+							<div class="gt-isotope-desc">
+								<div class="gt-iso-title">Hami Sakchaun</div>
+								<div class="gt-subtitle">
+									Website Design
+									<br>
+									<span class="icon-eye"></span>
+								</div>
+								<p>Website Design and Developed</p>
+							</div>
+						</div>
+					</a>
+				</div>		
+
+
+				<div class="col-md-3 design logo">
+					<a href="assets/img/gallery/8.jpg" data-lightbox="gallery">
+						<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/10.jpg');">
+							<div class="gt-isotope-desc">
+								<div class="gt-iso-title">Sidhartha Guest House</div>
+								<div class="gt-subtitle">
+									Website Design
+									<br>
+									<span class="icon-eye"></span>
+								</div>
+								<p>Website Design and Developed</p>
+							</div>
+						</div>
+					</a>
+				</div>		
+
+
+				<div class="col-md-3 design logo">
+					<a href="assets/img/gallery/8.jpg" data-lightbox="gallery">
+						<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/11.jpg');">
+							<div class="gt-isotope-desc">
+								<div class="gt-iso-title">Wild Heights</div>
+								<div class="gt-subtitle">
+									Website Design
+									<br>
+									<span class="icon-eye"></span>
+								</div>
+								<p>Website Design and Developed</p>
+							</div>
+						</div>
+					</a>
+				</div>		
+
+
+				<div class="col-md-3 design logo">
+					<a href="assets/img/gallery/8.jpg" data-lightbox="gallery">
+						<div class="gt-isotope-item" style="background-image: url('assets/img/gallery/12.jpg');">
+							<div class="gt-isotope-desc">
+								<div class="gt-iso-title">NYC Apartment Cleaners</div>
+								<div class="gt-subtitle">
+									Website Design
+									<br>
+									<span class="icon-eye"></span>
+								</div>
+								<p>Website Design and Developed</p>
+							</div>
+						</div>
+					</a>
+				</div>		
+
+
+			</div>
+
+
+		</div>
+	</div>
+</section>
+
+
+<div id="workflow"></div>
+<section class="gt-steps gt-grey">
+	<div class="container">
+		<div class="gt-title">
+			<h3>Work Flow</h3>
+			<p>How I ususally do the project</p>
+		</div>
+
+		<div class="col-md-3 gt-step-module first wp-1 delay-0">
+			<div class="gt-index"><span class="icon-pencil"></span></div>
+			<p>Sketch Idea</p>
+		</div>
+		<div class="col-md-3 gt-step-module wp-1 delay-1">
+			<div class="gt-index"><span class="icon-hw-desktop"></span></div>
+			<p>Design it on Photoshop</p>
+		</div>
+		<div class="col-md-3 gt-step-module wp-1 delay-2">
+			<div class="gt-index"><span class="icon-less"></span></div>
+			<p>Code it Html/css/js</p>
+		</div>
+		<div class="col-md-3 gt-step-module last wp-1 delay-3">
+			<div class="gt-index"><span class="icon-support"></span></div>
+			<p>Support</p>
+		</div>
+	</div>
+</section>
+
+
+<div id="icons"></div>
+<!-- Icon Font -->
+<section ng-app="icon" class="gt-iconfont">
+ <div class="gt-title">
+   <h3>Custom Icon Font</h3>
+   <p>263 Customised Icon Fonts, designed for personal use and if you want to use it please <a href="mailto:sanjeevpraja@gmail.com">send me mail</a>, I can forward you this icon set.</p>
+ </div>
+
+ <div class="container">
+  <div ng-controller="IconController">
+
+    <div class="row search-div">
+      <div class="col-md-4 col-md-offset-4">
+        <input ng-model="sort" class="form-control" placeholder="Search Available Icon"/>
+        <div class="how-to-use">
+          <span data-toggle="modal" data-target="#iconhelp">How to use?</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div ng-repeat="post in posts | filter : sort | orderBy : 'name'">
+        <div class="glyph">
+          <div class="preview-glyphs">
+            <span class="step size"><i class="size {{post.name}}"></i></span>
+          </div>
+          <div class="usage">
+            <input class="class" type="text" readonly="readonly" onClick="this.select();" value="{{post.name}}" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<div class="modal fade" id="iconhelp" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">How To Use?</h4>
+      </div>
+      <div class="modal-body">
+        <div class="glyph">
+          <div class="preview-glyphs">
+          <span class="step size"><i class="size icon-addon"></i></span>
+          </div>
+          <div class="usage">
+            <input type="text" value="icon-addon" onclick="this.select();" readonly="readonly" class="class">
+          </div>
+        </div>
+        <br>
+        Just Copy the class eg. icon-addon and add to element that you like to use as icon.
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Icon Font Ends -->
+
+<script>
+  var app = angular.module('icon', []);
+
+  app.controller('IconController', function($scope, $http){
+
+    $http.get('assets/font/iconfont/data.json').
+    success(function(data, status, headers, config) {
+      $scope.posts = data;
+    }).
+    error(function(data, status, headers, config) {
       // log error
+    });
+
+  });
+</script>
+
+
+ <link href="vendor/colpick-jQuery-Color-Picker-master/css/colpick.css" rel="stylesheet" media="all">
+ 
+ <div class="gt-control-panel">
+ 	<div class="gt-panel-opener"><span class="icon-setting"></span></div>
+ 	<div class="clearfix">
+ 		<input id="hexvalue" class="form-control" value="1F4C7A"></input>
+ 		<button id="hexchange" class="btn btn-grey gt-sweep-to-right" data-toggle="tooltip" data-placement="bottom" title="Apply"><span class="icon-arrow-right"></span></button>
+ 		<button id="hexrefresh" class="btn btn-grey gt-sweep-to-right" data-toggle="tooltip" data-placement="bottom" title="Reset"><span class="icon-sync"></span></button>
+ 	</div>
+
+ 	<div class="download-text">
+ 		Download Mold or get support at support@mold.com
+ 		or request full version with source <strong>kit/less/js</strong> files 
+ 		for just $45
+ 	</div>
+
+ 	<button class="btn download-mold">Free Download</button>
+
+ </div>
+ <script type="text/javascript" src="vendor/colpick-jQuery-Color-Picker-master/js/colpick.js"></script>
+ <script type="text/javascript" src="assets/js/helpcursor-min.js"></script>
+
+
+ <script>
+  function controlpanel(){
+    $('.gt-panel-opener').click(function(){
+      $('.gt-control-panel').toggleClass('show');
+    });
+    if($(window).width() > 768){
+      $('.gt-panel-opener').helpcursor({
+        position: 'left',
+        color: '#cccccc',
+        msg: 'You can change color from here.'
+      });
+
+      /*hide on scroll down*/
+      $('.gt-panel-opener').waypoint(function(direction) {
+        if (direction === 'down') {
+          $('.gt-help').hide();
+        }
+      },{
+        offset: '-60%'
+      });
+      $('.gt-panel-opener').waypoint(function(direction) {
+        if (direction === 'up') {
+          $('.gt-help').show();
+        }
+      }, {
+        offset: '-60%'
+      });
+    }
+  };
+  /********************/
+  $(document).ready(function(){
+    controlpanel();
+
+    $('#hexvalue').colpick({
+      layout:'hex',
+      submit:0,
+      colorScheme:'light',
+      onChange:function(hsb,hex,rgb,el,bySetColor) {
+        $(el).css('border-color','#'+hex);
+        $(el).val(hex);
+      }
+    }).keyup(function(){
+      $(this).colpickSetColor(this.value);
+    });
+    if($.cookie('hexvalue') != null){
+      var hex = '#'+$.cookie('hexvalue');
+      less.modifyVars({
+        '@base-color': hex
+      });
+      less.refreshStyles();
+    }
   });
 
-			});
-		</script>
+  $('#hexchange').click(function(){
+    showloading();
+    var hex = '#'+$('#hexvalue').val();
+    $.cookie('hexvalue', $('#hexvalue').val(), { expires: 7 });
+    less.modifyVars({
+      '@base-color': hex
+    });
+    less.refreshStyles();
+    hideloading();
+  });
+  $('#hexrefresh').click(function(){
+    showloading();
+    $.removeCookie('hexvalue');
+    less.modifyVars({
+      '@base-color': '#1F4C7A'
+    });
+    less.refreshStyles();
+    hideloading();
+  });
+ </script>
+	<!-- ########## Footer Section ########## -->
+	<footer>
 
-
-		<link href="vendor/colpick-jQuery-Color-Picker-master/css/colpick.css" rel="stylesheet" media="all">
-		
-		<div class="gt-control-panel">
-			<div class="gt-panel-opener"><span class="icon-mail"></span></div>
-
-
-			<div class="download-text">
-				For contact sanjeevpraja@gmail.com
-			</div>
-
-			<a href="mailto:sanjeevpraja@gmail.com" class="btn download-mold">Contact</a>
-
-		</div>
-		<script type="text/javascript" src="vendor/colpick-jQuery-Color-Picker-master/js/colpick.js"></script>
-		<script type="text/javascript" src="assets/js/helpcursor-min.js"></script>
-
-
-		<script>
-			function controlpanel(){
-				$('.gt-panel-opener').click(function(){
-					$('.gt-control-panel').toggleClass('show');
-				});
-				if($(window).width() > 768){
-					$('.gt-panel-opener').helpcursor({
-						position: 'left',
-						color: '#cccccc',
-						msg: 'Contact me'
-					});
-
-					/*hide on scroll down*/
-					$('.gt-panel-opener').waypoint(function(direction) {
-						if (direction === 'down') {
-							$('.gt-help').hide();
-						}
-					},{
-						offset: '-60%'
-					});
-					$('.gt-panel-opener').waypoint(function(direction) {
-						if (direction === 'up') {
-							$('.gt-help').show();
-						}
-					}, {
-						offset: '-60%'
-					});
-				}
-			};
-			/********************/
-			$(document).ready(function(){
-				controlpanel();
-			});
-
-
-		</script>
-		<!-- ########## Footer Section ########## -->
-		<footer>
-
-			<div class="container">
-				<div class="row">
-					<div class="col-md-5">
-						<h4>Have idea/project</h4>
-						<div>
-							<p>If have idea or project and need fronend help, please do contact.</p>
-						</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<h4>Have idea/project</h4>
+					<div>
+					<p>If have idea or project and need fronend help, please do contact.</p>
 					</div>
+				</div>
 
-					<div class="col-md-3 col-md-offset-1">
+				<div class="col-md-3 col-md-offset-1">
 						<h4>Social Media</h4>
 						<div class="gt-social">
-							<a href="https://np.linkedin.com/pub/sanjeev-praja/24/295/7a2" class="gt-icon icon-social-linkedin"></a>
-							<a href="https://twitter.com/sanjeevpraja" class="gt-icon icon-social-twitter"></a>
-							<a href="http://github.com/sanjeevpraja" class="gt-icon icon-social-github"></a>
+						<a href="https://np.linkedin.com/pub/sanjeev-praja/24/295/7a2" class="gt-icon icon-social-linkedin"></a>
+						<a href="https://twitter.com/sanjeevpraja" class="gt-icon icon-social-twitter"></a>
+						<a href="http://github.com/sanjeevpraja" class="gt-icon icon-social-github"></a>
 						</div>
-					</div>
+				</div>
 
-					<div class="col-md-3">
-						<h4>Contact</h4>
-						<div>
-							<ul>
-								<li><span class="gt-icon icon-telephone"></span>+977 9841-763-856</li>
-								<li><span class="gt-icon icon-address"></span>sanjeevpraja@gmail.com</li>
-							</ul>
-						</div>
+				<div class="col-md-3">
+					<h4>Contact</h4>
+					<div>
+					<ul>
+						<li><span class="gt-icon icon-telephone"></span>+977 9841-763-856</li>
+						<li><span class="gt-icon icon-address"></span>sanjeevpraja@gmail.com</li>
+					</ul>
 					</div>
 				</div>
 			</div>
+		</div>
 
-			<div class="container-fluid gt-copy"><span>&copy;</span> Copyright &copy;, 2015</div>
+		<div class="container-fluid gt-copy"><span>&copy;</span> Copyright &copy;, 2015</div>
 
-		</footer>
-		<!-- ########## Footer Section Ends ########## -->
-	</main>
+	</footer>
+	<!-- ########## Footer Section Ends ########## -->
+</main>
 
-	<!-- theme js-->
-	<script type="text/javascript" src="assets/js/theme-min.js"></script>
+<!-- theme js-->
+<script type="text/javascript" src="assets/js/theme-min.js"></script>
 
 
-	<script type="text/javascript" src="assets/js/home-min.js"></script>
+<script type="text/javascript" src="assets/js/home-min.js"></script>
 
-	<!-- isotope -->
-	<script type="text/javascript" src="vendor/isotope/isotope.pkgd.min.js"></script>
+<!-- isotope -->
+<script type="text/javascript" src="vendor/isotope/isotope.pkgd.min.js"></script>
 
-	<script>
-		$(window).resize(function(){
+<script>
+	$(window).resize(function(){
+		$('#iso-container').isotope({
+			itemSelector: '.col-md-3'
+		});
+	});
+	
+
+	$(document).ready(function(){
+		$('.wp-1').waypoint(function() {
+			$('.wp-1').addClass('animated flipInX');
+		}, {
+			offset: '75%'
+		});
+
+
+		$('.gt-isotope-menu li').click(function(){
+			$('.gt-isotope-menu li').removeClass('active');
+			$('.gt-isotope-menu li').removeClass('active');
+			$(this).addClass('active');
+			var filterValue = $(this).attr('data-filter');
 			$('#iso-container').isotope({
-				itemSelector: '.col-md-3'
+				filter: '.'+filterValue,
+				resizesContainer: true,
+				resizable: true
 			});
 		});
-		
+	});
+	
 
-		$(document).ready(function(){
-			$('.wp-1').waypoint(function() {
-				$('.wp-1').addClass('animated flipInX');
-			}, {
-				offset: '75%'
-			});
-
-
-			$('.gt-isotope-menu li').click(function(){
-				$('.gt-isotope-menu li').removeClass('active');
-				$('.gt-isotope-menu li').removeClass('active');
-				$(this).addClass('active');
-				var filterValue = $(this).attr('data-filter');
-				$('#iso-container').isotope({
-					filter: '.'+filterValue,
-					resizesContainer: true,
-					resizable: true
-				});
-			});
-		});
-		
-
-		$("#navbar-collapse-1 ul li a[href^='#']").on('click', function(e) {
+	$("#navbar-collapse-1 ul li a[href^='#']").on('click', function(e) {
 
    // prevent default anchor click behavior
    e.preventDefault();
@@ -566,7 +621,7 @@
 
 });
 
-	</script>
+</script>
 </body>
 </html>
 
