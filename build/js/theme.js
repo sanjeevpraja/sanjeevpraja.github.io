@@ -1,4 +1,8 @@
 	$(function(){
+		$(window).load(function() {
+			$('.gt-load').fadeOut();
+		});
+		
 		heightAdjust();
 		stickyNavbarShrink('gt-shrink');
 		$('[data-toggle="tooltip"]').tooltip();

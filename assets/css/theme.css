@@ -481,7 +481,6 @@ generates
   margin-right: 5px;
 }
 .gt-body .gt-load {
-  display: none;
   position: fixed;
   height: 100%;
   width: 100%;
