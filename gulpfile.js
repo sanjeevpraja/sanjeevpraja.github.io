@@ -1,5 +1,5 @@
 // Include gulp
-var gulp = require('gulp'); 
+var gulp = require('gulp');
 
 // Include Our Plugins
 var jshint = require('gulp-jshint');
@@ -12,12 +12,12 @@ var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create();
 var less = require('gulp-less');
 var path = require('path');
-var kit = require('gulp-kit'); 
+var kit = require('gulp-kit');
 var changed = require('gulp-changed');
 var glob = require("glob")
 var plumber = require('gulp-plumber');
 
-var onError = function (err) {  
+var onError = function (err) {
   console.log(err);
   this.emit('end');
 };
@@ -93,9 +93,9 @@ gulp.task('images', function() {
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    // browserSync.init({
-    //     server: "./app/"
-    // });
+    browserSync.init({
+        server: "./"
+    });
 gulp.watch('build/kit/**/*', ['kit']);
 gulp.watch('build/img/**/*', ['images']);
 gulp.watch('build/js/*.js', ['lint', 'scripts']);
