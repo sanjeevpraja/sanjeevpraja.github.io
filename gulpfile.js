@@ -39,7 +39,7 @@ gulp.task('kit', function(){
   .pipe(kit({
     paths: [ path.join(__dirname, 'build/kit', 'import') ]
   }))
-  .pipe(gulp.dest('/'))
+  .pipe(gulp.dest('./'))
 });
 
 gulp.task('less', function () {
