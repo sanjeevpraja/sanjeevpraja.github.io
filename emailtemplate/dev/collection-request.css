@@ -5,8 +5,7 @@
   border: 3px solid #EBEBEB !important;
 }
 .logo-wrap {
-  background: url('img/bg_page.png') #ccc;
-  height: 140px;
+  background: url('http://sanjeevpraja.github.io/emailtemplate/prod/img/airlog_logo.png/bg_page.png') #ccc;
   border-bottom: 1px solid #f2f2f2;
   text-align: center;
 }
@@ -19,6 +18,7 @@ h1 {
 .shipment-info {
   background: #eeeeee;
   border: 1px solid #dddddd !important;
+  width: 100%;
 }
 .shipment-info h2 {
   text-align: center;
