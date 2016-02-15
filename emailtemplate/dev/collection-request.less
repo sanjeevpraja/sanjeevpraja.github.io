@@ -1,0 +1,60 @@
+@base-url: "img";
+@main-bg: #ffffff;
+@font-color: #666666;
+@base-color: #26247B;
+
+
+.wrapper-table{
+	background: @main-bg;
+	color: @font-color;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	border: 3px solid #EBEBEB !important;
+}
+
+.logo-wrap{
+	background: url('@{base-url}/bg_page.png') #ccc;
+	height: 140px;
+	border-bottom: 1px solid #f2f2f2;
+	text-align: center;
+}
+.logo{
+}
+h1{
+	text-align: center;
+	font-size: 24px;
+	padding: 0 80px;
+	margin-bottom: 30px;
+}
+
+.shipment-info{
+	background: #eeeeee;
+	border: 1px solid #dddddd !important;
+	h2{
+		text-align: center;
+		font-size: 18px;
+	}
+	td{
+		padding: 2px 10px;
+		font-size: 14px;
+	}
+}
+
+
+.footer{
+	padding-top: 10px;
+	background: @base-color;
+	color: lighten(@base-color, 60%);
+	font-size: 13px;
+	text-align: center;
+	p{
+		margin: 0 50px 10px;
+		line-height: 20px;
+	}
+	.do-not-reply{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background: darken(@base-color, 10%);
+		font-size: 10px;
+	}
+}
+	

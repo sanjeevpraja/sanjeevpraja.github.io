@@ -2,96 +2,91 @@
 <html>
 <head>
 	<title>Notifications_email</title>
-	<meta content="PageBreeze Free HTML Editor (http://www.pagebreeze.com)" name="GENERATOR" />
 	<meta content="text/html;charset=ISO-8859-1" http-equiv="Content-Type" />
 
 	<link rel="stylesheet" href="style.css">
-	<style type="text/css">
-	body { background:url(http://www.connectlog.se/wp-content/uploads/2014/03/bakgrund.jpg);background-color: #cccccc; background-repeat: repeat; background-attachement: scroll; background-position: top center;}
-	</style>
+	<link rel="stylesheet" href="collection-request.css">
 </head>
 <body>
-<p pbzloc="2" style="text-align: center">&nbsp;</p>
 
-<table align="center" style="border-top: black 1px solid; border-right: black 1px solid; border-collapse: collapse; border-bottom: black 1px solid; border-left: black 1px solid; background-color: #aa1125" width="600">
-	<tbody>
-		<tr>
-			<td width="20">&nbsp;</td>
-		</tr>
-		<tr>
-			<td colspan="2">
-			<p pbzloc="21" style="text-align: center">&nbsp;</p>
+	<table class="wrapper-table" align="center" width="600">
+		<tbody>
+			<tr>
+				<td class="logo-wrap" colspan="2">
+					<img class="logo" src="img/airlog_logo.png" alt="">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" height="40">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2">
 
-			<p pbzloc="18"><span style="font-family: arial,helvetica,sans-serif"><span pbzloc="20" style="color: #ffffff">We kindly ask you to prepare the shipment:</span></span></p>
+					<h1>
+						We kindly ask you to prepare the shipment:
+					</h1>
 
-			<p pbzloc="17" style="text-align: center">&nbsp;</p>
+					<ol>
+						<li>
 
-			<ol>
-				<li pbzloc="4"><span style="font-family: arial,helvetica,sans-serif"><span pbzloc="10" style="color: #ffffff"><span style="font-family: arial,helvetica,sans-serif"><span pbzloc="12" style="color: #ffffff">Print the attached shipping label.</span></span></span></span></li>
-				<li><span style="font-family: arial,helvetica,sans-serif"><span pbzloc="14" style="color: #ffffff">For shipments coming from outside EU, an invoice must accompany the shipment</span></span></li>
-				<li><span style="font-family: arial,helvetica,sans-serif"><span pbzloc="24" style="color: #ffffff">As soon as the shipment is ready for pickup, please call the carrier and ask them to&nbsp;pickup this shipment. For carrier contact information {TRANSPORTLINK}</span></span></li>
-			</ol>
+							Print the attached shipping label.
+						</li>
+						<li>	
+							For shipments coming from outside EU, an invoice must accompany the shipment
+						</li>
+						<li>
+							As soon as the shipment is ready for pickup, please call the carrier and ask them to&nbsp;pickup this shipment. For carrier contact information {TRANSPORTLINK}
+						</li>
+					</ol>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" height="20">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<table class="shipment-info" align="center">
+						<tbody>
+							<tr>
+								<td colspan="2">
+									<h2>Shipment Information</h2>
+								</td>
+							</tr>
+							<tr>
+								<td>To</td>
+								<td>{RECIEVERCOMPANYNAME}</td>
+							</tr>
+							<tr>
+								<td>Description</td>
+								<td>{DESCRIPTION}</td>
+							</tr>
+							<tr>
+								<td>Senders Reference</td>
+								<td>{SENDERSREF}</td>
+							</tr>
+							<tr>
+								<td>Receivers Reference</td>
+								<td>{RECIEVERSREF}</td>
+							</tr>
+							<tr>
+								<td>AWB Number</td>
+								<td>{AWB}</td>
+							</tr>
+						</tbody>
+					</table>
 
-			<p pbzloc="22">&nbsp;</p>
-
-			<p><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff">Shipment information</span></span></span></span></p>
-
-			<table align="center" style="border-top: black 1px solid; border-right: black 1px solid; border-collapse: collapse; border-bottom: black 1px solid; border-left: black 1px solid">
-				<tbody>
-					<tr>
-						<td colspan="5">
-						<h2 style="font-family: 'Arial'; text-align: center"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff"><span style="font-size: 18px"><span style="color: #ffffff">Shipment Information</span></span></span></span></h2>
-						</td>
-					</tr>
-					<tr>
-						<td style="font-family: 'Arial'"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff"><span style="color: #ffffff">To</span></span></span></td>
-						<td style="width: 5px"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff">&nbsp;</span></span></td>
-						<td style="font-family: 'Arial'"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff"><span style="color: #ffffff">:</span></span></span></td>
-						<td style="width: 5px"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff">&nbsp;</span></span></td>
-						<td style="font-family: 'Arial'"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff"><span style="color: #ffffff">{RECIEVERCOMPANYNAME}</span></span></span></td>
-					</tr>
-					<tr>
-						<td style="font-family: 'Arial'"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff"><span style="color: #ffffff">Description</span></span></span></td>
-						<td style="width: 5px"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff">&nbsp;</span></span></td>
-						<td style="font-family: 'Arial'"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff"><span style="color: #ffffff">:</span></span></span></td>
-						<td style="width: 5px"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff">&nbsp;</span></span></td>
-						<td style="font-family: 'Arial'"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff"><span style="color: #ffffff">{DESCRIPTION}</span></span></span></td>
-					</tr>
-					<tr>
-						<td style="font-family: 'Arial'"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff"><span style="color: #ffffff">Senders Reference</span></span></span></td>
-						<td style="width: 5px"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff">&nbsp;</span></span></td>
-						<td style="font-family: 'Arial'"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff"><span style="color: #ffffff">:</span></span></span></td>
-						<td style="width: 5px"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff">&nbsp;</span></span></td>
-						<td style="font-family: 'Arial'"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff"><span style="color: #ffffff">{SENDERSREF}</span></span></span></td>
-					</tr>
-					<tr>
-						<td style="font-family: 'Arial'"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff"><span style="color: #ffffff">Receivers Reference</span></span></span></td>
-						<td style="width: 5px"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff">&nbsp;</span></span></td>
-						<td style="font-family: 'Arial'"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff"><span style="color: #ffffff">:</span></span></span></td>
-						<td style="width: 5px"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff">&nbsp;</span></span></td>
-						<td style="font-family: 'Arial'"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff"><span style="color: #ffffff">{RECIEVERSREF}</span></span></span></td>
-					</tr>
-					<tr>
-						<td style="font-family: 'Arial'"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff"><span style="color: #ffffff">AWB Number</span></span></span></td>
-						<td style="width: 5px"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff">&nbsp;</span></span></td>
-						<td style="font-family: 'Arial'"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff"><span style="color: #ffffff">:</span></span></span></td>
-						<td style="width: 5px"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff">&nbsp;</span></span></td>
-						<td style="font-family: 'Arial'"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff"><span style="color: #ffffff">{AWB}</span></span></span></td>
-					</tr>
-				</tbody>
-			</table>
-			&nbsp;
-
-			<p pbzloc="25"><br />
-			<span style="font-size: 12px"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff">For the Shipper/Receiver to be able to track the shipment, we kindly ask you to use the attached shipping label.</span></span></span></p>
-
-			<p><br />
-			<span style="font-size: 12px"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #ffffff">Please do not reply &mdash; this is an automated e-mail.</span></span></span></p>
-
-			<p>&nbsp;</p>
-			</td>
-		</tr>
-	</tbody>
-</table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" height="30">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="footer">
+					<p>For the Shipper/Receiver to be able to track the shipment, we kindly ask you to use the attached shipping label.</p>
+					<div class="do-not-reply">Please do not reply &mdash; this is an automated e-mail.</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
 </body>
 </html>
