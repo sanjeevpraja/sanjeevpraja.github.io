@@ -5,10 +5,9 @@ hr {
   background: #ffffff;
   color: #666666;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  border: 3px solid #dddddd !important;
 }
 .logo-wrap {
-  background-image: url('http://sanjeevpraja.github.io/emailtemplate/prod/img/bg_page.png');
+  background-image: url('img/bg_page.png');
   background-repeat: repeat;
   background-color: #F7F7F7;
   border-bottom: 1px solid #f2f2f2;

@@ -3,5 +3,6 @@ body,
   background-color: #eeeeee;
 }
 table {
-  border: 0px none !important;
+  border: 0px none!important;
+  border-collapse: collapse;
 }
