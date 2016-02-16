@@ -1,6 +1,6 @@
 body,
-div.body {
-  background: #eeeeee;
+.body {
+  background-color: #eeeeee;
 }
 table {
   border: 0px none !important;

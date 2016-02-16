@@ -1,18 +1,24 @@
-@base-url: "http://sanjeevpraja.github.io/emailtemplate/prod/img/airlog_logo.png";
+@base-url: "http://sanjeevpraja.github.io/emailtemplate/prod/img";
 @main-bg: #ffffff;
 @font-color: #666666;
 @base-color: #26247B;
+@font-family: "Trebuchet MS", Helvetica, sans-serif;
 
+hr{
+	border:1px solid #eee !important;
+}
 
 .wrapper-table{
 	background: @main-bg;
 	color: @font-color;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	border: 3px solid #EBEBEB !important;
+	font-family: @font-family;
+	border: 3px solid #dddddd !important;
 }
 
 .logo-wrap{
-	background: url('@{base-url}/bg_page.png') #ccc;
+	background-image: url('@{base-url}/bg_page.png');
+	background-repeat: repeat;
+	background-color:  #F7F7F7;
 	border-bottom: 1px solid #f2f2f2;
 	text-align: center;
 }
@@ -27,21 +33,68 @@ h1{
 
 .shipment-info{
 	background: #eeeeee;
-	border: 1px solid #dddddd !important;
+	border-color: 1px solid #cccccc !important;
 	width: 100%;
+	font-family:  @font-family;
+	.td-header{
+		border-bottom: 2px solid #e2e2e2;
+	}
 	h2{
 		text-align: center;
 		font-size: 18px;
+		color: @base-color;
+		line-height: 40px;
+		margin: 0px;
 	}
 	td{
-		padding: 2px 10px;
+		padding:  0 10px;
 		font-size: 14px;
+		height: 28px;
+		border-bottom: 1px solid #e2e2e2;
+		border-right: 1px solid #e2e2e2;
+		&:last-child{
+			border-right: none;
+		}
+	}
+	tr:last-child td{
+		border-bottom: 0px;
 	}
 }
 
+.hello-receiver{
+	font-weight: bold;
+	font-style: italic;
+}
+
+.list-head{
+	font-weight: bold;
+	line-height: 40px;
+}
+.list{
+	color: #000;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	li{
+		color: @font-color;
+		span{
+			display: inline-block;
+			width: 300px;
+		}
+	}
+}
+
+.info-box{
+	background: lighten(@base-color, 65%);
+	padding: 15px 15px 15px 15px;
+	h4{
+		margin-bottom: 0px;
+		border-bottom: 2px solid lighten(@base-color, 50%);
+		padding-bottom: 10px;
+	}
+}
 
 .footer{
-	padding-top: 10px;
 	background: @base-color;
 	color: lighten(@base-color, 60%);
 	font-size: 13px;
@@ -55,6 +108,7 @@ h1{
 		padding-bottom: 10px;
 		background: darken(@base-color, 10%);
 		font-size: 10px;
+		text-align: center;
 	}
 }
-	
+
