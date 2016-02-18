@@ -3,7 +3,19 @@ var less = require('gulp-less');
 var inlineCss = require('gulp-inline-css');
 var plumber = require('gulp-plumber');
 var path = require('path');
+var mail = require('gulp-mail');
 var browserSync = require('browser-sync').create();
+
+var smtpInfo = {
+  auth: {
+    user: 'spr@codebee.dk',
+    pass: 'ae4Xu1ga'
+  },
+  host: 'smtp.codebee.dk',
+  secureConnection: false,
+  port: 587
+}
+
 
 var onError = function (err) {
   console.log(err);
@@ -38,6 +50,20 @@ gulp.task('inline', function() {
         .pipe(gulp.dest('prod/'));
 });
 
+gulp.task('mail', function() {
+  return gulp.src('prod/Collection_request.html')
+    .pipe(mail({
+      to: [
+        'sanjeevpraja@yahoo.com', 'sanjeevpraja@gmail.com'
+      ],
+      from: 'spr@codebee.dk',
+      subject: 'Daily Status',
+      smtp: smtpInfo
+    }))
+})
+
+
+
 gulp.task('default', ['inline'], function() {
   // place code for your default task here
 });
@@ -51,3 +77,5 @@ gulp.task('watch', function() {
    gulp.watch('dev/*.css', ['inline']);
   gulp.watch("prod/*.html").on('change', browserSync.reload);
 });
+
+gulp.task('email', ['mail'], function() {});

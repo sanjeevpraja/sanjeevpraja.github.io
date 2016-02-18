@@ -1,6 +1,10 @@
 hr {
   border: 1px solid #eee !important;
 }
+a {
+  font-weight: bold;
+  color: #26247B;
+}
 .wrapper-table {
   background: #ffffff;
   color: #666666;
