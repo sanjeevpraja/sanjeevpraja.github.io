@@ -74,10 +74,10 @@ gulp.task('mail', function() {
   return gulp.src('dist/pickup_email_for_pickupcompany.html')
   .pipe(mail({
     to: [
-    'jsc@wallbee.dk', 'sanjeevpraja@yahoo.com', 'sanjeevpraja@gmail.com'
+     'sanjeevpraja@yahoo.com', 'sanjeevpraja@gmail.com'
     ],
     from: 'spr@codebee.dk',
-    subject: 'DHL Eamil Test',
+    subject: 'KN Email Test',
     smtp: smtpInfo
   }))
 })
