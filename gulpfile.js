@@ -71,13 +71,13 @@ gulp.task('lint', function() {
 gulp.task('scripts', function() {
   return gulp.src('build/js/*.js')
        // .pipe(concat('all.js'))
-        .pipe(uglify())
-        .pipe(rename({
-          suffix: "-min",
-          extname: ".js"
-        }))
-        .pipe(gulp.dest('assets/js'));
-      });
+       .pipe(uglify())
+       .pipe(rename({
+        suffix: "-min",
+        extname: ".js"
+      }))
+       .pipe(gulp.dest('assets/js'));
+     });
 
 //Image Optimize
 gulp.task('images', function() {
@@ -91,18 +91,6 @@ gulp.task('images', function() {
 });
 
 
-// Watch Files For Changes
-gulp.task('watch', function() {
-    // browserSync.init({
-    //     server: "./app/"
-    // });
-gulp.watch('build/kit/**/*', ['kit']);
-gulp.watch('build/img/**/*', ['images']);
-gulp.watch('build/js/*.js', ['lint', 'scripts']);
-gulp.watch('build/less/**/*.less', ['less']);
-gulp.watch("*.html").on('change', browserSync.reload);
-});
-
 // Default Task
 gulp.task('default', ['kit', 'less', 'images', 'scripts'], function() {
   browserSync.init({
@@ -111,6 +99,21 @@ gulp.task('default', ['kit', 'less', 'images', 'scripts'], function() {
 });
 
 gulp.task('image', ['images']);
+
+
+// Watch Files For Changes
+gulp.task('watch', function() {
+  browserSync.init({
+    server: "./"
+  });
+  gulp.watch('build/kit/**/*', ['kit']);
+  gulp.watch('build/img/**/*', ['images']);
+  gulp.watch('build/js/*.js', ['lint', 'scripts']);
+  gulp.watch('build/less/**/*.less', ['less']);
+  gulp.watch("*.html").on('change', browserSync.reload);
+});
+
+
 
 //copy custom font into asset
 // gulp.task('copyfont', function() {
