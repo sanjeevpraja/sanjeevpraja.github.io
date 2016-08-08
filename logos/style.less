@@ -1,0 +1,45 @@
+@base-color: #ccc;
+@height: 80px;
+
+
+.logo{
+	height: @height;
+	width: @height;
+	display: block;
+	background: @base-color;
+
+	&.leaf{
+		border-radius: @height*.6 0 @height*.6 0;
+	}
+	&.petal{
+		border-radius: @height @height @height 0;
+	}
+	&.polygon{
+		position: relative;
+		margin-top: @height;
+		height: @height/2;
+		&:before{
+			content: '';
+			height: 0;
+			width: 0;
+			border-left: @height/2 solid transparent;
+			border-right: @height/2 solid transparent;
+			border-bottom: @height/3 solid @base-color;
+			position: absolute;
+			left: 0;
+			top: -@height/3 + 1px;
+		}
+		&:after{
+			content: '';
+			height: 0;
+			width: 0;
+			border-left: @height/2 solid transparent;
+			border-right: @height/2 solid transparent;
+			border-top: @height/3 solid @base-color;
+			position: absolute;
+			left: 0;
+			bottom: -@height/3 + 1px;
+		}
+
+	}
+}

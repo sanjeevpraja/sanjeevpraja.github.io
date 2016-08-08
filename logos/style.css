@@ -1,0 +1,40 @@
+.logo {
+  height: 80px;
+  width: 80px;
+  display: block;
+  background: #cccccc;
+}
+.logo.leaf {
+  width: 64px;
+  border-radius: 48px 0 48px 0;
+}
+.logo.petal {
+  border-radius: 80px 80px 80px 0;
+}
+.logo.polygon {
+  position: relative;
+  margin-top: 80px;
+  height: 40px;
+}
+.logo.polygon:before {
+  content: '';
+  height: 0;
+  width: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 26.66666667px solid #cccccc;
+  position: absolute;
+  left: 0;
+  top: -25.66666667px;
+}
+.logo.polygon:after {
+  content: '';
+  height: 0;
+  width: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 26.66666667px solid #cccccc;
+  position: absolute;
+  left: 0;
+  bottom: -25.66666667px;
+}
