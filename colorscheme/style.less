@@ -1,0 +1,20 @@
+@color-base       : #3bafdA;
+@color-complement : spin(@color-base, 180);
+
+
+// Triadic structure
+@triadic-secondary : spin(@color-base, -(360 / 3));
+@triadic-tertiary  : spin(@color-base, (360 / 3));
+
+.color{
+	@height: 50px;
+	height: @height;
+	width: @height;
+	margin: 30px;
+	&.base{
+		background: @color-base;
+	}
+	&.complement{
+		background: @color-complement;
+	}
+}

@@ -1,0 +1,13 @@
+.color {
+  height: 50px;
+  width: 50px;
+  margin: 30px;
+}
+.color.base {
+  background: #3bafdA;
+}
+.color.complement {
+  background: #da663b;
+}
+
+/*# sourceMappingURL=style.css.map */
