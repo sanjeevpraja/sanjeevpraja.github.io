@@ -1,0 +1,78 @@
+/*****************Base********************/
+$width-sm: 768px; //$grid-float-breakpoint;
+$width-md: 992px; //$screen-md; 
+$width-lg: 1600px; //1900px;
+$header-height: 60px;
+$nav-width: 180px;
+
+
+$form-height: 26px;
+
+
+$base-url: '../img';
+
+html, body{
+  min-width: 1200px;
+  height: 100%;
+}
+body{
+  background: $body-bg;
+  color: $font-color;
+  overflow-x: hidden;
+}
+
+.container-fluid{
+  max-width: 1400px;
+}
+
+a{
+  color: $base-color;
+  cursor: pointer;
+  outline: none;
+  &:hover, 
+  &:focus,
+  &:active{
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+
+.pull-center{
+  display: table;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.padding-null-left{
+  padding-left: 0px;
+  @media(max-width: $width-md){
+    padding-left: 15px;
+  }
+}
+.padding-null-right{
+  padding-right: 0px;
+  @media(max-width: $width-md){
+    padding-left: 15px;
+  }
+}
+
+.tooltip-inner{
+  @include border-radius(2px);
+}
+
+hr{
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+[class^="if-"]{
+  font-size: 14px;
+}
+
+@media(min-width: $width-md){
+  .no-gutter  [class^="col-"] {
+   padding-right:0;
+ }
+}
+

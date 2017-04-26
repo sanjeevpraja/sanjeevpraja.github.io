@@ -1,0 +1,665 @@
+<!-- @import "partial/_header.kit" -->
+<!-- Additional page CSS -->
+
+<!-- @import "partial/_nav-vertical.kit" -->
+
+<div class="main-wrapper">	
+	<div class="container">
+
+		<div class="page-title"><div class="menu">History</div></div>
+
+		<div class="box-wrap">
+			<div class="box-body">			
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="form-group form-line">
+							<label>From Date</label>
+							<div class="form-fill">
+								<input type="text" class="form-control datetimepicker">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="form-group form-line">
+							<label>To Date</label>
+							<div class="form-fill">
+								<input type="text" class="form-control datetimepicker">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="form-group form-line">
+							<label>Delevary Status</label>
+							<div class="form-fill">
+								<select name="	" class="form-control">
+									<option>All</option>
+									<option>Delivered</option>
+									<option>Undelivered</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-sm-4">
+						<div class="form-group form-line">
+							<label>Branch</label>
+							<div class="form-fill">
+								<select name="" id="" class="form-control">
+									<option value="">All</option>
+									<option value="">Branch Name 1</option>
+									<option value="">Branch Name 2</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="form-group form-line">
+							<label>Company</label>
+							<div class="form-fill">
+								<select name="" id="" class="form-control">
+									<option value="">All</option>
+									<option value="">Company Name 1</option>
+									<option value="">Company Name 2</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="form-group form-line">
+							<label>Account</label>
+							<div class="form-fill">
+								<select name="" id="" class="form-control">
+									<option value="">All</option>
+									<option value="">Account customer 1</option>
+									<option value="">Account customer 2</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="form-group form-line">
+							<label>Insurance Condition</label>
+							<div class="form-fill">
+								<select name="" id="" class="form-control">
+									<option value="">All</option>
+									<option value="">With Insurance</option>
+									<option value="">Without Insurance</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="form-group form-line">
+							<label>Transport product</label>
+							<div class="form-fill">
+								<select name="" id="" class="form-control">
+									<option value="">All</option>
+									<option value="">With Insurance</option>
+									<option value="">Without Insurance</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="form-group form-line">
+							<label>Documents</label>
+							<div class="form-fill">
+								<select name="" id="" class="form-control">
+									<option value="">All</option>
+									<option value="">With Insurance</option>
+									<option value="">Without Insurance</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="form-group form-line">
+							<label>Shipment direction</label>
+							<div class="form-fill">
+								<select name="" id="" class="form-control">
+									<option value="">All</option>
+									<option value="">With Insurance</option>
+									<option value="">Without Insurance</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="form-group form-line">
+							<label>Shipping</label>
+							<div class="form-fill">
+								<select name="" id="" class="form-control">
+									<option value="">All</option>
+									<option value="">With Insurance</option>
+									<option value="">Without Insurance</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="form-group form-line">
+							<label>Search text</label>
+							<div class="form-fill">
+								<input type="text" class="form-control">
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="box-foot">	
+				<div class="left">
+					<button class="btn ripple btn-default">Recent</button>
+					<button class="btn ripple btn-default">Previous Month</button>
+				</div>
+				<div class="right">
+					<button class="btn ripple btn-default">Clear</button>
+					<button class="btn ripple btn-primary">Show History</button>
+				</div>		
+			</div>
+		</div>
+
+
+
+		<div class="box-wrap">
+			<div class="box-body">		
+				<div class="table-responsive">
+					<table  class="table table-bordered table-striped">
+						<thead>
+							<tr>
+								<th class="action"></th>
+								<th class="action"><input type="checkbox" id="checkAll"></th>
+								<th>Date<br><span class="sub">AWB</span></th>
+								<th>Transport product<br><span class="sub">Product</span></th>
+								<th>Ship from company<br><span class="sub">Account</span></th>
+								<th>Ship to company<br><span class="sub">Country</span></th>
+								<th>Senders reference<br><span class="sub">Receivers reference</span></th>
+								<th>Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									1
+								</td>
+								<td>
+									<input type="checkbox" value="true" class="">
+
+								</td>
+
+								<td>9/18/2015<br>
+									<div class="sub">
+										<a target="_blank" href="">GE366367748SE</a>
+									</div>
+								</td>
+
+								<td>
+									TNT Express<br>
+									<div class="sub">SaleProduct10DN</div>
+								</td>
+
+								<td>
+									ASTRAZENECA AB SWEDEN OPERATIONS<br>
+									<div class="sub">Account 3</div>
+								</td>
+
+								<td>
+									Sveta<br>
+									<div class="sub"><div class="flag flag-dk"></div> Denmark</div>
+								</td>
+
+								<td>
+									Senders reference<br>
+									Receivers reference
+								</td>
+								<td class="action">
+									<ul>
+										<li>
+											<span data-toggle="modal" data-target="#infoModal">
+												<span class="icon fa fa-info" title="Info" data-toggle="tooltip" data-placement="bottom"></span>
+											</span>
+										</li>
+										<li>
+											<span data-toggle="modal" data-target="#deliveryModal">
+												<span class="icon fa fa-check yes" title="Delivery status : Delivered" data-toggle="tooltip" data-placement="bottom"></span>
+											</span>
+										</li>
+										<li>
+											<div class="dropdown">
+												<button class="btn ripple btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+													<i class="fa fa-cog" title="More Action" data-toggle="tooltip" data-placement="bottom"></i>
+												</button>
+												<ul class="dropdown-menu">
+													<li class="delivery-info-link action-list">
+														<a href="/Shipment/ShipmentDeliveryExtraInfo/111544" title="Delivery info">
+															<span class="fa fa-info-circle">
+															</span>  Deliery Info
+														</a>
+													</li>
+													<li class="send-email-link action-list">
+														<a href="/Shipment/ShipmentSendEmailsPartialView/111544" title="Send E-Mails">
+															<span class="fa fa-envelope-o">
+
+															</span> Send Email
+														</a>
+													</li>
+													<li class="file-upload-link action-list">
+														<a href="/Shipment/UploadShipmentDocumentPartialView/111544" title="Upload">
+															<span class="fa fa-cloud-upload">
+
+															</span> Upload File
+														</a>
+													</li>
+													<li class="file-upload-download action-list">
+														<a href="/Shipment/GetShipmentAWB/111544" title="AWB">
+															<span class="fa fa-cloud-download">
+
+															</span>Download File
+														</a>
+													</li>
+													<li class="special-price-link action-list">
+														<a href="/Shipment/SpecialPrice/111544" title="Special price">
+															<span class="fa fa-money">
+
+															</span> Special Price
+														</a>
+													</li>
+													<li class="changeAWB-link action-list">
+														<a href="/Shipment/ChangeAWBPartialView/111544" title="Change AWB">
+															<span class="fa fa-plane">
+
+															</span> Change AWB
+														</a>
+													</li>
+													<li class="createInvoice-link action-list">
+														<a href="/Invoice/Create?shipmentID=111544" title="Create invoice">
+															<i class="fa fa-dollar circle-icon">
+
+															</i> Create Invoice
+														</a>
+													</li>
+													<li class="delete-link action-list">
+														<a href="/Shipment/Delete/111544" class="actions-btn" title="Delete">
+															<span class="fa fa-trash-o circle-icon">
+
+															</span> Delete
+														</a>
+													</li>
+												</ul>
+											</div>
+
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									2
+								</td>
+								<td>
+									<input type="checkbox" value="true" class="">
+
+								</td>
+
+								<td>9/18/2015<br>
+									<div class="sub">
+										<a target="_blank" href="">GE366367748SE</a>
+									</div>
+								</td>
+
+								<td>
+									TNT Express<br>
+									<span class="sub">SaleProduct10DN</span>
+								</td>
+
+								<td>
+									ASTRAZENECA AB SWEDEN OPERATIONS<br>
+									<span class="sub">Account 3</span>
+								</td>
+
+								<td>
+									Sveta<br>
+									<span class="sub"><div class="flag flag-dk"></div> Denmark</span>
+								</td>
+
+								<td>
+									Senders reference<br>
+									Receivers reference
+								</td>
+								<td class="action">
+									<ul>
+										<li>
+											<span data-toggle="modal" data-target="#infoModal">
+												<span class="icon fa fa-info" title="Info" data-toggle="tooltip" data-placement="bottom"></span>
+											</span>
+										</li>
+										<li>
+											<span data-toggle="modal" data-target="#deliveryModal">
+												<span class="icon fa fa-check yes" title="Delivery status : Delivered" data-toggle="tooltip" data-placement="bottom"></span>
+											</span>
+										</li>
+										<li>
+											<div class="dropdown">
+												<button class="btn ripple btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+													<i class="fa fa-cog" title="More Action" data-toggle="tooltip" data-placement="bottom"></i>
+												</button>
+												<ul class="dropdown-menu">
+													<li class="delivery-info-link action-list">
+														<a href="/Shipment/ShipmentDeliveryExtraInfo/111544" title="Delivery info">
+															<span class="fa fa-info-circle">
+															</span>  Deliery Info
+														</a>
+													</li>
+													<li class="send-email-link action-list">
+														<a href="/Shipment/ShipmentSendEmailsPartialView/111544" title="Send E-Mails">
+															<span class="fa fa-envelope-o">
+
+															</span> Send Email
+														</a>
+													</li>
+													<li class="file-upload-link action-list">
+														<a href="/Shipment/UploadShipmentDocumentPartialView/111544" title="Upload">
+															<span class="fa fa-cloud-upload">
+
+															</span> Upload File
+														</a>
+													</li>
+													<li class="file-upload-download action-list">
+														<a href="/Shipment/GetShipmentAWB/111544" title="AWB">
+															<span class="fa fa-cloud-download">
+
+															</span>Download File
+														</a>
+													</li>
+													<li class="special-price-link action-list">
+														<a href="/Shipment/SpecialPrice/111544" title="Special price">
+															<span class="fa fa-money">
+
+															</span> Special Price
+														</a>
+													</li>
+													<li class="changeAWB-link action-list">
+														<a href="/Shipment/ChangeAWBPartialView/111544" title="Change AWB">
+															<span class="fa fa-plane">
+
+															</span> Change AWB
+														</a>
+													</li>
+													<li class="createInvoice-link action-list">
+														<a href="/Invoice/Create?shipmentID=111544" title="Create invoice">
+															<i class="fa fa-dollar circle-icon">
+
+															</i> Create Invoice
+														</a>
+													</li>
+													<li class="delete-link action-list">
+														<a href="/Shipment/Delete/111544" class="actions-btn" title="Delete">
+															<span class="fa fa-trash-o circle-icon">
+
+															</span> Delete
+														</a>
+													</li>
+												</ul>
+											</div>
+
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>3
+								</td>
+								<td>
+									<input type="checkbox" value="true" class="">
+
+								</td>
+
+								<td>9/18/2015<br>
+									<div class="sub">
+										<a target="_blank" href="">GE366367748SE</a>
+									</div>
+								</td>
+
+								<td>
+									TNT Express<br>
+									<span class="sub">SaleProduct10DN</span>
+								</td>
+
+								<td>
+									ASTRAZENECA AB SWEDEN OPERATIONS<br>
+									<span class="sub">Account 3</span>
+								</td>
+
+								<td>
+									Sveta<br>
+									<span class="sub"><div class="flag flag-dk"></div> Denmark</span>
+								</td>
+
+								<td>
+									Senders reference<br>
+									Receivers reference
+								</td>
+								<td class="action">
+									<ul>
+										<li>
+											<span data-toggle="modal" data-target="#infoModal">
+												<span class="icon fa fa-info" title="Info" data-toggle="tooltip" data-placement="bottom"></span>
+											</span>
+										</li>
+										<li>
+											<span data-toggle="modal" data-target="#deliveryModal">
+												<span class="icon fa fa-check yes" title="Delivery status : Delivered" data-toggle="tooltip" data-placement="bottom"></span>
+											</span>
+										</li>
+										<li>
+											<div class="dropdown">
+												<button class="btn ripple btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+													<i class="fa fa-cog" title="More Action" data-toggle="tooltip" data-placement="bottom"></i>
+												</button>
+												<ul class="dropdown-menu">
+													<li class="delivery-info-link action-list">
+														<a href="/Shipment/ShipmentDeliveryExtraInfo/111544" title="Delivery info">
+															<span class="fa fa-info-circle">
+															</span>  Deliery Info
+														</a>
+													</li>
+													<li class="send-email-link action-list">
+														<a href="/Shipment/ShipmentSendEmailsPartialView/111544" title="Send E-Mails">
+															<span class="fa fa-envelope-o">
+
+															</span> Send Email
+														</a>
+													</li>
+													<li class="file-upload-link action-list">
+														<a href="/Shipment/UploadShipmentDocumentPartialView/111544" title="Upload">
+															<span class="fa fa-cloud-upload">
+
+															</span> Upload File
+														</a>
+													</li>
+													<li class="file-upload-download action-list">
+														<a href="/Shipment/GetShipmentAWB/111544" title="AWB">
+															<span class="fa fa-cloud-download">
+
+															</span>Download File
+														</a>
+													</li>
+													<li class="special-price-link action-list">
+														<a href="/Shipment/SpecialPrice/111544" title="Special price">
+															<span class="fa fa-money">
+
+															</span> Special Price
+														</a>
+													</li>
+													<li class="changeAWB-link action-list">
+														<a href="/Shipment/ChangeAWBPartialView/111544" title="Change AWB">
+															<span class="fa fa-plane">
+
+															</span> Change AWB
+														</a>
+													</li>
+													<li class="createInvoice-link action-list">
+														<a href="/Invoice/Create?shipmentID=111544" title="Create invoice">
+															<i class="fa fa-dollar circle-icon">
+
+															</i> Create Invoice
+														</a>
+													</li>
+													<li class="delete-link action-list">
+														<a href="/Shipment/Delete/111544" class="actions-btn" title="Delete">
+															<span class="fa fa-trash-o circle-icon">
+
+															</span> Delete
+														</a>
+													</li>
+												</ul>
+											</div>
+
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>4
+								</td>
+								<td>
+									<input type="checkbox" value="true" class="">
+
+								</td>
+
+								<td>9/18/2015<br>
+									<div class="sub">
+										<a target="_blank" href="">GE366367748SE</a>
+									</div>
+								</td>
+
+								<td>
+									TNT Express<br>
+									<span class="sub">SaleProduct10DN</span>
+								</td>
+
+								<td>
+									ASTRAZENECA AB SWEDEN OPERATIONS<br>
+									<span class="sub">Account 3</span>
+								</td>
+
+								<td>
+									Sveta<br>
+									<span class="sub"><div class="flag flag-dk"></div> Denmark</span>
+								</td>
+
+								<td>
+									Senders reference<br>
+									Receivers reference
+								</td>
+								<td class="action">
+									<ul>
+										<li>
+											<span data-toggle="modal" data-target="#infoModal">
+												<span class="icon fa fa-info" title="Info" data-toggle="tooltip" data-placement="bottom"></span>
+											</span>
+										</li>
+										<li>
+											<span data-toggle="modal" data-target="#deliveryModal">
+												<span class="icon fa fa-check yes" title="Delivery status : Delivered" data-toggle="tooltip" data-placement="bottom"></span>
+											</span>
+										</li>
+										<li>
+											<div class="dropdown">
+												<button class="btn ripple btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+													<i class="fa fa-cog" title="More Action" data-toggle="tooltip" data-placement="bottom"></i>
+												</button>
+												<ul class="dropdown-menu">
+													<li class="delivery-info-link action-list">
+														<a href="/Shipment/ShipmentDeliveryExtraInfo/111544" title="Delivery info">
+															<span class="fa fa-info-circle">
+															</span>  Deliery Info
+														</a>
+													</li>
+													<li class="send-email-link action-list">
+														<a href="/Shipment/ShipmentSendEmailsPartialView/111544" title="Send E-Mails">
+															<span class="fa fa-envelope-o">
+
+															</span> Send Email
+														</a>
+													</li>
+													<li class="file-upload-link action-list">
+														<a href="/Shipment/UploadShipmentDocumentPartialView/111544" title="Upload">
+															<span class="fa fa-cloud-upload">
+
+															</span> Upload File
+														</a>
+													</li>
+													<li class="file-upload-download action-list">
+														<a href="/Shipment/GetShipmentAWB/111544" title="AWB">
+															<span class="fa fa-cloud-download">
+
+															</span>Download File
+														</a>
+													</li>
+													<li class="special-price-link action-list">
+														<a href="/Shipment/SpecialPrice/111544" title="Special price">
+															<span class="fa fa-money">
+
+															</span> Special Price
+														</a>
+													</li>
+													<li class="changeAWB-link action-list">
+														<a href="/Shipment/ChangeAWBPartialView/111544" title="Change AWB">
+															<span class="fa fa-plane">
+
+															</span> Change AWB
+														</a>
+													</li>
+													<li class="createInvoice-link action-list">
+														<a href="/Invoice/Create?shipmentID=111544" title="Create invoice">
+															<i class="fa fa-dollar circle-icon">
+
+															</i> Create Invoice
+														</a>
+													</li>
+													<li class="delete-link action-list">
+														<a href="/Shipment/Delete/111544" class="actions-btn" title="Delete">
+															<span class="fa fa-trash-o circle-icon">
+
+															</span> Delete
+														</a>
+													</li>
+												</ul>
+											</div>
+
+										</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+			<div class="box-foot">	
+				<div class="left">
+					<button class="btn ripple btn-default"><span class="if-print"></span> Print manifest</button>
+					<button class="btn ripple btn-default"><span class="if-calculate"></span> Recalculate shipments</button>
+					<button class="btn ripple btn-default"><span class="if-document"></span> Print AWB and Documents</button>	
+				</div>	
+			</div>
+		</div>
+
+		
+	</div>
+</div>
+
+
+
+
+<script>
+	$(document).ready(function($) {
+		$('.datetimepicker').datetimepicker({
+			format: 'DD/MM/YYYY'
+		});
+	});
+</script>

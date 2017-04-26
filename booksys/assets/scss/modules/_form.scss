@@ -1,0 +1,134 @@
+.form-group{
+	min-height:  $form-height + 1px;
+	margin-bottom: 10px;
+	label{
+		font-size: 11px;
+	}
+
+}
+.form-control{
+	box-shadow: none;
+	padding: 0px 10px;
+	height: $form-height;
+	line-height: $form-height;
+	font-size: 1.1em;
+	@include border-radius(2px);
+	border-color: $form-border;
+	&:focus{
+		outline: none;
+		border: 1px solid #fff;
+		@include box-shadow(0 0 4px rgba(0,0,0,0.2));
+	}
+	&.error{
+		border-color: $brand-danger !important;
+	}
+}
+.error-msg{
+	color: $brand-danger;
+	font-size: 10px;
+}
+
+
+
+select.form-control{
+	padding-right: 0px;
+	background: #fff;
+	line-height: 32px;
+}
+input{
+	&.datetimepicker{
+		background: url('#{$baseurl}/datepicker.png') no-repeat center right #fff;
+		&:focus{
+			background: url('#{$baseurl}/datepicker.png') no-repeat center right #fff;
+		}
+	}
+}
+
+.input-group-btn{
+	.btn{
+		margin-right: 0px;
+	}
+}
+.input-group-addon{
+	padding: 0 12px;
+}
+.form-line{
+	.form-group{
+		margin-right: 15%;
+	}
+	label{
+		margin-top: 5px;
+		width: 40%;
+		float: left;
+	}
+	.form-fill{
+		width: 60%;
+		margin-left: 40%;
+	}
+	.label-60{
+		width: 60%;
+	}
+	.form-fill-40{
+		width: 40%;
+		margin-left: 60%;
+	}
+	.label-70{
+		width: 70%;
+	}
+	.form-fill-30{
+		width: 30%;
+		margin-left: 70%;
+	}
+}
+
+
+
+.toggable-row{
+	margin-top: -5px;
+	padding-top: 5px;
+	margin-bottom: 10px;
+	.toggable-body{
+		display: none;
+		opacity: 0;
+		transition: all 2s linear;
+	}
+	&.active{
+		//$padding: 6px;
+		//background: rgba(0,0,0,0.02);
+		//outline: 1px solid rgba(0,0,0,0.05);
+		//margin-left: -$padding;
+		//margin-right: -$padding;
+		//padding-left: $padding;
+		//padding-right: $padding;
+		.toggable-body{
+			display: block;
+			opacity: 1;
+			transition: all 2s linear;
+		}
+	}
+}
+
+
+
+.input-group-btn{
+	.btn{	
+		height: $form-height - 2px;
+		line-height: $form-height - 2px;
+		padding: 0px 10px;
+	}
+}
+.input-group-addon.currency{
+	padding-right: 30px;
+	font-size: 12px;
+	position: relative;
+	cursor: pointer;
+	&:after{
+		content: '';
+		background: url('#{$base-url}/down.png') no-repeat center;
+		height: 10px;
+		width: 10px;
+		position: absolute;
+		top: 7px;
+		right: 10px;
+	}
+}

@@ -1,0 +1,65 @@
+.btn{
+	height: $form-height;
+	line-height: $form-height - 2px;
+	padding: 0 15px;
+	font-size: 1rem;
+	text-transform: uppercase;
+	@include box-shadow(0 2px 2px 0 rgba(#000, .14), 0 3px 1px -2px rgba(#000, .2), 0 1px 5px 0 rgba(#000,.12));
+	@include border-radius(4px);
+	letter-spacing: 1px;
+	border: 1px solid rgba(0,0,0,0.05);
+	.fa, [class^='if']{
+		//margin-right: 5px;
+	}
+	&.btn-round{
+		@include border-radius(30px);
+	}
+	&.btn-primary{
+		color: $sec-color;
+	}
+	&.btn-default{
+		background: #888;
+		color: $sec-color;
+	}
+	&:focus{
+		outline: none;
+		border: 1px solid rgba(0,0,0,0.2) ;
+	}
+}
+
+
+.ripple {
+	position: relative;
+	overflow: hidden;
+	transform: translate3d(0, 0, 0);
+}
+.ripple:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	transform: scale(10, 10);
+	opacity: 0;
+	transition: transform .5s, opacity 1s;
+}
+.ripple:active:after {
+	transform: scale(0, 0);
+	opacity: .2;
+	transition: 0s;
+}
+
+
+.foot-wrap{
+	.btn{
+		[class^='if'], .fa{
+			margin-right: 5px;
+		}
+	}
+}

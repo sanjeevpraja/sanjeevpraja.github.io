@@ -1,0 +1,70 @@
+<!-- @import "partial/_header.kit" -->
+<!-- Additional page CSS -->
+
+<!-- @import "partial/_nav-vertical.kit" -->
+
+<div class="main-wrapper">	
+	<div class="page-title"><div class="menu">Create Shipment</div></div>
+
+	<div class="side-wrap">
+		<div class="bs-account">
+			<div class="row">
+				<div class="col-sm-8">
+					<div class="form-group">       
+						<label>Choose Account</label>
+						<select class="form-control">
+							<<option></option>				
+							<option>Philadelphia Eagles</option>
+							<option>Washington Redskins</option>
+							<option>Chicago Bears</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<br>
+					<div class="checkbox">
+						<label class="">
+							<input type="checkbox" value="" checked>
+							<span>Import</span> </label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- @import "partial/_tab.kit" -->
+		</div>
+		<div class="aside-wrap">
+			<!-- @import "partial/_shipment-options.kit" -->
+			<!-- @import "partial/_available-shipping.kit" -->
+		</div>
+
+		<div class="clearfix"></div>
+		<div class="show-shipping-wrap">
+			<div class="combine-width">
+				<button class="btn btn-primary ripple pull-right">Show Shipping Option</button>
+			</div>
+		</div>
+
+		<div class="col-sm-12">
+			<!-- @import "partial/_footer.kit" -->
+		</div>
+	</div>
+
+	<script>
+		$(document).ready(function($) {
+			var winHeight = $(window).height();
+			$('.aside-wrap').css('min-height', (winHeight -190) + 'px');
+
+			$('.currency-select').select2({
+				templateResult: function (data, container) {
+					if (data.element) {
+						$(container).addClass($(data.element).attr("class"));
+					}
+					return data.text;
+				}
+			});
+			$('.datetimepicker').datetimepicker({
+				format: 'DD/MM/YYYY'
+			});
+		});
+	</script>

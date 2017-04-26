@@ -1,0 +1,53 @@
+/*****************Typography********************/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i');
+
+$head-font: 'Noto Sans', sans-serif;
+$body-font: 'Noto Sans', sans-serif;
+
+$nav-font: $body-font;	
+
+$font-size-base: 12px;
+
+$font-size-h1:            floor(($font-size-base * 2.6)); // ~36px
+$font-size-h2:            floor(($font-size-base * 2.15)); // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.7)); // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)); // ~18px
+$font-size-h5:            $font-size-base;
+$font-size-h6:            ceil(($font-size-base * 0.85)); // ~12px
+
+
+
+html, body{
+	font-family: $body-font;
+	font-size: $font-size-base;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand, .nav-bar, .nav-bar a{
+	font-family: $head-font;
+}
+
+
+/*****************Font sizes overrides for bootstrap********************/
+h1{
+	font-size: $font-size-h1;
+} 
+h2{
+	font-size: $font-size-h2;
+} 
+h3{
+	font-size: $font-size-h3;
+} 
+h4{
+	font-size: $font-size-h4;
+} 
+h5{
+	font-size: $font-size-h5;
+} 
+h6{
+	font-size: $font-size-h6;
+}
+
+p{
+	line-height: 1.6em;
+}
+

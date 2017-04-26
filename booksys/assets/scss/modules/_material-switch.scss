@@ -1,0 +1,53 @@
+.material-switch{
+    $size: 10px;
+    $size-width: 24px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    & > input[type="checkbox"]{
+       display: none;   
+   }
+
+   & > label{
+    cursor: pointer;
+    height: 0px;
+    min-height: auto;
+    position: relative; 
+    width: 40px;  
+}
+
+& > label::before {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: '';
+    height: $size;
+    margin-top: -$size/2;
+    position:absolute;
+    left: 0px;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: $size-width;
+}
+& > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: $size;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: $size/2*3;
+    left: -$size/4;
+    margin-top: -$size/2;
+    position: absolute;
+    top:  -$size/4;
+    transition: all 0.3s ease-in-out;
+    width: $size/2*3;
+}
+& > input[type="checkbox"]:checked + label::before {
+    background: $base-color;
+}
+& > input[type="checkbox"]:checked + label::after {
+    background: $base-color;
+    left: $size-width - $size-width/2;
+}
+}

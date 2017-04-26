@@ -1,0 +1,32 @@
+/*color Scheme*/
+$base-color: #64B5F6;
+$base-hover: darken(saturate($base-color, 50%), 10%);
+$base-light: lighten($base-color,42%);
+$base-dark:  darken($base-color, 10%);
+$base-contrast: contrast($base-color);
+
+
+$sec-color: #fff;
+$sec-hover: darken(saturate($sec-color, 50%), 10%);
+$sec-light: lighten($sec-color,42%);
+$sec-dark:  darken($sec-color, 10%);
+$sec-contrast: contrast($sec-color);
+
+
+
+$nav-bg: #333;
+
+$body-bg: #ECECEC;
+$body-contrast: contrast($body-bg);
+$body-grey: fade(contrast($body-bg), 5%);
+
+$font-color: #666;
+$anchor-color: $base-dark;
+
+$success-color: #479b44;
+$danger-color: #C81517;
+
+
+$form-border: #ddd;
+
+$box-border: rgba(0,0,0,0.15);

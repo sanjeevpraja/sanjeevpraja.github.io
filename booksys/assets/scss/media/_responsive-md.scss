@@ -1,0 +1,14 @@
+/*****************Medium Screeen********************/
+@media(max-width: $width-md){	
+}
+
+@media(max-width: 1135px){	
+	.navbar-nav {
+		& > li {
+			& > a{
+				padding-left: 8px;
+				padding-right: 8px;
+			}
+		}
+	}
+}

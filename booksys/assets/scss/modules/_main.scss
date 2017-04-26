@@ -1,0 +1,138 @@
+.breaker{
+	height: 15px;
+	width: 100%;
+	display: block;
+}
+
+.page-title{
+	margin: 20px 0 15px;
+	padding:0;
+	font-size: 1.6em;
+	color: $sec-color;;
+}
+
+.box-wrap{
+	background: #fff;
+	//border: 1px solid $box-border;
+	@include border-radius(10px);
+	@include box-shadow(0 0 18px 2px rgba(0,0,0,.08));
+	.box-title{
+		$height: 40px;
+		height: $height;
+		line-height: $height;
+		padding: 0px 30px;
+		border-bottom: 1px solid  rgba(0,0,0,0.05);
+		
+		font-size: 1.2rem;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	.box-body{
+		padding: 30px;
+	}
+
+	&.box-seperate{
+		margin: 30px 0;
+	}
+	&.box-seperate-top{
+		margin-top: 30px;
+	}
+	&.box-seperate-bottom{
+		margin-bottom: 30px;
+	}
+	.box-foot{
+		min-height: 70px;
+		background: rgba(black, 0.02);
+		border-top: 1px solid rgba(black, 0.04);
+		padding: 15px 30px;
+		margin-bottom: 30px;
+		@include border-radius(0 0 10px 10px);
+		.left{
+			float: left;
+			.btn{
+				margin-right: 10px;
+			}
+		}
+		.right{
+			float: right;
+			.btn{
+				margin-left: 10px;	
+			}			
+		}
+	}
+}
+
+.box-panel{
+	padding: 15px;
+	margin: 0 -15px 20px;
+	background: rgba(0,0,0,0.05);
+	border: 1px solid rgba(black, 0.08);
+	@include border-radius(5px);
+}
+
+
+
+.page-wrapper{
+	padding: 10px;
+	margin-bottom: 15px;
+	background: #ffffff;
+	border: 1px solid #ddd;
+	@include border-radius(0px);
+	overflow: visible;
+
+	.header{
+		margin: -10px -10px 15px;
+		padding: 0 10px;
+		$height: 32px;
+		height: $height;
+		line-height: $height;
+		
+		//text-transform: uppercase;
+		padding-bottom: 5px;
+		font-size: 1.1em;
+		font-family: $head-font;
+		font-weight: bold;
+
+		color: $base-dark;
+		background:#fafafa;
+		border-bottom: 1px solid #ddd;
+		box-shadow: inset 0 -2px 0 rgba(0,0,0,.03);
+		position: relative;
+	}
+
+	.foot-wrap{
+		margin: -10px -10px -10px;
+		padding:10px;
+		
+		background:#fafafa;
+		border-top: 1px solid #ddd;
+		overflow: hidden;
+		clear: both;
+		.left{
+			text-align: left;
+			width: 50%;
+			float: left;
+		}
+		.right{
+			text-align: right;	
+		}
+		
+	}
+}
+
+
+
+
+.advance-btn{
+	padding: 0 15px;
+	line-height: 26px;
+	border: 1px solid transparent;
+	@include border-radius(30px);
+	.fa, [class^='if-']{
+		margin-left: 5px;
+	}
+	&:hover{
+		border-color: #ccc;
+		cursor: pointer;
+	}
+}

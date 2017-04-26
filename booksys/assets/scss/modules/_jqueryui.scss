@@ -1,0 +1,41 @@
+
+.ui-datepicker
+{
+	border: 1px solid #ccc;
+	.ui-datepicker-header{
+	}
+	.ui-state-hover, a.ui-state-hover{
+	}
+	.ui-datepicker-prev, .ui-datepicker-next{
+		top: 4px;
+	}
+	.ui-datepicker-prev{
+		span{
+			background: url('#{$baseurl}/datepicker_left.png') no-repeat  ;
+		}
+	}
+	.ui-datepicker-next{
+		span{
+			background: url('#{$baseurl}/datepicker_right.png') no-repeat ;
+		}
+	}
+}
+
+
+.ui-spinner{
+	border: 1px solid #dddddd;
+	.ui-spinner-input{
+		height: 20px;
+		border: none;
+		&:focus{
+			box-shadow: none;
+		}
+	}
+	.ui-spinner-button{
+		cursor: pointer;
+	}
+}
+
+.ui-datepicker-div{
+	z-index: 9999;
+}

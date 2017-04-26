@@ -1,0 +1,105 @@
+.pre-loader-wrap{
+  $height: 40px;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  $bg-color: #000;
+  background: rgba( #333, .8 );
+  z-index: 99999;
+  
+  .loader-logo {
+    $border-width: 8px;
+    border-top: $border-width solid #fff;
+    border-right: $border-width solid #fff;
+    border-bottom: $border-width solid #fff;
+    border-left: $border-width solid #000;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: loadani 1.1s infinite linear;
+    animation: loadani 1.1s infinite linear;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -$height/2;
+    margin-top: -$height/2;
+    z-index: 99;
+  }
+  .loader-logo,
+  .loader-logo:after {
+    border-radius: 50%;
+    width: $height;
+    height: $height;
+  }
+  @-webkit-keyframes loadani {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes loadani {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+}
+
+
+
+$base-line-height: 24px;
+$white: rgb(255,255,255);
+$off-white: rgba($white, 0.2);
+$spin-duration: 1s;
+$pulse-duration: 750ms;
+
+
+.loading-pulse {
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -$base-line-height/2;
+  margin-top: -$base-line-height/2;
+  z-index: 99;
+
+  width: ($base-line-height / 4);
+  height: $base-line-height;
+  background: $off-white;
+  animation: pulse $pulse-duration infinite;
+  animation-delay: ($pulse-duration / 3);
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: ($base-line-height / 1.5);
+    width: ($base-line-height / 4);
+    background: $off-white;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: pulse $pulse-duration infinite;
+  }
+  &:before {
+    left: -($base-line-height / 2);
+  }
+  &:after {
+    left: ($base-line-height / 2);
+    animation-delay: ($pulse-duration / 1.5);
+  }
+}
+
+@keyframes pulse {  
+  50% { 
+    background: $white;
+  } 
+}

@@ -1,0 +1,347 @@
+@font-face {
+	font-family: 'if';
+	src:url('fonts/if.eot?bj1wgn');
+	src:url('fonts/if.eot?bj1wgn#iefix') format('embedded-opentype'),
+		url('fonts/if.ttf?bj1wgn') format('truetype'),
+		url('fonts/if.woff?bj1wgn') format('woff'),
+		url('fonts/if.svg?bj1wgn#if') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="if-"], [class*=" if-"] {
+	font-family: 'if';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.if-history:before {
+	content: "\e804";
+}
+.if-barcode-change:before {
+	content: "\e802";
+}
+.if-barcode-view:before {
+	content: "\e803";
+}
+.if-barcode:before {
+	content: "\e801";
+}
+.if-calculate:before {
+	content: "\e81a";
+}
+.if-internalinfo:before {
+	content: "\e81b";
+}
+.if-print:before {
+	content: "\e81c";
+}
+.if-print-awb:before {
+	content: "\e81d";
+}
+.if-address:before {
+	content: "\e600";
+}
+.if-alarm:before {
+	content: "\e601";
+}
+.if-anchor:before {
+	content: "\e602";
+}
+.if-anounce:before {
+	content: "\e603";
+}
+.if-arrow-down:before {
+	content: "\e604";
+}
+.if-arrow-left:before {
+	content: "\e605";
+}
+.if-arrow-right:before {
+	content: "\e606";
+}
+.if-arrow-up:before {
+	content: "\e607";
+}
+.if-bell:before {
+	content: "\e608";
+}
+.if-box:before {
+	content: "\e609";
+}
+.if-branch:before {
+	content: "\e60a";
+}
+.if-bulb:before {
+	content: "\e60b";
+}
+.if-calendar:before {
+	content: "\e60c";
+}
+.if-category:before {
+	content: "\e60d";
+}
+.if-checklist:before {
+	content: "\e60e";
+}
+.if-clock:before {
+	content: "\e60f";
+}
+.if-company:before {
+	content: "\e610";
+}
+.if-contact:before {
+	content: "\e611";
+}
+.if-cross:before {
+	content: "\e612";
+}
+.if-csv:before {
+	content: "\e613";
+}
+.if-dashboard:before {
+	content: "\e614";
+}
+.if-data:before {
+	content: "\e615";
+}
+.if-date:before {
+	content: "\e616";
+}
+.if-dimension:before {
+	content: "\e617";
+}
+.if-document:before {
+	content: "\e618";
+}
+.if-dollar:before {
+	content: "\e619";
+}
+.if-driver:before {
+	content: "\e61a";
+}
+.if-filter:before {
+	content: "\e61b";
+}
+.if-grid:before {
+	content: "\e61c";
+}
+.if-hand-dislike:before {
+	content: "\e61d";
+}
+.if-hand-down:before {
+	content: "\e61e";
+}
+.if-hand-fist:before {
+	content: "\e61f";
+}
+.if-hand-left:before {
+	content: "\e620";
+}
+.if-hand-like:before {
+	content: "\e621";
+}
+.if-hand-pick:before {
+	content: "\e622";
+}
+.if-hand-receive:before {
+	content: "\e623";
+}
+.if-hand-right:before {
+	content: "\e624";
+}
+.if-hand-scissor:before {
+	content: "\e625";
+}
+.if-hand-stop:before {
+	content: "\e626";
+}
+.if-hand-swipe:before {
+	content: "\e627";
+}
+.if-hand-up:before {
+	content: "\e628";
+}
+.if-happy:before {
+	content: "\e629";
+}
+.if-help:before {
+	content: "\e62a";
+}
+.if-home:before {
+	content: "\e62c";
+}
+.if-industry:before {
+	content: "\e62d";
+}
+.if-info:before {
+	content: "\e62e";
+}
+.if-invoice:before {
+	content: "\e62f";
+}
+.if-invoice-ok:before {
+	content: "\e630";
+}
+.if-key:before {
+	content: "\e631";
+}
+.if-link:before {
+	content: "\e632";
+}
+.if-list:before {
+	content: "\e633";
+}
+.if-lock:before {
+	content: "\e634";
+}
+.if-logout:before {
+	content: "\e635";
+}
+.if-mail:before {
+	content: "\e636";
+}
+.if-mail-open:before {
+	content: "\e637";
+}
+.if-message:before {
+	content: "\e638";
+}
+.if-minus:before {
+	content: "\e639";
+}
+.if-network:before {
+	content: "\e63a";
+}
+.if-news:before {
+	content: "\e63b";
+}
+.if-organization:before {
+	content: "\e63c";
+}
+.if-paper-plane:before {
+	content: "\e63d";
+}
+.if-pdf:before {
+	content: "\e63e";
+}
+.if-pencil:before {
+	content: "\e63f";
+}
+.if-phone:before {
+	content: "\e640";
+}
+.if-pin:before {
+	content: "\e641";
+}
+.if-plug:before {
+	content: "\e642";
+}
+.if-plus:before {
+	content: "\e643";
+}
+.if-postal:before {
+	content: "\e644";
+}
+.if-product:before {
+	content: "\e645";
+}
+.if-recycle:before {
+	content: "\e646";
+}
+.if-reply:before {
+	content: "\e647";
+}
+.if-sad:before {
+	content: "\e648";
+}
+.if-sales:before {
+	content: "\e649";
+}
+.if-schedule:before {
+	content: "\e64a";
+}
+.if-search:before {
+	content: "\e64b";
+}
+.if-setting:before {
+	content: "\e64c";
+}
+.if-star:before {
+	content: "\e64d";
+}
+.if-subcategory:before {
+	content: "\e64e";
+}
+.if-support:before {
+	content: "\e64f";
+}
+.if-sync:before {
+	content: "\e650";
+}
+.if-telephone:before {
+	content: "\e651";
+}
+.if-tick:before {
+	content: "\e652";
+}
+.if-transfer:before {
+	content: "\e653";
+}
+.if-transfer2:before {
+	content: "\e654";
+}
+.if-trash:before {
+	content: "\e655";
+}
+.if-triangle-down:before {
+	content: "\e656";
+}
+.if-triangle-left:before {
+	content: "\e657";
+}
+.if-triangle-right:before {
+	content: "\e658";
+}
+.if-triangle-up:before {
+	content: "\e659";
+}
+.if-truck:before {
+	content: "\e65a";
+}
+.if-truck-question:before {
+	content: "\e65b";
+}
+.if-truck-time:before {
+	content: "\e65c";
+}
+.if-user:before {
+	content: "\e65d";
+}
+.if-weight:before {
+	content: "\e800";
+}
+.if-wrench:before {
+	content: "\e65e";
+}
+.if-xml:before {
+	content: "\e65f";
+}
+.if-zip:before {
+	content: "\e660";
+}
+.if-zoomin:before {
+	content: "\e661";
+}
+.if-zoomout:before {
+	content: "\e662";
+}
+

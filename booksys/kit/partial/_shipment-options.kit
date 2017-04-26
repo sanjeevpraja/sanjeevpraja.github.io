@@ -1,0 +1,154 @@
+
+<div class="row">
+	<div class="col-sm-6">
+		<div class="form-group form-line">
+			<label>Start Date</label>
+			<div class="form-fill">
+				<input type='text' class="form-control datetimepicker" />
+			</div>
+		</div> 
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm-6">
+		<div class="form-group form-line">
+			<label>C.O.D</label>
+			<div class="form-fill">
+				<div class="input-group">
+					<input type="text" class="form-control">
+					<span class="input-group-addon currency currency-btn">
+						Saudi Riyal
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="form-group form-line">
+			<label>Insurance Value</label>
+			<div class="form-fill">
+				<div class="input-group">
+					<input type="text" class="form-control">
+					<span class="input-group-addon currency currency-btn">
+						US Dollar
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="toggable-row">
+	<div class="toggable-title">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="form-group form-line">
+					<label>Receiver Pays</label>
+					<div class="form-fill">
+						<div class="material-switch">
+							<input type="checkbox"/>
+							<label></label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="toggable-body">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="form-group form-line">
+					<label>Account Number</label>
+					<div class="form-fill">
+						<input type="type" class="form-control">
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form-group form-line">
+					<label>Transport Porduct</label>
+					<div class="form-fill">
+						<select name="" id="" class="form-control">
+							<option value="">Choose Option</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="toggable-row">
+	<div class="toggable-title">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="form-group form-line">
+					<label>Dangerous Good</label>
+					<div class="form-fill">	<div class="material-switch">
+						<input type="checkbox"/>
+						<label></label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="toggable-body">
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="form-group form-line">
+				<label>Type</label>
+				<div class="form-fill">
+					<select name="" id="" class="form-control">
+						<option value="">Choose Type</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="toggable-row">
+	<div class="toggable-title">
+		<div class="row">
+			<div class="col-sm-6 form-group form-line">
+				<label>Number of packages <span>*</span></label>
+				<div class="form-fill">
+					<input type="text" class="form-control" id="number-package" value="1">
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form-group form-line">
+					<label>Package Dimension</label>
+					<div class="form-fill">
+						<div class="material-switch">
+							<input type="checkbox"/>
+							<label></label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="toggable-body">
+		<!-- @import "_package.kit" -->
+	</div>
+</div>
+
+
+
+
+
+<script>
+	$(document).ready(function($) {
+		$('.toggable-title [type="checkbox"]').on('click', function(){
+			if ($(this).is(':checked')) {
+				$(this).closest('.toggable-row ').addClass('active');
+			}
+			else{
+				$(this).closest('.toggable-row ').removeClass('active');
+			}
+		});
+	});
+</script>

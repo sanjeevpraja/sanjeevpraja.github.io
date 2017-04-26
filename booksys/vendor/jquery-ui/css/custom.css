@@ -1,0 +1,10 @@
+/* custom */
+.navbar {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10000;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImN1c3RvbS5sZXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFFQTtFQUNDLE9BQUE7RUFDQSxlQUFBO0VBQ0EsUUFBQTtFQUNBLE1BQUE7RUFDQSxjQUFBIiwic291cmNlc0NvbnRlbnQiOlsiLyogY3VzdG9tICovXG5cbi5uYXZiYXIge1xuXHRsZWZ0OiAwO1xuXHRwb3NpdGlvbjogZml4ZWQ7XG5cdHJpZ2h0OiAwO1xuXHR0b3A6IDA7XG5cdHotaW5kZXg6IDEwMDAwO1xufSJdLCJmaWxlIjoiY3VzdG9tLmNzcyIsInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9 */

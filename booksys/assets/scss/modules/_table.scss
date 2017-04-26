@@ -1,0 +1,179 @@
+	.table-responsive{
+		overflow-x: visible;
+	}
+
+	.table{
+		margin: 0 0 20px;
+		> thead{
+			> tr{
+				> th{
+					background: #ededed;
+					border-bottom: 2px solid rgba(black, .05);
+					padding: 8px;
+					border-left: 0px;
+					border-right: 0px;
+					vertical-align: middle;
+					color: #444;
+				}
+			}
+
+		}
+		> tbody{
+			> tr{
+				& > td, & > th{
+					padding-top: 2px;
+					padding-bottom: 2px;
+					border-left: 0px;
+					border-right: 0px;
+				}
+				.right{
+					text-align: right;
+				}
+				.center{
+					text-align: center;
+				}
+
+				&:hover{
+					background: rgba(#333, .08);
+				}
+
+				> td{
+					padding: 4px  8px;
+					line-height: 24px;
+					vertical-align: middle;
+					&.action{
+						width: 1%;
+						white-space: nowrap;
+						ul{
+							list-style: none;
+							margin: 0;
+							padding: 0;
+							li{	
+								vertical-align: middle;
+								display: inline-block;
+								padding: 0 2px;
+								.icon{
+									font-size: 12px ;
+									$height: 30px;
+									height: $height;
+									width: $height;
+									line-height: $height;
+									@include border-radius($height);
+									text-align: center;
+									color: #fff;;
+									background: $base-color;
+								}
+							}
+						}
+						.btn-group{	
+							margin-left: -4px;
+							float: none;	
+							& > .btn{
+								float: none;
+								margin-right: 0;
+							}
+						}
+						div.btn-group{
+							& > div.btn-group{
+								margin-right: -4px;
+							}
+						}
+
+						.dropdown-menu{
+							padding: 0px;
+							left: auto;
+							right: 0;
+							min-width: auto;
+							li{
+								display: block;
+								border-bottom: 1px solid rgba(black, 0.08);
+							}
+							a{	
+								display: block;
+								$height: 26px;
+								height: $height;
+								line-height: $height;
+								padding : 0px 10px;
+								font-size: 12px;
+								[class^='icon-'], .fa{
+									margin-right: 10px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+
+		th.product-name{
+			padding-left: 35px;
+		}
+		td.product-name{
+			padding-left: 35px;
+			background-image: url('#{$baseurl}/product-check.png');
+			background-repeat: no-repeat;
+			background-position: top left;
+		}
+
+		tr.selected{
+			td{
+				background-color: rgba($base-color, .05);
+			}
+			td.product-name{
+				background-image: url('#{$baseurl}/product-checked.png');
+			}
+		}
+
+		.sub{
+			line-height: 1;
+			margin-top: 0px;
+			margin-bottom: 3px;
+			//background: rgba(#333, 0.05);
+			//padding: 3px 5px;
+			display: inline-block;
+			//border: 1px solid rgba(black, 0.05);
+			font-size: 11px;
+			a{
+				color: $font-color;
+			}
+			.flag{
+				vertical-align: middle;
+				background-position: middle;
+			}
+		}
+	}
+
+
+	.sale-price{
+		th, td{
+			height: 30px;
+		}
+		thead{
+			border-top: 1px solid #bbb !important;
+			th{
+				background: rgba($base-dark, .2) !important;
+				height: 36px;
+				border-color: #bbb !important;
+			}
+		}
+		td.total{
+			background: rgba($base-dark, .2) !important;
+			border-color: #bbb !important;
+		}
+		.center{
+			height: 36px;
+		}
+	}
+
+	table.no-border{
+		font-size: 1.2em;
+		th{
+			border-top: 0px !important;
+			background: transparent !important;
+			font-weight: bold;
+		}
+		td{
+			border: 0px !important;
+		}
+	}

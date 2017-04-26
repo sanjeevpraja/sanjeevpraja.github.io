@@ -1,0 +1,107 @@
+.tab-vertical-wrap{
+  margin: 0 -30px -30px;
+  padding: 15px;
+  background: #fff;
+  border-top: 3px solid rgba(0,0,0,0.05);
+  @include border-radius(0 0 10px 10px);
+}
+
+.tab-vertical{
+  $tab-width: 90px;
+  $tab-bg: #fafafa;
+  .nav-tabs {
+    float: left;
+    border-bottom: 0;
+    margin-top: 10px;
+    margin-right: -3px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    > li {
+      float: none;
+      margin: 0;
+      padding: 5px 0 0 10px;
+      text-align: center;
+      >  a {
+        width: $tab-width;
+        padding: 15px;
+        margin-right: 0;
+        border: 0;
+        border-right: 3px solid transparent;
+
+        color: $font-color;
+        font-weight: bold;
+        
+        &:hover {
+          background: none;
+          border: 0px;
+          border-right: 3px solid $font-color;
+        }
+      }
+      .glyphicon, .fa {
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+      &.active{
+        > a{
+          color: $base-color;
+          position: relative;
+          border: 0px;
+          border-right: 3px solid $base-color;
+          &:before{
+            content: '';
+            height: 0px;
+            width: 0px;
+            $border: 10px;
+            border-left: $border solid $base-color;
+            border-top: $border solid transparent;
+            border-bottom: $border solid transparent;
+
+            position: absolute;
+            top: 25px;
+            right: -10px;
+            z-index: 99;
+          }
+        }
+        .glyphicon {
+          color: #333;
+        }
+      }
+      &:last-child{
+        a{
+          border-bottom: 0px;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    .tab-pane {
+      min-height: 100*3px;
+      display: none;
+      border: 1px solid rgba(0,0,0,0.07);
+      background-color: $tab-bg;
+      @include border-radius(10px);
+      padding: 30px;
+      overflow-y: auto;
+      &.active { 
+        display: block;
+      }
+    }
+
+
+  }
+
+  .list-group {
+    width: 100%;
+
+    .list-group-item {
+      height: 50px;
+
+      h4, span {
+        line-height: 11px;
+      }
+    }
+  }
+
+}
+
