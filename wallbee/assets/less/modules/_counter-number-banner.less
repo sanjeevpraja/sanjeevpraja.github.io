@@ -1,0 +1,62 @@
+/*---------- 2.9  Counter Number Banner ----------*/
+
+.counter-wrap{
+	background: url('@{baseurl}/carousel/parallax.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.counter-div{
+	text-align: center;
+	color: @primary-color;
+	[class^='col-']{
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	p{
+		letter-spacing: 1px;
+		font-weight: none;
+	}
+	.icon-font{
+		font-size: 3em;
+		line-height: 1;
+		display: block;
+	}
+	.counter{
+		font-size: 2rem;
+		font-weight: bold;
+		font-family: @head-font;
+		text-align: center;
+	}
+
+	background: @base-color;
+	color: @base-contrast;
+	[class^='col-']{
+		&:nth-child(odd){
+			background: @base-color;
+		}
+		&:nth-child(even){
+			background: @base-600;
+		}
+	}
+	.counter{
+		color:  @base-contrast;
+	}
+
+}
+
+@media screen and (max-width: @screen-md){
+	.counter-div{
+		font-size: .8em;
+		&.boxed{
+			margin-top: 0;
+			[class^='col-']{
+				&:nth-child(odd){
+					background: red;
+				}
+				&:nth-child(even){
+					background: blue;
+				}
+			}
+		}
+	}
+}

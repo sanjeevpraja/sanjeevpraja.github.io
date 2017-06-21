@@ -1,0 +1,37 @@
+/*---------- 2.23 Feature List ----------*/
+.feature-wrap{
+	background: url('@{baseurl}/carousel/parallax1.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	.feature-list{
+		min-height: 240px;
+		border: 3px solid @primary-color;
+		padding: 30px;
+		text-align: center;
+		h1, h2, h3, h4, h5, h6{
+			margin-bottom: 20px;
+		}
+		p{
+			margin-bottom: 15px;
+		}
+		a{
+			font-size: 1rem;
+			text-transform: uppercase;
+			padding: 8px 15px;
+		}
+		&:hover{
+			background: rgba(0, 0, 0, 0.5);
+			a{
+				background: @primary-color;
+				color: #fff;
+				&:hover{
+					background: @primary-700;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: @screen-media-sm){
+
+}
