@@ -9,7 +9,6 @@
 		heightAdjust();
 
 		$('[data-toggle="tooltip"]').tooltip({container: 'body'});
-		$('.selectpicker').selectpicker();
 		$('.datepicker').datepicker();
 		$('[data-toggle="popover"]').popover();
 
@@ -129,7 +128,7 @@
 		if(winheight > 700 || winheight > winwidth){
 			bodyheight = winheight - headerht;
 			$('.full-height').css('min-height', bodyheight+'px');
-			top = (bodyheight - textheight)/2 - headerht/2;
+			top = (bodyheight - textheight)/2 - headerht;
 			$('.full-height .center-txt').css('top', top);
 		}
 		else{
