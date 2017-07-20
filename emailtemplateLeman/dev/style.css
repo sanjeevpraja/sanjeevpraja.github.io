@@ -1,0 +1,141 @@
+body,
+.body {
+  background-color: #cccccc;
+}
+table {
+  border: 0px none!important;
+  border-collapse: collapse;
+}
+hr {
+  border: 1px solid #eee !important;
+}
+a {
+  font-weight: bold;
+  color: #00497f;
+}
+.wrapper-table {
+  background: #ffffff;
+  color: #666666;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+.logo-wrap {
+  border-top: 5px solid #00497f;
+  background-color: #ffffff;
+  border-bottom: 3px solid #EEEEEE;
+  text-align: center;
+}
+.logo {
+  float: left;
+}
+.sec-logo {
+  float: right;
+}
+h1 {
+  text-align: center;
+  font-size: 21px;
+  padding: 0 80px;
+  margin-bottom: 30px;
+}
+.head-table {
+  text-align: center;
+  color: #00497f;
+}
+table.shipment-info {
+  background: #eeeeee;
+  border-color: 1px solid #f24646 !important;
+  width: 100%;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+table.shipment-info .td-header {
+  border-bottom: 1px solid #cccccc;
+  background-color: #dddddd;
+}
+table.shipment-info th {
+  height: 36px;
+  font-size: 12px;
+  background-color: #d2d2d2;
+  border-bottom: 1px solid #cccccc;
+}
+table.shipment-info h2 {
+  text-align: center;
+  font-size: 18px;
+  color: #00497f;
+  line-height: 40px;
+  margin: 0px;
+}
+table.shipment-info td {
+  padding: 0 10px;
+  font-size: 13px;
+  height: 30px;
+  border-bottom: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+}
+table.shipment-info td:last-child {
+  border-right: none;
+}
+table.shipment-info tr:last-child td {
+  border-bottom: 0px;
+}
+.hello-receiver {
+  font-weight: bold;
+}
+ol {
+  font-size: 15px;
+}
+ol li {
+  line-height: 26px;
+}
+.list-head {
+  font-weight: bold;
+  line-height: 40px;
+}
+.list {
+  color: #000;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list li {
+  color: #666666;
+  font-size: 15px;
+  height: 25px;
+  border-bottom: 1px dashed #eee;
+  margin-top: 5px;
+}
+.list li span {
+  display: inline-block;
+  width: 300px;
+}
+.info-box {
+  background: #ffffff;
+  border: 1px solid #fbc7c7;
+  color: #00497f;
+  padding: 15px 15px 15px 15px;
+  font-size: 13px;
+}
+.info-box h4 {
+  margin-bottom: 0px;
+  border-bottom: 1px solid #fbc7c7;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+.footer {
+  border-top: 1px solid #c9a2a2;
+  border-bottom: 5px solid #00497f;
+  background: #fcd5d5;
+  color: #00497f;
+  font-size: 13px;
+  text-align: center;
+}
+.footer p {
+  margin: 0 50px 10px;
+  line-height: 20px;
+}
+.footer .do-not-reply {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #f9a5a5;
+  background: #fcd5d5;
+  font-size: 10px;
+  text-align: center;
+}
