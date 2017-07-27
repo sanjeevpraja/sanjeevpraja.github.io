@@ -1,0 +1,43 @@
+.banner {
+	margin-top: 2px;
+	text-align: center;
+	border-top: 1px solid @border-color;
+	h1 {
+		margin: 67px 0 9px;
+		color: @primary-color;
+		font-size: 7rem;
+		font-family: @font-head;
+	}
+	.banner-text {
+		.map {
+			height: 480px;
+			background-repeat: no-repeat;
+			background-position: top center;
+			position: relative;
+			.text-center{
+				position: absolute;
+				@width: 500px;
+				width: @width;
+				top: 0px;
+				left: 50%;
+				margin-left: -@width/2;
+			}
+		}
+		h2 {
+			margin: 24px 0 11px;
+			color: @secondary-color;
+			font-family: @font-body;
+			font-size: 1.14em;
+		}
+		h3 {
+			margin: 0;
+			color: @secondary-color;
+			font-weight: 700;
+			font-family: @font-head;
+			font-size: 1.71em;
+		}
+		img {
+			margin-top: 52px;
+		}
+	}	
+}
