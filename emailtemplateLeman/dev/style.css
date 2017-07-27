@@ -11,17 +11,17 @@ hr {
 }
 a {
   font-weight: bold;
-  color: #00497f;
+  color: #004a80;
 }
 .wrapper-table {
-  background: #ffffff;
+  background: #eeeeee;
   color: #666666;
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: 'Lucida Grande', Arial, sans-serif;
 }
 .logo-wrap {
-  border-top: 5px solid #00497f;
+  border-top: 5px solid #004a80;
+  border-bottom: 2px solid #dddddd;
   background-color: #ffffff;
-  border-bottom: 3px solid #EEEEEE;
   text-align: center;
 }
 .logo {
@@ -38,17 +38,17 @@ h1 {
 }
 .head-table {
   text-align: center;
-  color: #00497f;
+  color: #004a80;
 }
 table.shipment-info {
-  background: #eeeeee;
-  border-color: 1px solid #f24646 !important;
+  background: #ffffff;
+  border-color: 1px solid #68080c !important;
   width: 100%;
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: 'Lucida Grande', Arial, sans-serif;
 }
 table.shipment-info .td-header {
   border-bottom: 1px solid #cccccc;
-  background-color: #dddddd;
+  background-color: #004a80;
 }
 table.shipment-info th {
   height: 36px;
@@ -58,8 +58,8 @@ table.shipment-info th {
 }
 table.shipment-info h2 {
   text-align: center;
-  font-size: 18px;
-  color: #00497f;
+  font-size: 16px;
+  color: #ffffff;
   line-height: 40px;
   margin: 0px;
 }
@@ -93,12 +93,15 @@ ol li {
   color: #000;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 5px 0 0;
+  background: #ffffff;
 }
 .list li {
   color: #666666;
   font-size: 15px;
-  height: 25px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
   border-bottom: 1px dashed #eee;
   margin-top: 5px;
 }
@@ -107,24 +110,22 @@ ol li {
   width: 300px;
 }
 .info-box {
-  background: #ffffff;
-  border: 1px solid #fbc7c7;
-  color: #00497f;
-  padding: 15px 15px 15px 15px;
+  background: #004a80;
+  border: 1px solid #004171;
+  color: #ffffff;
+  padding: 15px 15px 30px 15px;
   font-size: 13px;
 }
 .info-box h4 {
   margin-bottom: 0px;
-  border-bottom: 1px solid #fbc7c7;
+  border-bottom: 2px solid #003b67;
   padding-bottom: 10px;
   font-size: 15px;
 }
 .footer {
-  border-top: 1px solid #c9a2a2;
-  border-bottom: 5px solid #00497f;
-  background: #fcd5d5;
-  color: #00497f;
-  font-size: 13px;
+  background: #555555;
+  color: #ffffff;
+  font-size: 12px;
   text-align: center;
 }
 .footer p {
@@ -134,8 +135,7 @@ ol li {
 .footer .do-not-reply {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-top: 1px solid #f9a5a5;
-  background: #fcd5d5;
+  border-top: 1px solid #484848;
   font-size: 10px;
   text-align: center;
 }

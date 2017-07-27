@@ -8,11 +8,13 @@ table{
 }
 
 @base-url: "img";
-@main-bg: #ffffff;
+@main-bg: #eeeeee;
 @font-color: #666666;
-@base-color: #fcd5d5;
-@sec-color: #00497f;
-@font-family: Tahoma, Geneva, sans-serif;
+@base-color: #ed1c24;
+@sec-color: #004a80;
+@footer-color: #555555;
+
+@font-family: 'Lucida Grande', Arial, sans-serif;
 @font-size: 13px;
 
 hr{
@@ -30,11 +32,9 @@ a{
 }
 
 .logo-wrap{
-	//background-image: url('@{base-url}/bg_page.jpg');
-	//background-repeat: no-repeat;
 	border-top: 5px solid @sec-color;
+	border-bottom: 2px solid #dddddd;
 	background-color: #ffffff;
-	border-bottom: 3px solid #EEEEEE;
 	text-align: center;
 }
 .logo{
@@ -54,13 +54,13 @@ h1{
 	color: @sec-color;
 }
 table.shipment-info{
-	background: #eeeeee;
+	background: #ffffff;
 	border-color: 1px solid darken(@base-color, 30%) !important;
 	width: 100%;
 	font-family:  @font-family;
 	.td-header{
 		border-bottom: 1px solid #cccccc;
-		background-color: #dddddd;
+		background-color: @sec-color;
 	}
 	th{
 		height: 36px;
@@ -70,8 +70,8 @@ table.shipment-info{
 	}
 	h2{
 		text-align: center;
-		font-size: @font-size + 5px;
-		color: @sec-color;
+		font-size: @font-size + 3px;
+		color: #ffffff;
 		line-height: 40px;
 		margin: 0px;
 	}
@@ -111,11 +111,14 @@ ol{
 	color: #000;
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding: 5px 0 0;
+	background: #ffffff;
 	li{
 		color: @font-color;
 		font-size: @font-size + 2px;
-		height: 25px;
+		height: 30px;
+		line-height: 30px;
+		padding: 0 15px; 
 		border-bottom: 1px dashed #eee;
 		margin-top: 5px;
 		span{
@@ -126,25 +129,23 @@ ol{
 }
 
 .info-box{
-	background: lighten(@base-color, 10%);
-	border: 1px solid darken(@base-color, 3%);
-	color: @sec-color;
-	padding: 15px 15px 15px 15px;
+	background: @sec-color;
+	border: 1px solid darken(@sec-color, 3%);
+	color: #ffffff;
+	padding: 15px 15px 30px 15px;
 	font-size: @font-size;
 	h4{
 		margin-bottom: 0px;
-		border-bottom: 1px solid darken(@base-color, 3%);
+		border-bottom: 2px solid darken(@sec-color, 5%);
 		padding-bottom: 10px;
 		font-size: @font-size + 2px;
 	}
 }
 
 .footer{
-	border-top: 1px solid desaturate(darken(@base-color, 20%), 60%);
-	border-bottom: 5px solid @sec-color;
-	background: @base-color;
-	color: @sec-color;
-	font-size: @font-size;
+	background: @footer-color;
+	color: contrast(@footer-color);
+	font-size: @font-size - 1px;
 	text-align: center;
 	p{
 		margin: 0 50px 10px;
@@ -153,8 +154,7 @@ ol{
 	.do-not-reply{
 		padding-top: 10px;
 		padding-bottom: 10px;
-		border-top: 1px solid darken(@base-color, 10%);
-		background: @base-color;
+		border-top: 1px solid darken(@footer-color, 5%);
 		font-size: @font-size - 3px;
 		text-align: center;
 	}
