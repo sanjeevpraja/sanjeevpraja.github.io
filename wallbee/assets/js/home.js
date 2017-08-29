@@ -38,12 +38,20 @@
 			stagePadding:0
 		});
 
-		var heights = $('.feature-list > [class^="col-"]').map(function ()
+		var heights = $('.feature-list').map(function ()
 		{
 			return $(this).height();
 		}).get(),
 		maxHeight = Math.max.apply(null, heights);
-		$('.feature-list > [class^="col-"]').height(maxHeight);
+		$('.feature-list').height(maxHeight);
+
+
+		var heights = $('.feature-benefit-list').map(function ()
+		{
+			return $(this).height();
+		}).get(),
+		maxHeight = Math.max.apply(null, heights);
+		$('.feature-benefit-list').height(maxHeight);
 	});
 
 })();
