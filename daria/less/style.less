@@ -1,0 +1,50 @@
+@import 'base/_base.less';
+@import 'module/_nav.less';
+@import 'module/_banner.less';
+@import 'module/_info.less';
+@import 'module/_services.less';
+@import 'module/_contact.less';
+@import 'module/_image-tile.less';
+@import 'module/_page-head.less';
+@import 'module/_footer.less';
+
+
+
+.border {
+	display: inline-block;
+	width: 20px;
+	border-bottom: 2px solid @border-color;
+}
+.btn{
+	
+	font-family: @font-body;
+	background: @primary-color;
+	color: #fff;
+	border: none;
+	border-radius: 32px;
+	font-size: 1rem;
+	letter-spacing: .5px;
+	@height: 34px;
+	height: @height;
+	line-height: @height;
+	padding: 0 20px;
+}
+.btn-lg{
+	@height: 50px;
+	height: @height;
+	line-height: @height;
+	padding: 0 30px;
+	font-size: 1.2rem;
+	border-radius: @height;
+}
+
+.page-title{
+	margin-top: 0px;
+	margin-bottom: 40px;
+	padding-bottom: 30px;
+	border-bottom: 4px double rgba(0,0,0,0.1);
+}
+
+.main-container{
+	margin-top: 60px;
+}

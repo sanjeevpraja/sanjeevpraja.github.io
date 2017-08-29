@@ -1,0 +1,93 @@
+.page-head{
+	padding: 120px 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+}
+
+.post-list{
+	background: #fff;
+	border: 1px solid #eee;
+	clear: both;
+	margin-bottom: 50px;
+	position: relative;
+	.post-img{
+		width: 40%;
+		height: 100%;
+		background-color: #eee;
+		background-size: cover;
+		background-position: center;
+		position: absolute;
+		right: 0;
+		top: 0;
+
+	}
+	.post-summary{
+		padding: 45px 30px;
+		margin-right: 40%;
+		&.no-img{
+			margin-right: 0;
+		}
+		.post-title{
+			margin: 0px 0px 5px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		.dot{
+			@height: 6px;
+			height: @height;
+			width: @height;
+			border-radius: @height;
+			background: #ddd;
+			color: transparent;
+			display: inline-block;
+			margin: 0 10px;
+			position: relative;
+			top: 8px;
+		}
+		.fa{
+			color: @primary-color;
+		}
+		.byline{
+			margin-bottom: 20px;
+			font-size: .8em;
+		}
+		.post-excerpt{
+			overflow: hidden;
+			margin-bottom: 10px;
+		}
+		.btn{
+			margin-bottom: 0;
+		}
+	}
+
+
+	&.full-img{
+		@img-height: 300px;
+		background: #fff;
+		border: 1px solid #eee;
+		clear: both;
+		margin-bottom: 50px;
+		.post-img{
+			width: 100%;
+			height: @img-height;
+			background-size: cover;
+			background-position: center;
+			position: relative;
+		}
+		.post-summary{
+			padding: 25px;
+			margin: 0;
+			.byline{
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+
+	/*if user can edit*/
+	.edit-link{
+		padding: 15px;
+	}
+}
