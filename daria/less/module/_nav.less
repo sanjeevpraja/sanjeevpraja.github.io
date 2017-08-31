@@ -1,5 +1,6 @@
 .header{
 	background: #eaeaee;
+	z-index: 999;
 	.header-img-wrap{
 		float: left;
 		height: 250px;
@@ -27,6 +28,38 @@
 			text-align: right;
 		}
 	}
+
+	&.fixed{
+		position: fixed;
+		width: 100%;
+		top: 0px;
+		.header-img-wrap{
+			display: none;
+		}
+		.header-nav-wrap{
+			margin-left: 0px;
+			.top-text{
+				display: none;
+			}
+			.logo{
+				float: left;
+				height: 50px;
+				margin: 10px 0;
+				img{
+					height: 100%;
+				}
+			}	
+		}		
+
+		.navbar-default .navbar-nav li a{
+			@height: 70px;
+			height: @height;
+			line-height: @height;
+		}
+		& + section{
+			margin-top: 140px;
+		}
+	}
 }
 
 // Menu Start
@@ -43,20 +76,29 @@
 	}
 	.navbar-nav {
 		li {
-			padding: 0px 15px;
+			padding: 0px;
 			a{	
 				@height: 50px;
 				height: @height;
 				line-height: @height;
-				padding: 0;
+				padding: 0px 15px;
 				font-size: 1.14em;
 				color: @secondary-color;
 				&.active, &:hover{
-					border-bottom: 2px solid @primary-color;	
+					border-bottom: 3px solid @primary-color;	
 				}				
 			}
 			&:last-child{
 				padding-right: 0px;
+			}
+			&.active{
+				a{
+					background: transparent;
+					border-bottom: 3px solid @primary-color;	
+					&:hover{
+						background: transparent;
+					}
+				}	
 			}
 		}
 		&.navbar-right {
@@ -79,9 +121,12 @@
 
 
 
-
-
-
+.internal-link{
+	position: absolute;
+	height: 0px;
+	width: 100px;
+	margin-top: -120px;
+}
 
 
 

@@ -11,7 +11,7 @@
 	<script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#main-navbar">
 
 	<div class="header">
 		<div class="container">
@@ -34,13 +34,13 @@
 					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<div class="collapse navbar-collapse" id="main-navbar">
 						<ul class="nav navbar-nav">
-							<li><a href="#">Cultural Training</a></li>
-							<li><a href="#">Research</a></li>
-							<li><a href="/blog.html">Photography</a></li>
-							<li><a href="#">Translation</a></li>
-							<li><a href="#">Consultancy</a></li>
+							<li><a href="#culture">Cultural Training</a></li>
+							<li><a href="#research">Research</a></li>
+							<li><a href="#photography">Photography</a></li>
+							<li><a href="#translation">Translation</a></li>
+							<li><a href="#consultancy">Consultancy</a></li>
 						</ul>
 					</div><!-- /.navbar-collapse -->
 				</nav>
@@ -48,9 +48,56 @@
 		</div>
 	</div>
 
-	
+	<section  class="page-section white">
+		<div class="internal-link"  id="culture"></div>
+		<div class="container">
+			<div class="page-title">
+				<h1 class="head">Cultural Training</h1>
+				<p class="sub-head">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eveniet culpa inventore minus aliquam mollitia officia dolor fugiat dolorem atque, qui sequi doloremque, suscipit perspiciatis dolore. Quisquam, non, ea. Dolorum ad rem magnam animi necessitatibus, illum nam. Ipsa nobis at, inventore iusto. Tenetur ullam, ut.</p>
+					<p>Temporibus atque quas obcaecati ipsam iure magnam ad officiis illum velit vitae, unde eligendi numquam odio architecto nihil eaque. Error maiores maxime, quis accusamus et. Sint nisi, iste, labore ut dolores, cupiditate rerum nihil accusantium fugit suscipit tempore libero accusamus repudiandae. Non quia, doloribus doloremque.</p>
+					<em>Consectetur adipisicing elit. Deserunt quod quam distinctio error cum mollitia.</em>
+				</div>
+				<div class="col-sm-6">
+					<p>Exercitationem sunt, dignissimos. Voluptas provident quod, eum sapiente fuga eius, dolor praesentium quis repellat consequatur nisi nihil facilis autem, accusantium vero inventore rerum possimus expedita quae aut beatae asperiores? Maiores quos molestias sequi assumenda aliquam consectetur id perferendis, magnam soluta perspiciatis veritatis eius in nesciunt!</p>
+					<p>Provident iusto animi cumque qui iste tempora repellat dignissimos ea aut quam explicabo perferendis maxime, nemo enim ipsam totam, incidunt sint impedit, error voluptatum soluta quae? Magni rem quia saepe necessitatibus perferendis, sapiente hic rerum quo! Quo iste nemo ratione quisquam, aspernatur, quidem eum numquam.</p>
+				</div>
+			</div>
+			<br>
+			<a href="" class="btn btn-lg btn-primary">Read More &nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+		</div>
+	</section>
+
+	<section  class="page-section white">
+		<div class="internal-link" id="research"></div>
+		<div class="container">
+			<div class="page-title">
+				<h1 class="head">Research</h1>
+				<p class="sub-head">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eveniet culpa inventore minus aliquam mollitia officia dolor fugiat dolorem atque, qui sequi doloremque, suscipit perspiciatis dolore. Quisquam, non, ea. Dolorum ad rem magnam animi necessitatibus, illum nam. Ipsa nobis at, inventore iusto. Tenetur ullam, ut.</p>
+					<p>Temporibus atque quas obcaecati ipsam iure magnam ad officiis illum velit vitae, unde eligendi numquam odio architecto nihil eaque. Error maiores maxime, quis accusamus et. Sint nisi, iste, labore ut dolores, cupiditate rerum nihil accusantium fugit suscipit tempore libero accusamus repudiandae. Non quia, doloribus doloremque.</p>
+					<em>Consectetur adipisicing elit. Deserunt quod quam distinctio error cum mollitia.</em>
+				</div>
+				<div class="col-sm-6">
+					<p>Exercitationem sunt, dignissimos. Voluptas provident quod, eum sapiente fuga eius, dolor praesentium quis repellat consequatur nisi nihil facilis autem, accusantium vero inventore rerum possimus expedita quae aut beatae asperiores? Maiores quos molestias sequi assumenda aliquam consectetur id perferendis, magnam soluta perspiciatis veritatis eius in nesciunt!</p>
+					<p>Provident iusto animi cumque qui iste tempora repellat dignissimos ea aut quam explicabo perferendis maxime, nemo enim ipsam totam, incidunt sint impedit, error voluptatum soluta quae? Magni rem quia saepe necessitatibus perferendis, sapiente hic rerum quo! Quo iste nemo ratione quisquam, aspernatur, quidem eum numquam.</p>
+				</div>
+			</div>
+			<br>
+			<a href="" class="btn btn-lg btn-primary">Read More &nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+		</div>
+	</section>
+
+
 	<!-- Services Start -->
-	<div class="services">
+<!-- 	<div class="services">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4 services-col-2">
@@ -82,123 +129,169 @@
 				</div>
 			</div>		
 		</div>
-	</div>
+	</div> -->
 
 
 	<!-- Image section-->
 	<div class="image-tile">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-3">
-					<div class="img-wrap" style="background-image: url('asset/images/image-1.jpg')">
-						<div class="img-text">
-							<h2>Russia</h2>
-							<p>8 Related Posts</p>
-						</div>
-						<div class="img-hover">
-							<h2>Russia</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque fugit nobis, libero.</p>
-							<a href="category.html">Read More</a>
-						</div>
+		<div class="internal-link" id="photography"></div>
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="img-wrap" style="background-image: url('asset/images/image-1.jpg')">
+					<div class="img-text">
+						<h2>Russia</h2>
+						<p>8 Related Posts</p>
 					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="img-wrap" style="background-image: url('asset/images/image-2.jpg')">
-						<div class="img-text">
-							<h2>Arctic</h2>
-							<p>8 Related Posts</p>
-						</div>
-						<div class="img-hover">
-							<h2>Arctic</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque fugit nobis, libero.</p>
-							<a href="category.html">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="img-wrap" style="background-image: url('asset/images/image-3.jpg')">
-						<div class="img-text">
-							<h2>Yamal</h2>
-							<p>8 Related Posts</p>
-						</div>
-						<div class="img-hover">
-							<h2>Yamal</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque fugit nobis, libero.</p>
-							<a href="category.html">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="img-wrap" style="background-image: url('asset/images/image-4.jpg')">
-						<div class="img-text">
-							<h2>Denmark</h2>
-							<p>8 Related Posts</p>
-						</div>
-						<div class="img-hover">
-							<h2>Denmark</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque fugit nobis, libero.</p>
-							<a href="category.html">Read More</a>
-						</div>
+					<div class="img-hover">
+						<h2>Russia</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque fugit nobis, libero.</p>
+						<a href="category.html">Read More</a>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-sm-3">
-					<div class="img-wrap" style="background-image: url('asset/images/image-5.jpg')">
-						<div class="img-text">
-							<h2>Alaska</h2>
-							<p>8 Related Posts</p>
-						</div>
-						<div class="img-hover">
-							<h2>Denmark</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque fugit nobis, libero.</p>
-							<a href="category.html">Read More</a>
-						</div>
+			<div class="col-sm-3">
+				<div class="img-wrap" style="background-image: url('asset/images/image-2.jpg')">
+					<div class="img-text">
+						<h2>Arctic</h2>
+						<p>8 Related Posts</p>
+					</div>
+					<div class="img-hover">
+						<h2>Arctic</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque fugit nobis, libero.</p>
+						<a href="category.html">Read More</a>
 					</div>
 				</div>
-				<div class="col-sm-3">
-					<div class="img-wrap" style="background-image: url('asset/images/image-6.jpg')">
-						<div class="img-text">
-							<h2>Belarus</h2>
-							<p>8 Related Posts</p>
-						</div>
-						<div class="img-hover">
-							<h2>Russia</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque fugit nobis, libero.</p>
-							<a href="category.html">Read More</a>
-						</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="img-wrap" style="background-image: url('asset/images/image-3.jpg')">
+					<div class="img-text">
+						<h2>Yamal</h2>
+						<p>8 Related Posts</p>
+					</div>
+					<div class="img-hover">
+						<h2>Yamal</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque fugit nobis, libero.</p>
+						<a href="category.html">Read More</a>
 					</div>
 				</div>
-				<div class="col-sm-3">
-					<div class="img-wrap" style="background-image: url('asset/images/image-7.jpg')">
-						<div class="img-text">
-							<h2>Chukotka</h2>
-							<p>8 Related Posts</p>
-						</div>
-						<div class="img-hover">
-							<h2>Arctic</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque fugit nobis, libero.</p>
-							<a href="category.html">Read More</a>
-						</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="img-wrap" style="background-image: url('asset/images/image-4.jpg')">
+					<div class="img-text">
+						<h2>Denmark</h2>
+						<p>8 Related Posts</p>
+					</div>
+					<div class="img-hover">
+						<h2>Denmark</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque fugit nobis, libero.</p>
+						<a href="category.html">Read More</a>
 					</div>
 				</div>
-				<div class="col-sm-3">
-					<div class="img-wrap" style="background-image: url('asset/images/image-8.jpg')">
-						<div class="img-text">
-							<h2>Nepal</h2>
-							<p>8 Related Posts</p>
-						</div>
-						<div class="img-hover">
-							<h2>Yamal</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque fugit nobis, libero.</p>
-							<a href="category.html">Read More</a>
-						</div>
-					</div>
-				</div>
-				
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="img-wrap" style="background-image: url('asset/images/image-5.jpg')">
+					<div class="img-text">
+						<h2>Alaska</h2>
+						<p>8 Related Posts</p>
+					</div>
+					<div class="img-hover">
+						<h2>Denmark</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque fugit nobis, libero.</p>
+						<a href="category.html">Read More</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="img-wrap" style="background-image: url('asset/images/image-6.jpg')">
+					<div class="img-text">
+						<h2>Belarus</h2>
+						<p>8 Related Posts</p>
+					</div>
+					<div class="img-hover">
+						<h2>Russia</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque fugit nobis, libero.</p>
+						<a href="category.html">Read More</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="img-wrap" style="background-image: url('asset/images/image-7.jpg')">
+					<div class="img-text">
+						<h2>Chukotka</h2>
+						<p>8 Related Posts</p>
+					</div>
+					<div class="img-hover">
+						<h2>Arctic</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque fugit nobis, libero.</p>
+						<a href="category.html">Read More</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="img-wrap" style="background-image: url('asset/images/image-8.jpg')">
+					<div class="img-text">
+						<h2>Nepal</h2>
+						<p>8 Related Posts</p>
+					</div>
+					<div class="img-hover">
+						<h2>Yamal</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque fugit nobis, libero.</p>
+						<a href="category.html">Read More</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
 	</div>
+
+	<section  class="page-section white">
+		<div class="internal-link" id="translation"></div>
+		<div class="container">
+			<div class="page-title">
+				<h1 class="head">Translation</h1>
+				<p class="sub-head">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+			<div class="row">
+				<div class="col-sm-8">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eveniet culpa inventore minus aliquam mollitia officia dolor fugiat dolorem atque, qui sequi doloremque, suscipit perspiciatis dolore. Quisquam, non, ea. Dolorum ad rem magnam animi necessitatibus, illum nam. Ipsa nobis at, inventore iusto. Tenetur ullam, ut.</p>
+					<em>Consectetur adipisicing elit. Deserunt quod quam distinctio error cum mollitia.</em>
+				</div>
+				<div class="col-sm-4">
+					<ul class="list-group" style="max-width: 300px">
+						<li class="list-group-item">English</li>
+						<li class="list-group-item">Danish</li>
+						<li class="list-group-item">French</li>
+					</ul>
+				</div>
+			</div>
+			<br>
+		</div>
+	</section>
+
+	<section  class="page-section">
+		<div class="internal-link" id="consultancy"></div>
+		<div class="container">
+			<div class="page-title">
+				<h1 class="head">Consultancy</h1>
+				<p class="sub-head">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eveniet culpa inventore minus aliquam mollitia officia dolor fugiat dolorem atque, qui sequi doloremque, suscipit perspiciatis dolore. Quisquam, non, ea. Dolorum ad rem magnam animi necessitatibus, illum nam. Ipsa nobis at, inventore iusto. Tenetur ullam, ut.</p>
+					<p>Temporibus atque quas obcaecati ipsam iure magnam ad officiis illum velit vitae, unde eligendi numquam odio architecto nihil eaque. Error maiores maxime, quis accusamus et. Sint nisi, iste, labore ut dolores, cupiditate rerum nihil accusantium fugit suscipit tempore libero accusamus repudiandae. Non quia, doloribus doloremque.</p>
+					<em>Consectetur adipisicing elit. Deserunt quod quam distinctio error cum mollitia.</em>
+				</div>
+				<div class="col-sm-6">
+					<p>Exercitationem sunt, dignissimos. Voluptas provident quod, eum sapiente fuga eius, dolor praesentium quis repellat consequatur nisi nihil facilis autem, accusantium vero inventore rerum possimus expedita quae aut beatae asperiores? Maiores quos molestias sequi assumenda aliquam consectetur id perferendis, magnam soluta perspiciatis veritatis eius in nesciunt!</p>
+					<p>Provident iusto animi cumque qui iste tempora repellat dignissimos ea aut quam explicabo perferendis maxime, nemo enim ipsam totam, incidunt sint impedit, error voluptatum soluta quae? Magni rem quia saepe necessitatibus perferendis, sapiente hic rerum quo! Quo iste nemo ratione quisquam, aspernatur, quidem eum numquam.</p>
+				</div>
+			</div>
+			<br>
+		</div>
+	</section>
+
 
 	<!-- Contact start -->
 	<div class="contact">
@@ -233,13 +326,28 @@
 			</div>
 		</div>
 	</div>
-	
-	
+
+
 
 	<!-- Footer start -->
 	<footer>
 		Copyright 2017
 	</footer>
+
+
+	<script>
+		$(document).ready(function(){
+			$('body').scrollspy({ target: '#main-navbar' })
+		});
+		$( window ).scroll(function() {
+			if($(window).scrollTop() > 10){
+				$('.header').addClass('fixed');
+			}
+			else{
+				$('.header').removeClass('fixed');	
+			}
+		});
+	</script>
 
 </body>
 </html>
