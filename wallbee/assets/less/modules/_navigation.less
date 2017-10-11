@@ -12,8 +12,10 @@
 
 .nav-menu{
 	border: 0;
+	width: 100%;
+	position: fixed;
 	z-index: 999;
-	position: relative;
+	background: #fff;
 	.icon-bar{
 		background: contrast(@base-color);
 	}
@@ -33,7 +35,7 @@
 	.navbar{
 		border: 0;
 		margin-bottom: 0px;
-		background:@nav-bg;
+		//background:@nav-bg;
 		.navbar-brand{
 			padding: 0;
 			position: relative;
@@ -71,9 +73,9 @@
 				padding:0 10px;
 				border-radius: @nav-radius;
 				font-family: @nav-sub-font;
-				font-weight: normal;
+				font-weight: bold;
 				text-transform: uppercase;
-				color: @nav-font;
+				color: @sec-color;
 				&:focus, &:hover{
 					color: @nav-font-hover;
 					border-bottom: 5px solid @primary-color;
@@ -98,7 +100,7 @@
 				padding: 15px 0;
 				margin-top: -1px;
 				border: none;
-				background: @bg-drop;
+				background: #333;
 				color: @primary-color;
 				letter-spacing: .06em;
 				font-size: .9em;
@@ -254,20 +256,26 @@
 		position: fixed;
 		top: 0px;
 		z-index: 999;
-		.navbar 
-		.navbar-brand{
-			margin-top: 10px;
-			height: @shrink-height - 20px;
-			.transition(all .2s linear);
-			img{
+
+		.navbar{
+			background: #fff;
+			border-bottom: 1px solid #eee;
+			.navbar-brand{
+				margin-top: 10px;
 				height: @shrink-height - 20px;
+				.transition(all .2s linear);
+				img{
+					height: @shrink-height - 20px;
+				}
 			}
-		}
+		} 
+		
 		.nav > li {
 			& > a{
 				height: @shrink-height;
 				line-height: @shrink-height;
 				font-size: .9em;
+				color: @font-color;
 				.transition(all .2s linear);
 			}
 		}

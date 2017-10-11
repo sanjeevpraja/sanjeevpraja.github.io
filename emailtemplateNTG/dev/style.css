@@ -12,7 +12,7 @@ hr {
 }
 a {
   font-weight: bold;
-  color: #3e9bff;
+  color: #9acc2f;
 }
 p {
   font-size: 14px;
@@ -23,8 +23,8 @@ p {
   font-family: 'Lucida Grande', Arial, sans-serif;
 }
 .logo-wrap {
-  border-top: 5px solid #141d43;
-  border-bottom: 2px solid #dddddd;
+  border-top: 4px solid #141d43;
+  border-bottom: 1px solid #dddddd;
   background-color: #ffffff;
   text-align: center;
 }
@@ -114,15 +114,15 @@ ol li {
   width: 300px;
 }
 .info-box {
-  background: rgba(62, 155, 255, 0.1);
-  border: 1px solid rgba(62, 155, 255, 0.15);
+  background: rgba(154, 204, 47, 0.1);
+  border: 1px solid rgba(154, 204, 47, 0.5);
   color: #141d43;
   padding: 15px 15px 30px 15px;
   font-size: 12px;
 }
 .info-box h4 {
   margin-bottom: 0px;
-  border-bottom: 2px solid #248eff;
+  border-bottom: 2px solid #5b791c;
   padding-bottom: 10px;
   font-size: 14px;
 }

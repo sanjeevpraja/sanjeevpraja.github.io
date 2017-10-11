@@ -3,32 +3,46 @@
 	background: url('@{baseurl}/carousel/parallax1.jpg') no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
+	position: relative;
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+	&:before{
+		content: '';
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0px;
+		//background: fade(darken(@sec-color, 10%), 80%);
+		background: fade(lighten(@primary-color, 47%), 90%);
+	}
+	.container{
+		position: relative;
+		z-index: 99;
+	}
 	.feature-list{
-		min-height: 240px;
-		border: 3px solid @primary-color;
-		padding: 30px;
-		text-align: center;
+		padding-bottom: 30px;
+		position: relative;
 		h1, h2, h3, h4, h5, h6{
 			margin-bottom: 20px;
+			font-weight: bold;
 		}
 		p{
-			margin-bottom: 15px;
+			margin-bottom: 30px;
+			font-size: 1rem;
+			position: relative;
 		}
 		a{
 			font-size: 1rem;
 			text-transform: uppercase;
 			padding: 8px 15px;
-		}
-		&:hover{
-			background: rgba(0, 0, 0, 0.5);
-			a{
-				background: @primary-color;
-				color: #fff;
-				&:hover{
-					background: @primary-700;
-				}
+			background: @primary-color;
+			background: @primary-color;
+			color: #fff;
+			&:hover{
+				background: @primary-700;
 			}
-		}
+		}	
 	}
 }
 

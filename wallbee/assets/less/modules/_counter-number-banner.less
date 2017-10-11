@@ -7,7 +7,8 @@
 }
 .counter-div{
 	text-align: center;
-	color: @primary-color;
+	background: @base-color;
+	color: @base-contrast;
 	[class^='col-']{
 		padding-top: 60px;
 		padding-bottom: 60px;
@@ -20,16 +21,17 @@
 		font-size: 3em;
 		line-height: 1;
 		display: block;
+		margin-bottom: 10px;
 	}
 	.counter{
-		font-size: 2rem;
+		font-size: 3rem;
 		font-weight: bold;
 		font-family: @head-font;
 		text-align: center;
+		color:  @base-contrast;
 	}
 
-	background: @base-color;
-	color: @base-contrast;
+
 	[class^='col-']{
 		&:nth-child(odd){
 			background: @base-color;
@@ -38,9 +40,7 @@
 			background: @base-600;
 		}
 	}
-	.counter{
-		color:  @base-contrast;
-	}
+
 
 }
 
